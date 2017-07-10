@@ -1,7 +1,9 @@
 #!/bin/sh
 
 echo "Removing existing project from public_html"
+
 rm -rf ~/public_html/*
+
 echo "Done removing project."
 
 sleep 3
