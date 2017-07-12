@@ -14,12 +14,13 @@
 
 	.header{
 		width: 100%;
-		height: 75px;
+		height: 50px;
 		border-radius: 8px;
 		overflow: hidden;
 		background-color; grey;
 		position: fixed;
 		top: 0;
+		border: 1px solid grey;
 	}
 	.navheader-ul {
 		text-align: right;
@@ -40,6 +41,30 @@
 	.navheader-li a:hover{
 		color: orange;
 	}
+
+	div div h2 {
+		position: relative;
+		left: 20px;
+	}
+
+	button.accordion {
+	    background-color: #000000;
+	    color: white;
+	    cursor: pointer;
+	    padding: 18px;
+	    width: 100%;
+	    border: none;
+	    text-align: left;
+	    font-size: 25px;
+	    transition: 0.4s;
+	}
+
+	div.selfcontainer {
+	    padding: 0 18px;
+	    display: none;
+	    background-color: black;
+	    overflow: hidden;
+	}	
 
 /**********************************/
 /* END: NAVHEADER and GENERAL CSS */
@@ -67,7 +92,7 @@
 	.typing-anim-container {
 		width: 95%; 
 		position: relative; 
-		margin-top: 50px;
+		margin-top: 75px;
 	}
 
 	.cursor{
@@ -106,11 +131,26 @@
 	.intro-self {
 		width: 75%;
 		margin: 0 auto; 
-		border: 2px solid #FFFFFF;
+		border: 2px solid red;
+	}
+
+	.intro-self:hover {
+		background-color: red;
+		transition: 0.4s;
+		color: black;
+	}
+
+	.selfcontainer:hover {
+		transition: 0.4s;
 	}
 
 	.intro-p {
 		text-align: center;
+		margin: 30px 0px;
+	}
+
+	.intro-container {
+		margin-bottom: 60px;
 	}
 
 /**********************/
@@ -124,6 +164,20 @@
 /* START: Work Section */
 /***********************/
 
+	.work-container button.accordion.active, .work-container button.accordion:hover {
+		background-color: orange;
+		color: black;
+	}
+	.work-container {
+		width: 75%;
+		border: 2px solid orange;
+		margin: 0px auto 30px auto;
+	}
+	.work-p {
+		margin: 30px 0px;
+		text-align: center;
+	}
+
 /*********************/
 /* END: Work Section */
 /*********************/
@@ -135,9 +189,80 @@
 /* START: ABOUT Section */
 /************************/
 
+	.about-container button.accordion.active, .about-container button.accordion:hover {
+		background-color: yellow;
+		color: black;
+	}
+	.about-container {
+		border: 2px solid yellow;
+		width: 75%;
+		margin: 60px auto 30px auto;
+	}
+
 /**********************/
 /* END: ABOUT Section */
 /**********************/
+
+
+/***********************/
+/* START: BLOG Section */
+/***********************/
+
+	.blog-container button.accordion.active, .blog-container button.accordion:hover {
+		background-color: green;
+		color: black;
+	}
+	.blog-container {
+		border: 2px solid green;
+		width: 75%;
+		margin: 60px auto;
+	}
+
+/*********************/
+/* END: BLOG Section */
+/*********************/
+
+
+
+
+/****************************/
+/* START: INTERESTS Section */
+/****************************/
+
+	.interests-container button.accordion.active, .interests-container button.accordion:hover {
+		background-color: blue;
+		color: black;
+	}
+	.interests-container {
+		border: 2px solid blue;
+		width: 75%;
+		margin: 60px auto;
+	}
+
+/**************************/
+/* END: INTERESTS Section */
+/**************************/
+
+
+
+
+/**************************/
+/* START: CONTACT Section */
+/**************************/
+
+	.contact-container button.accordion.active, .contact-container button.accordion:hover {
+		background-color: purple;
+		color: black;
+	}
+	.contact-container {
+		border: 2px solid purple;
+		width: 75%;
+		margin: 60px auto;
+	}
+
+/************************/
+/* END: CONTACT Section */
+/************************/
 
 
 
