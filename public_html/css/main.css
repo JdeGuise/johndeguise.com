@@ -67,6 +67,31 @@ a:after {
   SECTION WRAPS
 ---------------------------------------------------*/
 
+nav {
+  text-align: left;
+  left: 35%;
+  top: -100px;
+  position: relative;
+  max-width: 21%;
+  margin: 0 auto;
+  background-color: rgba(99,55,55, .5);
+  border-radius: 2%;
+}
+
+nav ul li{
+  left: -10px;
+  position: relative;
+  margin: 0 5px;
+  display: inline;
+  list-style-type: none;
+  color: white;
+  opacity: 1;
+}
+
+nav li:hover {
+  color: maroon;
+}
+
 .john:hover {
   color: lightblue;
 }
