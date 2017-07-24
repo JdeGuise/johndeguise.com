@@ -32,10 +32,19 @@
 </head>
 <body>
 	<header id="wrap">
+		<nav>
+			<ul>
+				<a href="#"><li class="aboutnav">About</li></a>
+				<a href="#"><li class="worknav">Work</li></a>
+				<a href="#"><li class="projectsnav">Projects</li></a>
+				<a href="#"><li class="volunteernav">Volunteering</li></a>
+				<a href="#"><li class="awardsnav">Awards</li></a>	
+			</ul>
+		</nav>
 		<div class="container">
 			<div class="row centered">
 				<div class="col-lg-12">
-					<h1><span class="john">John </span><span class="deGuise">deGuise</span></h1>
+					<h1><span class="john">John </span><span class="deGuise">deGuise</span></h1> <br/>
 					<h3>Software Developer |
 					<a href="mailto:john.r.deguise@gmail.com">john.r.deguise@gmail.com</a>
 					</h3>
@@ -96,7 +105,7 @@
 	<div class="container desc">
 		<div class="row">
 
-				<div class="col-lg-2 col-lg-offset-1">
+				<div class="col-lg-2 col-lg-offset-1 work">
 					<h4>WORK</h4>
 				</div>
 				
@@ -148,7 +157,7 @@
 	<div class="container desc">
 		<div class="row">
 				
-			<div class="col-lg-2 col-lg-offset-1">
+			<div class="col-lg-2 col-lg-offset-1 projects">
 				<h4>PROJECTS</h4>
 			</div>
 
@@ -188,7 +197,7 @@
 	<div class="container desc">
 		<div class="row">
 
-			<div class="col-lg-2 col-lg-offset-1">
+			<div class="col-lg-2 col-lg-offset-1 volunteer">
 				<h4>VOLUNTEERING</h4>
 			</div>
 
@@ -275,7 +284,7 @@
 	<!-- AWARDS SECTION -->
 	<div class="container desc">
 		<div class="row">
-				<div class="col-lg-2 col-lg-offset-1">
+				<div class="col-lg-2 col-lg-offset-1 awards">
 					<h4>AWARDS</h4>
 				</div>
 
@@ -354,6 +363,31 @@
 			deGuise.play();
 		});
 
+		$(".aboutnav").click(function() {
+		    $('html,body').animate({
+		        scrollTop: $(".about").offset().top},
+		        'slow');
+		});
+		$(".worknav").click(function() {
+		    $('html,body').animate({
+		        scrollTop: $(".work").offset().top},
+		        'slow');
+		});
+		$(".projectsnav").click(function() {
+		    $('html,body').animate({
+		        scrollTop: $(".projects").offset().top},
+		        'slow');
+		});
+		$(".volunteernav").click(function() {
+		    $('html,body').animate({
+		        scrollTop: $(".volunteer").offset().top},
+		        'slow');
+		});
+		$(".awardsnav").click(function() {
+		    $('html,body').animate({
+		        scrollTop: $(".awards").offset().top},
+		        'slow');
+		});
 
 	</script>
 
