@@ -68,14 +68,33 @@ a:after {
 ---------------------------------------------------*/
 
 nav {
-  text-align: left;
-  left: 35%;
+  text-align: center;
   top: -100px;
   position: relative;
-  max-width: 21%;
-  margin: 0 auto;
-  background-color: rgba(99,55,55, .5);
+  background-color: rgba(99,55,55, .20);
   border-radius: 2%;
+}
+
+/* mid */
+@media only screen and (max-width: 767px){
+    nav {
+        margin: 0 auto;
+        max-width: 75%;
+    }
+}
+
+/* mid */
+@media only screen and (min-width: 768px) and (max-width: 1100px){
+    nav {
+        margin: 0 auto;
+        max-width: 52%;
+    }
+}
+@media only screen and (min-width: 1101px){
+    nav {
+        margin: 0 auto;
+        max-width: 35%;
+    }
 }
 
 nav ul li{
