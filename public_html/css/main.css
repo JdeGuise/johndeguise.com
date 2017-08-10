@@ -40,7 +40,7 @@ a {
 
 a:hover,
 a:focus {
-  color: #7b7b7b;
+  color: rgb(220,220,255);
   text-decoration: none;
   outline: 0;
 }
@@ -130,7 +130,7 @@ header {
   background-position: center center;
   min-height: 500px;
   width: 100%;
-  
+
   -webkit-background-size: 100%;
   -moz-background-size: 100%;
   -o-background-size: 100%;
@@ -164,7 +164,7 @@ header h3 a {
   padding-top: 60px;
   padding-bottom: 60px;
   color: white;
-} 
+}
 
 .about h5, p {
   color: white;
@@ -263,11 +263,11 @@ body {
 
 @-webkit-keyframes fadeIn {
   0% {
-    opacity: 0; 
+    opacity: 0;
   }
 
   100% {
-    opacity: 1; 
+    opacity: 1;
   }
 }
 
@@ -298,7 +298,7 @@ body {
 
   100% {
     opacity: 1;
-  } 
+  }
 }
 
 .fadeIn {
