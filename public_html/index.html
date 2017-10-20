@@ -7,9 +7,9 @@
     <meta name="description" content="John deGuise's website page, and personal portfolio">
     <!-- OPTIONAL: author -->
     <meta name="author" content="John deGuise">
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="images/goose.ico">
     <link rel="apple-touch-icon" href="icon.png" />
-	<title>John deGuise's Portfolio</title>
+	<title>John deGuise's Site</title>
 
 	<!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -35,6 +35,7 @@
 		<nav>
 			<ul>
 				<a href="#"><li class="aboutnav">About</li></a>
+				<a href="#"><li class="edunav">Education</li></a>
 				<a href="#"><li class="worknav">Work</li></a>
 				<a href="#"><li class="projectsnav">Projects</li></a>
 				<a href="#"><li class="volunteernav">Volunteering</li></a>
@@ -47,7 +48,7 @@
 					<h1><span class="john">John </span><span class="deGuise">deGuise</span></h1> <br/>
 					<h3>Software Developer</h3>
 					<br>
-					<h4><a href="tel:6164140882" class="tel">616 414 0882</a> | <a href="mailto:jrdwebsolutions@gmail.com">jrdwebsolutions@gmail.com</a></h4>
+					<h4><a href="tel:6164140882" class="tel">616 414 0882</a> | <a href="mailto:john.r.deguise@gmail.com">john.r.deguise@gmail.com</a></h4>
 				</div>
 			</div>
 		</div>
@@ -57,13 +58,13 @@
 	<div class="about">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-2 col-lg-offset-1">
-					<h5>ABOUT</h5>
+				<div class="col-lg-2">
+					<h5 style="position: relative; left: 15px;">ABOUT</h5>
 				</div>
 
-				<div class="col-lg-6"><p>This is John deGuise's website, created by himself. John is a computer science and business graduate with a passion for providing web development and software solutions.  For work opportunities, contact John via email or phone. </p></div>
+				<div class="col-lg-8"><p>This is John deGuise's website, created by himself. John is a web developer with a passion for providing computer science and business software.  For work opportunities, contact John via email or phone. </p></div>
 
-				<div class="col-lg-3">
+				<div class="col-lg-2">
 					<p><a href="documents/JdeGuise.pdf"><i class="icon-file" target="_blank"></i> <sm>DOWNLOAD PDF</sm></a></p>
 				</div>
 			</div><!--/.row-->
@@ -75,14 +76,14 @@
 
 <section id="resume" name="resume"></section>
 	<!-- EDUCATION SECTION -->
-	<div class="container desc resume">
-		<div class="row">
+	<div class="container desc resume education">
+		<div class="row col-lg-12 col-md-12 col-sm-12">
 
-				<div class="col-lg-2 col-lg-offset-1">
+				<div class="col-lg-2 col-md-12 col-sm-12">
 					<h4>EDUCATION</h4>
 				</div>
 				<!-- EDIT: education line 1 -->
-				<div class="col-lg-6">
+				<div class="col-lg-5 col-md-9 col-sm-12">
 					<p><t>Bachelor of Applied Arts</t><br/>
 						Central Michigan University <br/> <br/>
 						Majors: Computer Science, Entrepreneurship<br/>
@@ -90,29 +91,64 @@
 						<!--<br/><i>Extra info here</i>-->
 					</p>
 				</div>
-				<div class="col-lg-3">
+				<div class="col-lg-2 col-md-3 col-sm-12">
 					<p><imp><sm>Graduated May 2017</sm></imp><br/>
 					<sm>GPA: 3.3</sm>
 					</p>
 				</div>
-
+				<div class="col-lg-3 col-md-12 col-sm-12">
+					<a href="https://cmich.edu"><img src="images/cmu.png" width="350" class="logos"></a>
+				</div>
 		</div><!--/.row -->
 		<br>
 		<hr>
 	</div><!--/.container -->
 
 	<!-- WORK SECTION -->
-	<div class="container desc">
-		<div class="row">
+	<div class="container desc work">
+		<div class="col-lg-12 col-md-12 col-sm-12">
+			<h4>WORK</h4>
+		</div>
 
-				<div class="col-lg-2 col-lg-offset-1 work">
-					<h4>WORK</h4>
-				</div>
+		<div class="row col-lg-12 col-md-12 col-sm-12">
 
 				<!-- EDIT: work line 1-->
-				<div class="col-lg-6">
+				<div class="col-lg-7 col-md-9 col-sm-12">
+					<p class="tight"><t>Current Position</t><br/>
+						Developer 1 <br/> Bluewolf
+					</p>
+					<p><more>
+						<ul>
+							<li>Development of web applications using Cloud platforms</li>
+							<li>Interacting with Force.com, Heroku, and AWS building front and back-end solutions</li>
+							<li>Utilizing TDD and pair programming</li>
+							<li>Participating in daily scrums, code reviews and weekly meetings</li>
+							<li>Joining client meetings to communicate status, give demos, provide timelines and offer insight</li>
+						</ul>
+					</more></p>
+					<br>
+				</div>
+				<div class="col-lg-2 col-md-3 col-sm-12">
+					<br>
+					<p><sm>OCT 2017 - PRESENT <br />
+					DENVER, COLORADO</sm></p>
+				</div>
+				<div class="col-lg-3 col-md-12 col-sm-12">
+					<br>
+					<br>
+					<a href="https://bluewolf.com"><img src="images/bluewolf.png" alt="" width="350" class="logos"></a>
+				</div>
+
+
+				<br>
+				<br>
+				<hr>
+				<br>
+
+				<!-- EDIT: work line 2-->
+				<div class="col-lg-7 col-md-9 col-sm-12">
 					<p class="tight"><t>Previous Positions</t><br/>
-						Software Developer - ChargeOver <br/>
+						Software Developer <br/> ChargeOver
 					</p>
 					<p><more>
 						<ul>
@@ -123,15 +159,20 @@
 						</ul>
 					</more></p>
 				</div>
-				<div class="col-lg-3">
-					<p><sm>FEBRUARY 2016 - MAY 2017 <br />
-					MOUNT PLEASANT, MICHIGAN</sm></p>
+				<div class="col-lg-2 col-md-3 col-sm-12"> <br>
+					<p><sm>FEB 2016 - MAY 2017 <br />
+					MT. PLEASANT, MICHIGAN</sm></p>
+				</div>
+				<div class="col-lg-3 col-md-12 col-sm-12">
+					<br>
+					<br>
+					<a href="https://www.chargeover.com"><img src="images/chargeover.png" alt="" width="350" class="logos"></a>
 				</div>
 
-				<!-- EDIT: work line 2-->
-				<div class="col-lg-6 col-lg-offset-3">
-					<p class="tight"><t>Previous Position</t><br/>
-						Junior Systems Administrator - Central Michigan University - Technology Operations <br/>
+				<!-- EDIT: work line 3-->
+				<div class="col-lg-7 col-md-9 col-sm-12">
+					<p class="tight"><t></t><br/>
+						Junior Systems Administrator <br/> Central Michigan University - Technology Operations
 					</p>
 					<p><more>
 						<ul>
@@ -142,27 +183,31 @@
 						</ul>
 					</more></p>
 				</div>
-				<div class="col-lg-3">
-					<p><sm>SEPTEMBER 2014 - MARCH 2016 <br />
-					MOUNT PLEASANT, MICHIGAN</sm></p>
+				<div class="col-lg-2 col-md-3 col-sm-12">
+					<br>
+					<p><sm>SEP 2014 - MAR 2016 <br />
+					MT. PLEASANT, MICHIGAN</sm></p>
 				</div>
-
-
+				<div class="col-lg-3 col-md-12 col-sm-12">
+					<br>
+					<br>
+					<a href="https://techops.cmich.edu"><img src="images/techops.png" alt="" width="350" class="logos"></a>
+				</div>
 		</div><!--/.row -->
 		<br>
 		<hr>
 	</div><!--/.container -->
 
 	<!-- PROJECTS SECTION -->
-	<div class="container desc">
+	<div class="container desc projects">
 		<div class="row">
 
-			<div class="col-lg-2 col-lg-offset-1 projects">
+			<div class="col-lg-12 col-md-12 col-sm-12">
 				<h4>PROJECTS</h4>
 			</div>
 
 			<!-- project line 1 -->
-			<div class="col-lg-6">
+			<div class="col-lg-8">
 				<p class="tight"><t>EZ-Biz Management Application <br/>
 				SPRING 2016 (3-PERSON PROJECT)</t></p>
 				<p><more>
@@ -172,10 +217,14 @@
 					</ul>
 				</more></p>
 			</div>
+			<div class="col-lg-4">
+				<img src="http://via.placeholder.com/355x200" alt="">
+			</div>
 
 			<!-- PROJECT LINE 2 -->
-			<div class="col-lg-6 col-lg-offset-3">
+			<div class="col-lg-8">
 				<br/>
+				<br>
 
 				<p><t>Pachelbel's Canon (performed by Arduino string trio)<br/>
 				MARCH 2015 (2-PERSON PROJECT)</t></p>
@@ -187,6 +236,11 @@
 					</ul>
 				</more></p>
 			</div>
+			<div class="col-lg-4">
+				<br>
+				<br>
+				<img src="http://via.placeholder.com/355x200" alt="">
+			</div>
 
 		</div><!--/.row -->
 		<br>
@@ -194,16 +248,16 @@
 	</div>
 
 	<!-- VOLUNTEER SECTION -->
-	<div class="container desc">
+	<div class="container desc volunteer">
 		<div class="row">
 
-			<div class="col-lg-2 col-lg-offset-1 volunteer">
-				<h4>VOLUNTEERING</h4>
+			<div class="col-lg-12 col-md-12 col-sm-12">
+				<h4>ORGANIZATIONS / VOLUNTEERING</h4>
 			</div>
 
 			<!-- volunteer line 1 -->
-			<div class="col-lg-6">
-				<p class="tight"><t>Web Developer - Pack Your Back</t> (remote, volunteer) <br/>
+			<div class="col-lg-7">
+				<p class="tight"><t>Web Developer</t> (remote, volunteer) <br><t>Pack Your Back</t> <br/>
 				</p>
 				<p><more><ul>
 						<li>Overseeing implementation of design and technical updates for packyourback.org</li>
@@ -212,14 +266,17 @@
 						<li>Managed a web development team of three, while coaching their continual learning</li>
 					</ul></more></p>
 			</div>
+			<div class="col-lg-2">
+				<p><sm>JUL 2016 - OCT 2017 <br />
+				MT. PLEASANT, MICHIGAN</sm></p>
+			</div>
 			<div class="col-lg-3">
-				<p><sm>JULY 2016 - CURRENT <br />
-				MOUNT PLEASANT, MICHIGAN</sm></p>
+				<br>
+				<a href="https://packyourback.org"><img src="images/packyourback.png" width="350" alt=""></a>
 			</div>
 
-
 			<!-- volunteer line 2 -->
-			<div class="col-lg-6 col-lg-offset-3">
+			<div class="col-lg-7">
 				<p class="tight"><br/><t>President - Phi Mu Alpha Sinfonia</t> (CMU Chapter)<br/>
 				</p>
 				<p><more>
@@ -232,13 +289,18 @@
 						</ul>
 				</more></p>
 			</div>
+			<div class="col-lg-2">
+				<br><p><sm>APR 2014 - APR 2015 <br/>
+				MT. PLEASANT, MICHIGAN</sm></p>
+			</div>
 			<div class="col-lg-3">
-				<p><sm>APRIL 2014 - APRIL 2015 <br/>
-				MOUNT PLEASANT, MICHIGAN</sm></p>
+				<br>
+				<br>
+				<img src="images/pma.png" width="350" alt="">
 			</div>
 
 			<!-- volunteer line 3 -->
-			<div class="col-lg-6 col-lg-offset-3">
+			<div class="col-lg-7">
 				<p class="tight"><br/>
 					<t>Warden/Parliamentarian - Phi Mu Alpha Sinfonia</t> (CMU Chapter) <br/>
 				</p>
@@ -250,13 +312,18 @@
 						</ul>
 				</more></p>
 			</div>
+			<div class="col-lg-2">
+				<br><p><sm>APR 2013 - APR 2014 <br/>
+				MT. PLEASANT, MICHIGAN</sm></p>
+			</div>
 			<div class="col-lg-3">
-				<p><sm>APRIL 2013 - APRIL 2014 <br/>
-				MOUNT PLEASANT, MICHIGAN</sm></p>
+				<br>
+				<br>
+				<img src="images/pma.png" width="350" alt="">
 			</div>
 
 			<!-- volunteer line 2 -->
-			<div class="col-lg-6 col-lg-offset-3">
+			<div class="col-lg-7">
 				<p class="tight"><br/>
 					<t>Fundraising Chair - Phi Mu Alpha Sinfonia</t> (CMU Chapter) <br/>
 				</p>
@@ -269,9 +336,14 @@
 						</ul>
 				</more></p>
 			</div>
+			<div class="col-lg-2">
+				<br><p><sm>APR 2013 - APR 2014 <br/>
+				MT. PLEASANT, MICHIGAN</sm></p>
+			</div>
 			<div class="col-lg-3">
-				<p><sm>APRIL 2013 - APRIL 2014 <br/>
-				MOUNT PLEASANT, MICHIGAN</sm></p>
+				<br>
+				<br>
+				<img src="images/pma.png" width="350" alt="">
 			</div>
 
 		</div>
@@ -282,34 +354,39 @@
 
 
 	<!-- AWARDS SECTION -->
-	<div class="container desc">
+	<div class="container desc awards">
 		<div class="row">
-				<div class="col-lg-2 col-lg-offset-1 awards">
+				<div class="col-lg-12 col-md-12 col-sm-12">
 					<h4>AWARDS</h4>
 				</div>
 
 				<!-- EDIT: awards line 1-->
-				<div class="col-lg-6">
+				<div class="col-lg-7">
 					<p class="tight"><t>John Philip Sousa Award</t><br/>
 						Rockford Bands<br/>
 					</p>
 					<p><more>"The John Philip Sousa Award is an optional award a high school band director may award to one of their students. It is restricted to one per school per year (or two in the rare event of a tie). The award recognizes superior musicianship, dependability, loyalty, and cooperation."</more></p>
 				</div>
-				<div class="col-lg-3">
+				<div class="col-lg-2">
 					<p><sm>2011 - 2012</sm></p>
+				</div>
+				<div class="col-lg-3">
+					<a href="www.rockfordbands.org"><img src="images/rockfordbands.png" width="350" alt=""></a>
 				</div>
 
 				<!-- EDIT: awards line 2-->
-				<div class="col-lg-6 col-lg-offset-3">
+				<div class="col-lg-7" style="margin-top: 30px;">
 					<p class="tight"><t>Patrick S. Gilmore Band Award</t><br/>
 						Rockford Bands
 					</p>
 					<p><more>"This award honors outstanding high school band students and their achievements and commitment to the band." <br/> <br/>
-					For Rockford Bands, this is awarded for outstanding behavior specifically during the competitive marching season.  I served my last two years as a drum major for the band (one as a side drum major, one as the head drum major).
 					</more></p>
 				</div>
-				<div class="col-lg-3">
+				<div class="col-lg-2" style="margin-top: 30px;">
 					<p><sm>2011 - 2012</sm></p>
+				</div>
+				<div class="col-lg-3" style="margin-top: 30px;">
+					<a href="www.rockfordbands.org"><img src="images/rockfordbands.png" width="350" alt=""></a>
 				</div>
 
 		</div><!--/.row -->
@@ -329,11 +406,11 @@
 					<!-- EDIT: email -->
 					<div class="col-lg-6">
 						<p><t>Email</t><br/>
-							<a href="mailto:jrdwebsolutions@gmail.com" class="mail">jrdwebsolutions@gmail.com</a> <br/>
+							<a href="mailto:john.r.deguise@gmail.com" class="mail">john.r.deguise@gmail.com</a> <br/>
 						</p>
 						<!-- EDIT: address -->
 						<p><t>Location</t><br/>
-							Grand Rapids, Michigan 49519 <br/>
+							Denver, Colorado 80216 <br/>
 							USA<br/>
 						</p>
 						<!-- EDIT: phone number -->
@@ -357,17 +434,15 @@
 
 	<script type="text/javascript">
 
-		var deGuise = new Audio('audio/deGuise.mp3');
-
-		$('.deGuise').click(function () {
-			deGuise.play();
-		});
-
-
 		$(".aboutnav").click(function() {
 		    $('html,body').animate({
 		        scrollTop: $(".about").offset().top},
 		        'slow');
+		});
+		$(".edunav").click(function() {
+			$('html,body').animate({
+				scrollTop: $(".education").offset().top},
+				'slow');
 		});
 		$(".worknav").click(function() {
 		    $('html,body').animate({
