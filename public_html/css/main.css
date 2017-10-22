@@ -28,7 +28,7 @@ p {
 
 /* Links */
 a {
-  color: #1CBCAD;
+  color: white;
   word-wrap: break-word;
 
   -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
@@ -112,11 +112,11 @@ nav li:hover {
 }
 
 .john:hover {
-  color: lightblue;
+  color: rgb(220,220,255);
 }
 
 .deGuise:hover {
-  color: lightblue;
+  color: rgb(220,220,255);
 }
 
 /* Header Wrap */
@@ -142,10 +142,9 @@ header {
   background-size: cover;
 }
 
-header h1 {
+header h1{
   font-size: 80px;
   color: white;
-  background: rgba(0,0,0,0.2);
 }
 
 header h3 {
@@ -154,7 +153,7 @@ header h3 {
 }
 
 header h3 a {
-  color: #fff;
+  color: white;
 }
 
 /* About Wrap */
@@ -371,4 +370,8 @@ body {
 
 .logo_container {
   text-align: center;
+}
+
+.intro-card {
+  background: rgb(0,0,0,0.2);
 }
