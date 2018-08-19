@@ -75,7 +75,7 @@ nav {
   border-radius: 2%;
 }
 
-/* mid */
+/* small */
 @media only screen and (max-width: 767px){
     nav {
         margin: 0 auto;
@@ -90,10 +90,12 @@ nav {
         max-width: 52%;
     }
 }
+
+/* big */
 @media only screen and (min-width: 1101px){
     nav {
         margin: 0 auto;
-        max-width: 35%;
+        max-width: 50%;
     }
 }
 
