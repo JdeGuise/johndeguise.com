@@ -2,7 +2,7 @@ body {
 	background-color: #f2f2f2;
 	font-family: "Lato"; /* OPTIONAL: Google Fonts - base font */
 	font-weight: 300;
-	font-size: 18px;
+	font-size: 17px;
 	color: #555;
 	-webkit-font-smoothing: antialiased;
 	-webkit-overflow-scrolling: touch;
@@ -352,7 +352,7 @@ sm {
 	margin-bottom: 5px;
 }
 #graduated_note, .date_range_of_relevance {
-	font-size: 16px;
+	font-size: 15px;
 }
 .section_header {
 	text-align: center;
