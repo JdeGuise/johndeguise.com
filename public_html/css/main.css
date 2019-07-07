@@ -4,9 +4,9 @@ body {
 	font-weight: 300;
 	font-size: 16px;
 	color: #555;
-
 	-webkit-font-smoothing: antialiased;
 	-webkit-overflow-scrolling: touch;
+	-webkit-backface-visibility: hidden;
 }
 
 /* Titles */
@@ -30,21 +30,18 @@ p {
 a {
 	color: white;
 	word-wrap: break-word;
-
 	-webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
 	-moz-transition: color 0.1s ease-in, background 0.1s ease-in;
 	-ms-transition: color 0.1s ease-in, background 0.1s ease-in;
 	-o-transition: color 0.1s ease-in, background 0.1s ease-in;
 	transition: color 0.1s ease-in, background 0.1s ease-in;
 }
-
 a:hover,
 a:focus {
 	color: rgb(220,220,255);
 	text-decoration: none;
 	outline: 0;
 }
-
 a:before,
 a:after {
 	-webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
@@ -54,7 +51,7 @@ a:after {
 	transition: color 0.1s ease-in, background 0.1s ease-in;
 }
 
- hr {
+hr {
 	display: block;
 	height: 1px;
 	border: 0;
@@ -66,7 +63,6 @@ a:after {
 /*---------------------------------------------------
 	SECTION WRAPS
 ---------------------------------------------------*/
-
 nav {
 	text-align: center;
 	top: -140px;
@@ -74,45 +70,13 @@ nav {
 	background-color: rgba(99,55,55, .20);
 	border-radius: 2%;
 	height: 40px;
+	margin: 0 auto;
 }
-
 nav ul {
 	position: relative;
 	top: 5px;
 	font-size: 20px;
 }
-
-/* small */
-@media only screen and (max-width: 767px){
-	nav {
-		margin: 0 auto;
-		height: 120px;
-	}
-	.logo_container, .date_range_of_relevance{
-		text-align: center;
-	}
-}
-
-/* mid */
-@media only screen and (min-width: 768px) and (max-width: 1100px){
-	nav {
-		margin: 0 auto;
-	}
-	.logo_container, .date_range_of_relevance {
-		text-align: center;
-	}
-}
-
-/* big */
-@media only screen and (min-width: 1101px){
-	nav {
-		margin: 0 auto;
-	}
-	.logo_container {
-		text-align: right;
-	}	
-}
-
 nav ul li{
 	left: -10px;
 	position: relative;
@@ -123,16 +87,30 @@ nav ul li{
 	opacity: 1;
 }
 
-nav li:hover {
-	color: maroon;
-}
-
-.john:hover {
+nav li:hover, .john:hover, .deGuise:hover {
 	color: rgb(220,220,255);
 }
 
-.deGuise:hover {
-	color: rgb(220,220,255);
+/* small */
+@media only screen and (max-width: 767px){
+	nav {
+		height: 120px;
+	}
+	.logo_container, .date_range_of_relevance{
+		text-align: center;
+	}
+}
+/* mid */
+@media only screen and (min-width: 768px) and (max-width: 1100px){
+	.logo_container, .date_range_of_relevance {
+		text-align: center;
+	}
+}
+/* big */
+@media only screen and (min-width: 1101px){
+	.logo_container {
+		text-align: right;
+	}	
 }
 
 /* Header Wrap */
@@ -146,28 +124,19 @@ header {
 	background-position: center center;
 	min-height: 500px;
 	width: 100%;
-
-	-webkit-background-size: 100%;
-	-moz-background-size: 100%;
-	-o-background-size: 100%;
-	background-size: 100%;
-
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 }
-
 header h1{
 	font-size: 80px;
 	color: white;
 }
-
 header h3 {
 	font-size: 20px;
 	color: white;
 }
-
 header h3 a {
 	color: white;
 }
@@ -180,16 +149,13 @@ header h3 a {
 	padding-bottom: 60px;
 	color: white;
 }
-
 .about h5 {
 	position: relative;
 	left: 15px;
 }
-
 .about h5, p {
 	color: white;
 }
-
 .about i {
 	color: white;
 	font-size: 20px;
@@ -207,19 +173,15 @@ footer {
 	padding-top: 50px;
 	padding-bottom: 50px;
 }
-
 footer p {
 	color: white;
 }
-
 footer h5 {
 	color: white;
 }
-
 footer t {
 	font-weight: 700;
 }
-
 /* social icons: */
 footer i {
 	padding-right: 8px;
@@ -227,47 +189,33 @@ footer i {
 }
 
 /* Global Values */
-
 .desc {
 	padding-top: 50px;
 }
-
 .desc p {
 	color: #2f2f2f;
 }
-
 .desc t {
 	color: #34495e;
 	font-weight: 700;
 }
-
 .desc imp {
 	padding: 6px;
 	color: white;
 	background: #34495e;
 }
-
 .desc more {
 	color: #616669;
 }
-
-
+.desc .col-lg-3 {
+	text-transform: uppercase;
+}
 sm {
 	font-size: 12px;
 }
 
-.desc .col-lg-3 {
-	text-transform: uppercase;
-}
-
 .container .row p.tight {
 	margin-bottom: 10px;
-}
-
-/* define some CSS3 animations: */
-body {
-	/* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
-	-webkit-backface-visibility: hidden;
 }
 
 .animated {
@@ -290,7 +238,6 @@ body {
 		opacity: 1;
 	}
 }
-
 @-moz-keyframes fadeIn {
 	0% {
 		opacity: 0;
@@ -300,7 +247,6 @@ body {
 		opacity: 1;
 	}
 }
-
 @-o-keyframes fadeIn {
 	0% {
 		opacity: 0;
@@ -310,7 +256,6 @@ body {
 		opacity: 1;
 	}
 }
-
 @keyframes fadeIn {
 	0% {
 		opacity: 0;
@@ -319,13 +264,6 @@ body {
 	100% {
 		opacity: 1;
 	}
-}
-
-.fadeIn {
-	-webkit-animation-name: fadeIn;
-	-moz-animation-name: fadeIn;
-	-o-animation-name: fadeIn;
-	animation-name: fadeIn;
 }
 
 /* 1 */
@@ -340,7 +278,6 @@ body {
 		-webkit-transform: translateY(0);
 	}
 }
-
 @-moz-keyframes fadeInUp {
 	0% {
 		opacity: 0;
@@ -352,7 +289,6 @@ body {
 		-moz-transform: translateY(0);
 	}
 }
-
 @-o-keyframes fadeInUp {
 	0% {
 		opacity: 0;
@@ -364,7 +300,6 @@ body {
 		-o-transform: translateY(0);
 	}
 }
-
 @keyframes fadeInUp {
 	0% {
 		opacity: 0;
@@ -377,6 +312,12 @@ body {
 	}
 }
 
+.fadeIn {
+	-webkit-animation-name: fadeIn;
+	-moz-animation-name: fadeIn;
+	-o-animation-name: fadeIn;
+	animation-name: fadeIn;
+}
 .fadeInUp {
 	-webkit-animation-name: fadeInUp;
 	-moz-animation-name: fadeInUp;
@@ -388,21 +329,17 @@ body {
 	top: 50px;
 	position: relative;
 }
-
 .intro-card {
 	background: rgb(0,0,0,0.2);
 }
-
 .job_separator {
 	max-width: 500px;
 	margin: 50px auto;
 }
-
 .work_line_description {
 	margin-top: 5px;
 	margin-bottom: 5px;
 }
-
 #graduated_note, .date_range_of_relevance {
 	font-size: 15px;
 }
