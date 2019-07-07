@@ -398,6 +398,6 @@ body {
 	margin-bottom: 5px;
 }
 
-#graduated_note {
+#graduated_note, .date_range_of_relevance {
 	font-size: 15px;
 }
