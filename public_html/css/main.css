@@ -69,17 +69,24 @@ a:after {
 
 nav {
 	text-align: center;
-	top: -100px;
+	top: -140px;
 	position: relative;
 	background-color: rgba(99,55,55, .20);
 	border-radius: 2%;
+	height: 40px;
+}
+
+nav ul {
+	position: relative;
+	top: 5px;
+	font-size: 20px;
 }
 
 /* small */
 @media only screen and (max-width: 767px){
 	nav {
 		margin: 0 auto;
-		max-width: 75%;
+		height: 120px;
 	}
 	.logo_container, .date_range_of_relevance{
 		text-align: center;
@@ -90,7 +97,6 @@ nav {
 @media only screen and (min-width: 768px) and (max-width: 1100px){
 	nav {
 		margin: 0 auto;
-		max-width: 52%;
 	}
 	.logo_container, .date_range_of_relevance {
 		text-align: center;
@@ -101,7 +107,6 @@ nav {
 @media only screen and (min-width: 1101px){
 	nav {
 		margin: 0 auto;
-		max-width: 50%;
 	}
 	.logo_container {
 		text-align: right;
