@@ -1,379 +1,384 @@
 body {
-  background-color: #f2f2f2;
-  font-family: "Lato"; /* OPTIONAL: Google Fonts - base font */
-  font-weight: 300;
-  font-size: 16px;
-  color: #555;
+	background-color: #f2f2f2;
+	font-family: "Lato"; /* OPTIONAL: Google Fonts - base font */
+	font-weight: 300;
+	font-size: 16px;
+	color: #555;
 
-  -webkit-font-smoothing: antialiased;
-  -webkit-overflow-scrolling: touch;
+	-webkit-font-smoothing: antialiased;
+	-webkit-overflow-scrolling: touch;
 }
 
 /* Titles */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Raleway"; /* OPTIONAL: Google Fonts - title font */
-  font-weight: 300;
-  color: #333;
+	font-family: "Raleway"; /* OPTIONAL: Google Fonts - title font */
+	font-weight: 300;
+	color: #333;
 }
 
 /* Paragraph & Typographic */
 p {
-  line-height: 28px;
-  margin-bottom: 25px;
+	line-height: 28px;
+	margin-bottom: 25px;
 }
 
 .centered {
-    text-align: center;
+	text-align: center;
 }
 
 /* Links */
 a {
-  color: white;
-  word-wrap: break-word;
+	color: white;
+	word-wrap: break-word;
 
-  -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
-  -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
-  -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
-  -o-transition: color 0.1s ease-in, background 0.1s ease-in;
-  transition: color 0.1s ease-in, background 0.1s ease-in;
+	-webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+	-moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+	-ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+	-o-transition: color 0.1s ease-in, background 0.1s ease-in;
+	transition: color 0.1s ease-in, background 0.1s ease-in;
 }
 
 a:hover,
 a:focus {
-  color: rgb(220,220,255);
-  text-decoration: none;
-  outline: 0;
+	color: rgb(220,220,255);
+	text-decoration: none;
+	outline: 0;
 }
 
 a:before,
 a:after {
-  -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
-  -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
-  -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
-  -o-transition: color 0.1s ease-in, background 0.1s ease-in;
-  transition: color 0.1s ease-in, background 0.1s ease-in;
+	-webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+	-moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+	-ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+	-o-transition: color 0.1s ease-in, background 0.1s ease-in;
+	transition: color 0.1s ease-in, background 0.1s ease-in;
 }
 
  hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
 }
 
 /*---------------------------------------------------
-  SECTION WRAPS
+	SECTION WRAPS
 ---------------------------------------------------*/
 
 nav {
-  text-align: center;
-  top: -100px;
-  position: relative;
-  background-color: rgba(99,55,55, .20);
-  border-radius: 2%;
+	text-align: center;
+	top: -100px;
+	position: relative;
+	background-color: rgba(99,55,55, .20);
+	border-radius: 2%;
 }
 
 /* small */
 @media only screen and (max-width: 767px){
-    nav {
-        margin: 0 auto;
-        max-width: 75%;
-    }
+	nav {
+		margin: 0 auto;
+		max-width: 75%;
+	}
+	.logo_container {
+		text-align: center;
+	}
 }
 
 /* mid */
 @media only screen and (min-width: 768px) and (max-width: 1100px){
-    nav {
-        margin: 0 auto;
-        max-width: 52%;
-    }
+	nav {
+		margin: 0 auto;
+		max-width: 52%;
+	}
+	.logo_container {
+		text-align: center;
+	}
 }
 
 /* big */
 @media only screen and (min-width: 1101px){
-    nav {
-        margin: 0 auto;
-        max-width: 50%;
-    }
+	nav {
+		margin: 0 auto;
+		max-width: 50%;
+	}
+	.logo_container {
+		text-align: right;
+	}	
 }
 
 nav ul li{
-  left: -10px;
-  position: relative;
-  margin: 0 5px;
-  display: inline;
-  list-style-type: none;
-  color: white;
-  opacity: 1;
+	left: -10px;
+	position: relative;
+	margin: 0 5px;
+	display: inline;
+	list-style-type: none;
+	color: white;
+	opacity: 1;
 }
 
 nav li:hover {
-  color: maroon;
+	color: maroon;
 }
 
 .john:hover {
-  color: rgb(220,220,255);
+	color: rgb(220,220,255);
 }
 
 .deGuise:hover {
-  color: rgb(220,220,255);
+	color: rgb(220,220,255);
 }
 
 /* Header Wrap */
 header {
-  background: #1CBCAD;
-  background: url(../images/header-bg-5.jpg) no-repeat center top;
-  border: 2px solid rgb(50,50,50);
-  padding-top:140px;
-  text-align:center;
-  background-attachment: relative;
-  background-position: center center;
-  min-height: 500px;
-  width: 100%;
+	background: #1CBCAD;
+	background: url(../images/header-bg-5.jpg) no-repeat center top;
+	border: 2px solid rgb(50,50,50);
+	padding-top:140px;
+	text-align:center;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 500px;
+	width: 100%;
 
-  -webkit-background-size: 100%;
-  -moz-background-size: 100%;
-  -o-background-size: 100%;
-  background-size: 100%;
+	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
+	-o-background-size: 100%;
+	background-size: 100%;
 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 header h1{
-  font-size: 80px;
-  color: white;
+	font-size: 80px;
+	color: white;
 }
 
 header h3 {
-  font-size: 20px;
-  color: white;
+	font-size: 20px;
+	color: white;
 }
 
 header h3 a {
-  color: white;
+	color: white;
 }
 
 /* About Wrap */
 .about {
-  border: 2px solid rgb(46,46,46);
-  background: #2c3e50;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  color: white;
+	border: 2px solid rgb(46,46,46);
+	background: #2c3e50;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	color: white;
 }
 
 .about h5, p {
-  color: white;
+	color: white;
 }
 
 .about i {
-  color: white;
-  font-size: 20px;
-  padding-right: 8px;
-  vertical-align: middle;
+	color: white;
+	font-size: 20px;
+	padding-right: 8px;
+	vertical-align: middle;
 }
 
 .prob {
-  border: 2px solid rgb(50,50,50);
+	border: 2px solid rgb(50,50,50);
 }
 
 footer {
-  border: 2px solid rgb(46,46,46);
-  background: #2f2f2f;
-  padding-top: 50px;
-  padding-bottom: 50px;
+	border: 2px solid rgb(46,46,46);
+	background: #2f2f2f;
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
 
 footer p {
-  color: white;
+	color: white;
 }
 
 footer h5 {
-  color: white;
+	color: white;
 }
 
 footer t {
-  font-weight: 700;
+	font-weight: 700;
 }
 
 /* social icons: */
 footer i {
-  padding-right: 8px;
-  /*color: #1abc9c;*/
+	padding-right: 8px;
+	/*color: #1abc9c;*/
 }
 
 /* Global Values */
 
 .desc {
-  padding-top: 50px;
+	padding-top: 50px;
 }
 
 .desc p {
-  color: #2f2f2f;
+	color: #2f2f2f;
 }
 
 .desc t {
-  color: #34495e;
-  font-weight: 700;
+	color: #34495e;
+	font-weight: 700;
 }
 
 .desc imp {
-  padding: 6px;
-  color: white;
-  background: #34495e;
+	padding: 6px;
+	color: white;
+	background: #34495e;
 }
 
 .desc more {
-  color: #616669;
+	color: #616669;
 }
 
 
 sm {
-  font-size: 12px;
+	font-size: 12px;
 }
 
 .desc .col-lg-3 {
-  text-transform: uppercase;
+	text-transform: uppercase;
 }
 
 .container .row p.tight {
-  margin-bottom: 10px;
+	margin-bottom: 10px;
 }
 
 /* define some CSS3 animations: */
 body {
-  /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
-  -webkit-backface-visibility: hidden;
+	/* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
+	-webkit-backface-visibility: hidden;
 }
 
 .animated {
-  -webkit-animation-duration: 1s;
-  -moz-animation-duration: 1s;
-  -o-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  -moz-animation-fill-mode: both;
-  -o-animation-fill-mode: both;
-  animation-fill-mode: both;
+	-webkit-animation-duration: 1s;
+	-moz-animation-duration: 1s;
+	-o-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	-moz-animation-fill-mode: both;
+	-o-animation-fill-mode: both;
+	animation-fill-mode: both;
 }
 
 @-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
+	0% {
+		opacity: 0;
+	}
 
-  100% {
-    opacity: 1;
-  }
+	100% {
+		opacity: 1;
+	}
 }
 
 @-moz-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
+	0% {
+		opacity: 0;
+	}
 
-  100% {
-    opacity: 1;
-  }
+	100% {
+		opacity: 1;
+	}
 }
 
 @-o-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
+	0% {
+		opacity: 0;
+	}
 
-  100% {
-    opacity: 1;
-  }
+	100% {
+		opacity: 1;
+	}
 }
 
 @keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
+	0% {
+		opacity: 0;
+	}
 
-  100% {
-    opacity: 1;
-  }
+	100% {
+		opacity: 1;
+	}
 }
 
 .fadeIn {
-  -webkit-animation-name: fadeIn;
-  -moz-animation-name: fadeIn;
-  -o-animation-name: fadeIn;
-  animation-name: fadeIn;
+	-webkit-animation-name: fadeIn;
+	-moz-animation-name: fadeIn;
+	-o-animation-name: fadeIn;
+	animation-name: fadeIn;
 }
 
 /* 1 */
 @-webkit-keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(20px);
-  }
+	0% {
+		opacity: 0;
+		-webkit-transform: translateY(20px);
+	}
 
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-  }
+	100% {
+		opacity: 1;
+		-webkit-transform: translateY(0);
+	}
 }
 
 @-moz-keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    -moz-transform: translateY(20px);
-  }
+	0% {
+		opacity: 0;
+		-moz-transform: translateY(20px);
+	}
 
-  100% {
-    opacity: 1;
-    -moz-transform: translateY(0);
-  }
+	100% {
+		opacity: 1;
+		-moz-transform: translateY(0);
+	}
 }
 
 @-o-keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    -o-transform: translateY(20px);
-  }
+	0% {
+		opacity: 0;
+		-o-transform: translateY(20px);
+	}
 
-  100% {
-    opacity: 1;
-    -o-transform: translateY(0);
-  }
+	100% {
+		opacity: 1;
+		-o-transform: translateY(0);
+	}
 }
 
 @keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
+	0% {
+		opacity: 0;
+		transform: translateY(20px);
+	}
 
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }
 
 .fadeInUp {
-  -webkit-animation-name: fadeInUp;
-  -moz-animation-name: fadeInUp;
-  -o-animation-name: fadeInUp;
-  animation-name: fadeInUp;
-  }
-
-.spacer {
-  top: 50px;
-  position: relative;
+	-webkit-animation-name: fadeInUp;
+	-moz-animation-name: fadeInUp;
+	-o-animation-name: fadeInUp;
+	animation-name: fadeInUp;
 }
 
-.logo_container {
-  text-align: center;
+.spacer {
+	top: 50px;
+	position: relative;
 }
 
 .intro-card {
-  background: rgb(0,0,0,0.2);
+	background: rgb(0,0,0,0.2);
 }
