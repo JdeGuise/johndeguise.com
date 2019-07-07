@@ -1,24 +1,26 @@
-function loadNav() {
-    const request = new XMLHttpRequest();
-    request.open('GET', 'nav.html', true);
-    request.onload = function() {
-        if (request.status >= 200 && request.status < 400) {
-            document.querySelector('#nav_wrapper').innerHTML = request.responseText;
-        }
-    };
-    request.send();
-}
+// function loadNav() {
+//     var request = new XMLHttpRequest();
+//     request.open('GET', 'nav.html', true);
+//     request.onload = function() {
+//         if (request.status >= 200 && request.status < 400) {
+//             document.querySelector('#nav_wrapper').innerHTML = request.responseText;
+//         }
+//     };
+//     request.send();
+// }
 
-function loadFooter() {
-    const request = new XMLHttpRequest();
-    request.open('GET', 'footer.html', true);
-    request.onload = function() {
-        if (request.status >= 200 && request.status < 400) {
-            document.querySelector('#footer_wrapper').innerHTML = request.responseText;
-        }
-    };
-    request.send();
-}
+$('#footer_wrapper').load('footer.html');
+
+// function loadFooter() {
+//     var request = new XMLHttpRequest();
+//     request.open('GET', 'footer.html', true);
+//     request.onload = function() {
+//         if (request.status >= 200 && request.status < 400) {
+//             document.querySelector('#footer_wrapper').innerHTML = request.responseText;
+//         }
+//     };
+//     request.send();
+// }
 
 function handleClickEvents() {
     $(".aboutnav").click(function() {
@@ -53,6 +55,6 @@ function handleClickEvents() {
     });
 }
 
-loadNav();
-loadFooter();
+// loadNav();
+// loadFooter();
 handleClickEvents();
