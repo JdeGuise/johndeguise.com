@@ -343,6 +343,16 @@ sm {
 .intro-card {
 	background: rgb(0,0,0,0.2);
 }
+.intro-card div {
+	padding-top: 30px;
+}
+.intro-card h4 {
+	padding-top: 30px;
+	padding-bottom: 40px;
+}
+.intro-card div h1 {
+	max-width: 95%;
+}
 .job_separator {
 	max-width: 500px;
 	margin: 50px auto;
