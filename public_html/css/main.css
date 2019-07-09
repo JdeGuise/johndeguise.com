@@ -350,6 +350,9 @@ sm {
 	padding-top: 30px;
 	padding-bottom: 40px;
 }
+.intro-card div h1 {
+	max-width: 95%;
+}
 .job_separator {
 	max-width: 500px;
 	margin: 50px auto;
