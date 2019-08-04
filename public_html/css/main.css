@@ -136,14 +136,16 @@ header {
 	border: 2px solid rgb(50,50,50);
 	padding-top: 140px;
 	text-align: center;
-	background-attachment: relative;
-	background-position: center center;
 	min-height: 500px;
 	width: 100%;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;	
 }
 header h1{
 	font-size: 80px;
