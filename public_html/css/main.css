@@ -90,7 +90,7 @@ nav ul li{
 	color: white;
 	opacity: 1;
 }
-nav li:hover, .john:hover, .deGuise:hover {
+nav li:hover, #john:hover, #deGuise:hover {
 	color: rgb(220,220,255);
 }
 
@@ -108,6 +108,9 @@ nav li:hover, .john:hover, .deGuise:hover {
 	}
 	.date_range_of_relevance{
 		text-align: center;
+	}
+	.nameSpan {
+		max-width: 766px;
 	}
 }
 /* mid */
