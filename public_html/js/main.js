@@ -29,6 +29,20 @@ function handleClickEvents() {
             scrollTop: $(".awards").offset().top},
             'slow');
     });
+    $("#myBtn").click(function() {
+        $('html,body').animate({
+            scrollTop: $("header").offset().top},
+            'slow');
+    });
 }
+
+window.onscroll = function() {
+    console.log(document.body.scrollTop);
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById('myBtn').style.display = "block";
+    } else {
+        document.getElementById('myBtn').style.display = "none";
+    }
+};  
 
 handleClickEvents();
