@@ -36,6 +36,11 @@ function handleClickEvents() {
     });
 }
 
+function playAudio(url) {
+    const audio = new Audio(url);
+    audio.play();
+}
+
 window.onscroll = function() {
     console.log(document.body.scrollTop);
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
