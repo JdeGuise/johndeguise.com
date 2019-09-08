@@ -120,7 +120,7 @@ nav li:hover, #john:hover, #deGuise:hover {
 /* small */
 @media only screen and (max-width: 767px){
 	nav {
-		height: 80px;
+		height: 90px;
 	}
 	nav ul li {
 		margin: 0 5px;
@@ -137,6 +137,9 @@ nav li:hover, #john:hover, #deGuise:hover {
 	}
 	header {
 		background-color: rgb(38, 55, 69);
+	}
+	#nameFeature {
+		padding-bottom: 75px;
 	}
 }
 /* mid */
