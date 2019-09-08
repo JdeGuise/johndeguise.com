@@ -120,7 +120,7 @@ nav li:hover, #john:hover, #deGuise:hover {
 /* small */
 @media only screen and (max-width: 767px){
 	nav {
-		height: 90px;
+		height: 95px;
 	}
 	nav ul li {
 		margin: 0 5px;
