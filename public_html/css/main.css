@@ -92,9 +92,9 @@ hr {
 ---------------------------------------------------*/
 nav {
 	text-align: center;
-	top: -140px;
+	top: -70px;
 	position: relative;
-	background-color: rgba(99,55,55, .20);
+	background-color: rgba(45,62,79, .75);
 	border-radius: 2%;
 	height: 40px;
 	margin: 0 auto;
@@ -120,7 +120,7 @@ nav li:hover, #john:hover, #deGuise:hover {
 /* small */
 @media only screen and (max-width: 767px){
 	nav {
-		height: 120px;
+		height: 80px;
 	}
 	nav ul li {
 		margin: 0 5px;
@@ -135,29 +135,41 @@ nav li:hover, #john:hover, #deGuise:hover {
 	.nameSpan {
 		max-width: 766px;
 	}
+	header {
+		background-color: rgb(38, 55, 69);
+	}
 }
 /* mid */
 @media only screen and (min-width: 768px) and (max-width: 1100px){
 	.date_range_of_relevance {
 		text-align: center;
 	}
+	nav {
+		height: 80px;
+	}	
 	.logo_container {
 		margin-bottom: 50px;
 		text-align: center;
 	}
+	header {
+		background-color: rgb(38, 55, 69);
+	}	
 }
 /* big */
 @media only screen and (min-width: 1101px){
 	.logo_container {
 		text-align: left;
 	}	
+	header {
+		background: url(../images/header-bg-5.jpg) no-repeat center top;
+	}
 }
 
 /* Header Wrap */
 header {
-	background: url(../images/header-bg-5.jpg) no-repeat center top;
-	border: 2px solid rgb(50,50,50);
-	padding-top: 140px;
+/*	background: url(../images/header-bg-5.jpg) no-repeat center top;
+*/	border: 2px solid rgb(50,50,50);
+	padding-top: 70px;
 	text-align: center;
 	min-height: 500px;
 	width: 100%;
