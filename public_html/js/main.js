@@ -31,7 +31,7 @@ function handleClickEvents() {
     });
     $("#myBtn").click(function() {
         $('html,body').animate({
-            scrollTop: $("header").offset().top},
+            scrollTop: $("nav").offset().top},
             'slow');
     });
 }
