@@ -30,6 +30,10 @@ p {
 	text-align: center;
 }
 
+.white-text, a, p {
+	color: white;
+}
+
 #scrollToTop {
 	display: none;
 	position: fixed;
@@ -40,12 +44,10 @@ p {
 	border: none;
 	outline: none;
 	background-color: crimson;
-	color: white;
 	cursor: pointer;
 	border-radius: 50%;
 	width: 50px;
 	height: 50px;
-	color: white;
 	background: #34495e;  
 }
 
@@ -55,7 +57,6 @@ p {
 
 /* Links */
 a {
-	color: white;
 	word-wrap: break-word;
 	-webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
 	-moz-transition: color 0.1s ease-in, background 0.1s ease-in;
@@ -88,14 +89,14 @@ hr {
 }
 
 /*---------------------------------------------------
-	SECTION WRAPS
+	NAV STYLES
 ---------------------------------------------------*/
 nav {
-	top: -70px;
 	position: relative;
+	height: 40px;
+	top: -70px;
 	background-color: rgba(45,62,79, .75);
 	border-radius: 2%;
-	height: 40px;
 	margin: 0 auto;
 }
 nav ul {
@@ -104,18 +105,20 @@ nav ul {
 	font-size: 20px;
 }
 nav ul li{
-	left: -10px;
 	position: relative;
+	left: -10px;
 	margin: 0 20px;
 	display: inline;
 	list-style-type: none;
-	color: white;
 	opacity: 1;
 }
 nav li:hover, #john:hover, #deGuise:hover {
 	color: rgb(220,220,255);
 }
 
+/*---------------------------------------------------
+	MEDIA QUERIES
+---------------------------------------------------*/
 /* small */
 @media only screen and (max-width: 767px){
 	nav {
@@ -166,6 +169,9 @@ nav li:hover, #john:hover, #deGuise:hover {
 		background: url(../images/header-bg-5.jpg) no-repeat center top;
 	}
 }
+/*---------------------------------------------------
+	END MEDIA QUERIES
+---------------------------------------------------*/
 
 /* Header Wrap */
 header {
@@ -184,14 +190,9 @@ header {
 }
 header h1{
 	font-size: 80px;
-	color: white;
 }
 header h3 {
 	font-size: 20px;
-	color: white;
-}
-header h3 a {
-	color: white;
 }
 
 /* About Wrap */
@@ -200,16 +201,11 @@ header h3 a {
 	background-color: rgba(45,62,79);
 	padding-top: 60px;
 	padding-bottom: 60px;
-	color: white;
 }
 #about h4 {
 	position: relative;
 }
-#about h4, p {
-	color: white;
-}
 #about i {
-	color: white;
 	font-size: 20px;
 	padding-right: 8px;
 	vertical-align: middle;
@@ -224,12 +220,6 @@ footer {
 	background: rgb(38, 55, 69);
 	padding-top: 50px;
 	padding-bottom: 50px;
-}
-footer p {
-	color: white;
-}
-footer h5 {
-	color: white;
 }
 footer t {
 	font-weight: 700;
@@ -252,7 +242,6 @@ footer i {
 }
 .desc imp {
 	padding: 6px;
-	color: white;
 	background: #34495e;
 }
 .desc more {
@@ -267,113 +256,6 @@ sm {
 
 .container .row p.tight {
 	margin-bottom: 10px;
-}
-
-.animated {
-	-webkit-animation-duration: 1s;
-	-moz-animation-duration: 1s;
-	-o-animation-duration: 1s;
-	animation-duration: 1s;
-	-webkit-animation-fill-mode: both;
-	-moz-animation-fill-mode: both;
-	-o-animation-fill-mode: both;
-	animation-fill-mode: both;
-}
-
-@-webkit-keyframes fadeIn {
-	0% {
-		opacity: 0;
-	}
-
-	100% {
-		opacity: 1;
-	}
-}
-@-moz-keyframes fadeIn {
-	0% {
-		opacity: 0;
-	}
-
-	100% {
-		opacity: 1;
-	}
-}
-@-o-keyframes fadeIn {
-	0% {
-		opacity: 0;
-	}
-
-	100% {
-		opacity: 1;
-	}
-}
-@keyframes fadeIn {
-	0% {
-		opacity: 0;
-	}
-
-	100% {
-		opacity: 1;
-	}
-}
-
-/* 1 */
-@-webkit-keyframes fadeInUp {
-	0% {
-		opacity: 0;
-		-webkit-transform: translateY(20px);
-	}
-
-	100% {
-		opacity: 1;
-		-webkit-transform: translateY(0);
-	}
-}
-@-moz-keyframes fadeInUp {
-	0% {
-		opacity: 0;
-		-moz-transform: translateY(20px);
-	}
-
-	100% {
-		opacity: 1;
-		-moz-transform: translateY(0);
-	}
-}
-@-o-keyframes fadeInUp {
-	0% {
-		opacity: 0;
-		-o-transform: translateY(20px);
-	}
-
-	100% {
-		opacity: 1;
-		-o-transform: translateY(0);
-	}
-}
-@keyframes fadeInUp {
-	0% {
-		opacity: 0;
-		transform: translateY(20px);
-	}
-
-	100% {
-		opacity: 1;
-		transform: translateY(0);
-	}
-}
-
-.fadeIn {
-	-webkit-animation-name: fadeIn;
-	-moz-animation-name: fadeIn;
-	-o-animation-name: fadeIn;
-	animation-name: fadeIn;
-}
-.fadeInUp {
-	-webkit-animation-name: fadeInUp;
-	-moz-animation-name: fadeInUp;
-	-o-animation-name: fadeInUp;
-	animation-name: fadeInUp;
 }
 
 .spacer {
