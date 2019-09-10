@@ -29,7 +29,7 @@ function handleClickEvents() {
             scrollTop: $(".awards").offset().top},
             'slow');
     });
-    $("#myBtn").click(function() {
+    $("#scrollToTop").click(function() {
         $('html,body').animate({
             scrollTop: $("nav").offset().top},
             'slow');
@@ -44,9 +44,9 @@ function playAudio(url) {
 window.onscroll = function() {
     console.log(document.body.scrollTop);
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById('myBtn').style.display = "block";
+        document.getElementById('scrollToTop').style.display = "block";
     } else {
-        document.getElementById('myBtn').style.display = "none";
+        document.getElementById('scrollToTop').style.display = "none";
     }
 };  
 
