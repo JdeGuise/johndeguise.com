@@ -1,7 +1,7 @@
 function handleClickEvents() {
     $("#aboutNav").click(function() {
         $('html, body').animate({
-            scrollTop: $(".about").offset().top
+            scrollTop: $("#about").offset().top
         }, 'slow');
     });
     $("#educationNav").click(function() {
