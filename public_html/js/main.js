@@ -21,7 +21,7 @@ function handleClickEvents() {
     });
     $("#volunteerNav").click(function() {
         $('html, body').animate({
-            scrollTop: $(".volunteer").offset().top
+            scrollTop: $("#volunteer").offset().top
         }, 'slow');
     });
     $("#awardsNav").click(function() {
