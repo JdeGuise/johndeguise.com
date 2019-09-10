@@ -26,7 +26,7 @@ function handleClickEvents() {
     });
     $("#awardsNav").click(function() {
         $('html, body').animate({
-            scrollTop: $(".awards").offset().top
+            scrollTop: $("#awards").offset().top
         }, 'slow');
     });
 
