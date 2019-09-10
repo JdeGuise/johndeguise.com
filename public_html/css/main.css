@@ -20,39 +20,28 @@ h4 strong {
 	font-size: 30px;
 }
 
+nav, nav ul, nav ul li,
+#about h4 {
+	position: relative;
+}
+
 /* Paragraph & Typographic */
 p {
 	line-height: 28px;
 	margin-bottom: 25px;
 }
 
-.centered {
-	text-align: center;
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
 }
 
-.white-text, a, p {
-	color: white;
-}
-
-#scrollToTop {
-	display: none;
-	position: fixed;
-	bottom: 20px;	
-	right: 30px;
-	z-index: 999999;
-	font-size: 18px;
-	border: none;
-	outline: none;
-	background-color: crimson;
-	cursor: pointer;
-	border-radius: 50%;
-	width: 50px;
-	height: 50px;
-	background: #34495e;  
-}
-
-#scrollToTop:hover {
-  background-color: crimson;
+sm {
+	font-size: 12px;
 }
 
 /* Links */
@@ -79,20 +68,11 @@ a:after {
 	transition: color 0.1s ease-in, background 0.1s ease-in;
 }
 
-hr {
-	display: block;
-	height: 1px;
-	border: 0;
-	border-top: 1px solid #ccc;
-	margin: 1em 0;
-	padding: 0;
-}
-
 /*---------------------------------------------------
-	NAV STYLES
+	NAV/HEADER/FOOTER STYLES
 ---------------------------------------------------*/
+
 nav {
-	position: relative;
 	height: 40px;
 	top: -70px;
 	background-color: rgba(45,62,79, .75);
@@ -100,12 +80,10 @@ nav {
 	margin: 0 auto;
 }
 nav ul {
-	position: relative;
 	top: 5px;
 	font-size: 20px;
 }
 nav ul li{
-	position: relative;
 	left: -10px;
 	margin: 0 20px;
 	display: inline;
@@ -116,9 +94,46 @@ nav li:hover, #john:hover, #deGuise:hover {
 	color: rgb(220,220,255);
 }
 
+/* Header Wrap */
+header {
+	border: 2px solid rgb(50,50,50);
+	padding-top: 70px;
+	min-height: 500px;
+	width: 100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;	
+}
+header h1{
+	font-size: 80px;
+}
+header h3 {
+	font-size: 20px;
+}
+
+footer {
+	border: 2px solid rgb(46,46,46);
+	background: rgb(38, 55, 69);
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+footer t {
+	font-weight: 700;
+}
+/* social icons: */
+footer i {
+	padding-right: 8px;
+}
+
 /*---------------------------------------------------
 	MEDIA QUERIES
 ---------------------------------------------------*/
+
 /* small */
 @media only screen and (max-width: 767px){
 	nav {
@@ -169,64 +184,18 @@ nav li:hover, #john:hover, #deGuise:hover {
 		background: url(../images/header-bg-5.jpg) no-repeat center top;
 	}
 }
+
 /*---------------------------------------------------
 	END MEDIA QUERIES
 ---------------------------------------------------*/
 
-/* Header Wrap */
-header {
-	border: 2px solid rgb(50,50,50);
-	padding-top: 70px;
-	min-height: 500px;
-	width: 100%;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;	
-}
-header h1{
-	font-size: 80px;
-}
-header h3 {
-	font-size: 20px;
-}
 
-/* About Wrap */
-#about {
-	border: 2px solid rgb(46,46,46);
-	background-color: rgba(45,62,79);
-	padding-top: 60px;
-	padding-bottom: 60px;
-}
-#about h4 {
-	position: relative;
-}
-#about i {
-	font-size: 20px;
-	padding-right: 8px;
-	vertical-align: middle;
-}
+/*---------------------------------------------------
+	SPECIFIC ID AND CLASS STYLES
+---------------------------------------------------*/
 
 .prob {
 	border: 2px solid rgb(50,50,50);
-}
-
-footer {
-	border: 2px solid rgb(46,46,46);
-	background: rgb(38, 55, 69);
-	padding-top: 50px;
-	padding-bottom: 50px;
-}
-footer t {
-	font-weight: 700;
-}
-/* social icons: */
-footer i {
-	padding-right: 8px;
 }
 
 /* Global Values */
@@ -240,28 +209,70 @@ footer i {
 	color: #34495e;
 	font-weight: 700;
 }
-.desc imp {
-	padding: 6px;
-	background: #34495e;
-}
 .desc more {
 	color: #616669;
 }
 .desc .col-lg-3 {
 	text-transform: uppercase;
 }
-sm {
-	font-size: 12px;
-}
 
 .container .row p.tight {
 	margin-bottom: 10px;
 }
 
-.spacer {
-	top: 50px;
-	position: relative;
+.section_header {
+	margin-bottom: 70px;
 }
+
+.job_separator {
+	max-width: 500px;
+	margin: 50px auto;
+}
+.work_line_description {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.centered {
+	text-align: center;
+}
+
+.white-text, a, p {
+	color: white;
+}
+
+#about {
+	border: 2px solid rgb(46,46,46);
+	background-color: rgba(45,62,79);
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+#about i {
+	font-size: 20px;
+	padding-right: 8px;
+	vertical-align: middle;
+}
+
+#scrollToTop {
+	display: none;
+	position: fixed;
+	bottom: 20px;	
+	right: 30px;
+	z-index: 999999;
+	font-size: 18px;
+	border: none;
+	outline: none;
+	background-color: crimson;
+	cursor: pointer;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	background: #34495e;  
+}
+#scrollToTop:hover {
+  background-color: crimson;
+}
+
 #nameCard {
 	background: rgb(0,0,0,0.2);
 }
@@ -275,17 +286,10 @@ sm {
 #nameCard div h1 {
 	max-width: 95%;
 }
-.job_separator {
-	max-width: 500px;
-	margin: 50px auto;
-}
-.work_line_description {
-	margin-top: 5px;
-	margin-bottom: 5px;
+#graduatedDiv{
+	padding: 6px;
+	background: #34495e;
 }
 #graduated_note, .date_range_of_relevance {
 	font-size: 15px;
-}
-.section_header {
-	margin-bottom: 70px;
 }
