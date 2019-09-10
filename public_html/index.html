@@ -6,52 +6,67 @@
     <meta name="description" content="Full stack Salesforce developer with computer science education. Need software solutions? Will deliver.">
     <meta name="keywords" content="Salesforce developer,Full Stack Developer,Software,Web Development,Graphic Design,Computer Science,Software Engineering">    
     <meta name="author" content="John deGuise">
+
     <link rel="shortcut icon" type='image/x-icon' href="images/favicon.ico">
-    <link rel="apple-touch-icon" href="icon.png" />
+    <link rel="apple-touch-icon" href="icon.png"/>
     <link href="css/bootstrap.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href='//fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
     <link href='//fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+
 	<script src="js/jquery.min.js"></script>
 </head>
 <body>
-	<header id="wrap">
-		<nav>
+	<header class="centered">
+		<nav class="centered">
 			<ul>
-				<a href="#"><li class="aboutnav">ABOUT</li></a>
-				<a href="#"><li class="edunav">EDUCATION</li></a>
-				<a href="#"><li class="worknav">WORK</li></a>
-				<a href="#"><li class="projectsnav">PROJECTS</li></a>
-				<a href="#"><li class="volunteernav">VOLUNTEERING</li></a>
-				<a href="#"><li class="awardsnav">AWARDS</li></a>
+				<a href="#">
+					<li class="white-text" id="aboutNav">ABOUT</li>
+				</a>
+				<a href="#">
+					<li class="white-text" id="educationNav">EDUCATION</li>
+				</a>
+				<a href="#">
+					<li class="white-text" id="workNav">WORK</li>
+				</a>
+				<a href="#">
+					<li class="white-text" id="projectsNav">PROJECTS</li>
+				</a>
+				<a href="#">
+					<li class="white-text" id="volunteerNav">VOLUNTEERING</li>
+				</a>
+				<a href="#">
+					<li class="white-text" id="awardsNav">AWARDS</li>
+				</a>
 			</ul>
 		</nav>
 		<div class="container">
-			<div class="row centered" id="nameFeature">
-				<div class="col-lg-12 intro-card">
-					<div class="typewriter">
-						<h1>
+			<div class="row centered" id="nameCardWrapper">
+				<div class="col-lg-12 fadeInUp" id="nameCard">
+					<div>
+						<h1 class="white-text" >
 							<span class="nameSpan" id="john">John</span>
 							<span class="nameSpan" id="deGuise" onclick="playAudio('audio/deGuise.mp3')">deGuise</span>
 						</h1>
-						<h3>
+						<h3 class="white-text" >
 							<span>Software Developer</span>
 						</h3>
 					</div>							
 					<h4>
-						<a href="tel:6164140882" class="tel">(616) 414-0882</a> | <a href="mailto:john.r.deguise@gmail.com">john.r.deguise@gmail.com</a> | <a href="https://github.com/JdeGuise">Github</a>
+						<a href="tel:6164140882" class="tel">(616) 414-0882</a> | <a href="mailto:john.r.deguise@gmail.com">john.r.deguise@gmail.com</a> | <a href="https://www.github.com/JdeGuise">Github</a>
 					</h4>
 				</div>
 			</div>
 		</div>
-	</header>	
-	<section id="about" name="about"></section>
-	<div class="about">
+	</header>
+
+	<section id="aboutSection" name="about"></section>
+	<div class="white-text" id="about">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-2">
-					<h4><strong>ABOUT</strong></h4>
+					<h4 class="white-text"><strong>ABOUT</strong></h4>
 				</div>
 
 				<div class="col-lg-8">
@@ -59,23 +74,25 @@
 				</div>
 
 				<div class="col-lg-2">
-					<p><a href="documents/JdeGuise.pdf"><i class="icon-file" target="_blank"></i> <sm>DOWNLOAD PDF</sm></a></p>
+					<p><a href="documents/JdeGuise.pdf"><i class="icon-file white-text" target="_blank"></i> <sm>DOWNLOAD PDF</sm></a></p>
 				</div>
 			</div><!--/.row-->
 		</div><!--/.container-->
 	</div><!--/ #intro-->
+
 	<div class="prob">
 		<section id="resume" name="resume"></section>
 		<!-- EDUCATION SECTION -->
-		<div class="container education desc">
+		<div class="container desc" id="education">
 			<div class="row col-lg-12 col-md-12 col-sm-12">
 
 				<div class="col-lg-12 col-md-12 col-sm-12">
-					<h4 class="section_header"><strong>EDUCATION</strong></h4>
+					<h4 class="section_header centered"><strong>EDUCATION</strong></h4>
 				</div>
+				
 				<!-- EDIT: education line 1 -->
 				<div class="col-lg-4 col-md-12 col-sm-12 logo_container">
-					<a href="https://cmich.edu"><img src="images/cmu.png" width="60%" class="logos"></a>
+					<a href="https://www.cmich.edu"><img src="images/cmu.png" width="60%" class="logos"></a>
 				</div>				
 
 				<div class="col-lg-6 col-md-9 col-sm-12">
@@ -92,7 +109,7 @@
 				</div>
 				<div class="col-lg-2 col-md-3 col-sm-12">
 					<p id="graduated_note">
-						<imp>Graduated May 2017</imp>
+						<imp class="white-text" id="graduatedDiv">Graduated May 2017</imp>
 						
 						<br/>
 						
@@ -104,16 +121,16 @@
 		</div><!--/.container -->
 		<hr>
 		<!-- WORK SECTION -->
-		<div class="container work desc">
+		<div class="container desc" id="work">
 			<div class="col-lg-12 col-md-12 col-sm-12">
-				<h4 class="section_header"><strong>EXPERIENCE</strong></h4>
+				<h4 class="section_header centered"><strong>EXPERIENCE</strong></h4>
 			</div>
 			<div class="row col-lg-12 col-md-12 col-sm-12">
 				<!-- EDIT: work line 1-->
 				<div class="col-lg-4 col-md-12 col-sm-12 logo_container">
 					<br>
 					<br>
-					<a href="http://www.pingidentity.com"><img src="images/ping.png" alt="" width="60%" class="logos"></a>
+					<a href="https://www.pingidentity.com"><img src="images/ping.png" alt="" width="60%" class="logos"></a>
 				</div>				
 				<div class="col-lg-6 col-md-9 col-sm-12">
 					<p class="tight"><strong>Current Position</strong><br/>
@@ -170,7 +187,7 @@
 				<div class="col-lg-4 col-md-12 col-sm-12 logo_container">
 					<br>
 					<br>
-					<a href="https://bluewolf.com"><img src="images/bluewolf.png" alt="" width="60%" class="logos"></a>
+					<a href="https://www.bluewolf.com"><img src="images/bluewolf.png" alt="" width="60%" class="logos"></a>
 				</div>				
 				<div class="col-lg-6 col-md-9 col-sm-12">
 					<p class="tight"><t></t><br/>
@@ -250,11 +267,11 @@
 		</div><!--/.container -->
 
 		<!-- PROJECTS SECTION -->
-		<div class="container desc projects">
+		<div class="container desc" id="projects">
 
 			<div class="row">
 				<div class="col-lg-12 col-md-12 col-sm-12">
-					<h4 class="section_header"><strong>PROJECTS</strong></h4>
+					<h4 class="section_header centered"><strong>PROJECTS</strong></h4>
 				</div>
 				<!-- project line 1 -->
 				<div class="col-lg-8">
@@ -382,15 +399,15 @@
 		</div>
 
 		<!-- VOLUNTEER SECTION -->
-		<div class="container desc volunteer">
+		<div class="container desc" id="volunteer">
 			<div class="row">
 				<div class="col-lg-12 col-md-12 col-sm-12">
-					<h4 class="section_header"><strong>ORGANIZATIONS / VOLUNTEERING</strong></h4>
+					<h4 class="section_header centered"><strong>ORGANIZATIONS / VOLUNTEERING</strong></h4>
 				</div>
 				<!-- volunteer line 1 -->
 				<div class="col-lg-4 logo_container">
 					<br>
-					<a href="https://packyourback.org"><img src="images/packyourback.png" width="60%" alt=""></a>
+					<a href="https://www.packyourback.org"><img src="images/packyourback.png" width="60%" alt=""></a>
 				</div>				
 				<div class="col-lg-6">
 					<p class="tight"><t>Web Developer</t> (remote, volunteer) <br>Pack Your Back <br/>
@@ -489,10 +506,10 @@
 		</div>
 
 		<!-- AWARDS SECTION -->
-		<div class="container desc awards">
+		<div class="container desc" id="awards">
 			<div class="row">
 				<div class="col-lg-12 col-md-12 col-sm-12">
-					<h4 class="section_header"><strong>AWARDS</strong></h4>
+					<h4 class="section_header centered"><strong>AWARDS</strong></h4>
 				</div>
 				<!-- EDIT: awards line 1-->
 				<div class="col-lg-6">
@@ -527,7 +544,7 @@
 			</div><!--/.row -->
 			<br>
 		</div><!--/.container -->
-		<button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+		<button onclick="topFunction()" id="scrollToTop" class="white-text" title="Go to top">^</button>
 	</div>
 
 	<section id="contact" name="contact"></section>
@@ -540,21 +557,21 @@
 				</div>
 				<!-- EDIT: email -->
 				<div class="col-lg-6">
-					<p><t>Email</t><br/>
+					<p class="white-text"><t>Email</t><br/>
 						<a href="mailto:john.r.deguise@gmail.com" class="mail">john.r.deguise@gmail.com</a> <br/>
 					</p>
 					<!-- EDIT: address -->
-					<p><t>Location</t><br/>
+					<p class="white-text"><t>Location</t><br/>
 						Denver, Colorado 80202, USA<br/>
 					</p>
 					<!-- EDIT: phone number -->
-					<p><t>Phone</t><br/>
+					<p class="white-text"><t>Phone</t><br/>
 						<a href="tel:6164140882" class="tel">(616) 414-0882</a> <br/>
 					</p>
 				</div>
 				<div class="col-lg-3">
-					<p><sm>SOCIAL LINKS</sm></p>
-					<p>
+					<p class="white-text"><sm>SOCIAL LINKS</sm></p>
+					<p class="white-text">
 						<a href="https://www.github.com/JdeGuise"><i class="icon-github"></i></a>
 						<a href="https://www.linkedin.com/in/john-r-deguise/"><i class="icon-linkedin"></i></a>
 					</p>
