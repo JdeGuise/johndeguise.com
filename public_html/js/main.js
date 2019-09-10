@@ -6,7 +6,7 @@ function handleClickEvents() {
     });
     $("#educationNav").click(function() {
         $('html, body').animate({
-            scrollTop: $(".education").offset().top
+            scrollTop: $("#education").offset().top
         }, 'slow');
     });
     $("#workNav").click(function() {
