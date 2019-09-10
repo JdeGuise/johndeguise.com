@@ -1,30 +1,30 @@
 function handleClickEvents() {
-    $(".aboutnav").click(function() {
+    $("#aboutNav").click(function() {
         $('html,body').animate({
             scrollTop: $(".about").offset().top},
             'slow');
     });
-    $(".edunav").click(function() {
+    $("#educationNav").click(function() {
         $('html,body').animate({
             scrollTop: $(".education").offset().top},
             'slow');
     });
-    $(".worknav").click(function() {
+    $("#workNav").click(function() {
         $('html,body').animate({
             scrollTop: $(".work").offset().top},
             'slow');
     });
-    $(".projectsnav").click(function() {
+    $("#projectsNav").click(function() {
         $('html,body').animate({
             scrollTop: $(".projects").offset().top},
             'slow');
     });
-    $(".volunteernav").click(function() {
+    $("#volunteerNav").click(function() {
         $('html,body').animate({
             scrollTop: $(".volunteer").offset().top},
             'slow');
     });
-    $(".awardsnav").click(function() {
+    $("#awardsNav").click(function() {
         $('html,body').animate({
             scrollTop: $(".awards").offset().top},
             'slow');
