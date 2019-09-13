@@ -142,7 +142,7 @@ footer i {
 	nav ul li {
 		margin: 0 5px;
 	}
-	.logo_container {
+	.logo_container, #schoolLogoContainer {
 		text-align: center;
 		margin-bottom: 50px;
 	}
@@ -167,7 +167,7 @@ footer i {
 	nav {
 		height: 80px;
 	}	
-	.logo_container {
+	.logo_container, #schoolLogoContainer {
 		margin-bottom: 50px;
 		text-align: center;
 	}
@@ -177,7 +177,7 @@ footer i {
 }
 /* big */
 @media only screen and (min-width: 1101px){
-	.logo_container {
+	.logo_container, #schoolLogoContainer {
 		text-align: left;
 	}	
 	header {
@@ -253,6 +253,10 @@ footer i {
 	vertical-align: middle;
 }
 
+#education > div {
+	margin-bottom: 25px;
+}
+
 #scrollToTop {
 	display: none;
 	position: fixed;
@@ -290,6 +294,9 @@ footer i {
 	padding: 6px;
 	background: #34495e;
 }
-#graduated_note, .date_range_of_relevance {
+#graduated_note, #chargeOverDateRangeWrapper, #packYourBackDateRangeWrapper, .phiMuAlphaDateRangeWrapper, .date_range_of_relevance {
 	font-size: 15px;
+}
+.date_range_of_relevance > p{
+	margin-top: 25px;
 }
