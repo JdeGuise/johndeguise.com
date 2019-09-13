@@ -294,6 +294,9 @@ footer i {
 	padding: 6px;
 	background: #34495e;
 }
-#graduated_note, .date_range_of_relevance {
+#graduated_note, #chargeOverDateRangeWrapper, #packYourBackDateRangeWrapper, .phiMuAlphaDateRangeWrapper, .date_range_of_relevance {
 	font-size: 15px;
+}
+.date_range_of_relevance > p{
+	margin-top: 25px;
 }
