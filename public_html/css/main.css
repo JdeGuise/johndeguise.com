@@ -142,7 +142,7 @@ footer i {
 	nav ul li {
 		margin: 0 5px;
 	}
-	.logo_container {
+	.logo_container, #schoolLogoContainer {
 		text-align: center;
 		margin-bottom: 50px;
 	}
@@ -167,7 +167,7 @@ footer i {
 	nav {
 		height: 80px;
 	}	
-	.logo_container {
+	.logo_container, #schoolLogoContainer {
 		margin-bottom: 50px;
 		text-align: center;
 	}
@@ -177,7 +177,7 @@ footer i {
 }
 /* big */
 @media only screen and (min-width: 1101px){
-	.logo_container {
+	.logo_container, #schoolLogoContainer {
 		text-align: left;
 	}	
 	header {
@@ -251,6 +251,10 @@ footer i {
 	font-size: 20px;
 	padding-right: 8px;
 	vertical-align: middle;
+}
+
+#education > div {
+	margin-bottom: 25px;
 }
 
 #scrollToTop {
