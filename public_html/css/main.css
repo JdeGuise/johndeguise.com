@@ -36,7 +36,7 @@ hr {
 	height: 1px;
 	border: 0;
 	border-top: 1px solid #ccc;
-	margin: 1em 0;
+	margin: 50px 0;
 	padding: 0;
 }
 
@@ -154,13 +154,9 @@ footer i {
 	#graduated_note {
 		margin-top: 25px;
 	}	
+	#degreeTextWrapper, #universityNameTextWrapper, #majorsTextWrapper, 
+	#minorsTextWrapper, #graduationTextWrapper, .volunteer_date_range_of_relevance,
 	.date_range_of_relevance {
-		text-align: center;
-	}
-	.volunteer_date_range_of_relevance {
-		text-align: center;
-	}
-	#degreeTextWrapper, #universityNameTextWrapper, #majorsTextWrapper, #minorsTextWrapper, #graduationTextWrapper {
 		text-align: center;
 	}
 }
@@ -176,13 +172,9 @@ footer i {
 	#graduated_note {
 		margin-top: 25px;
 	}
-	.date_range_of_relevance {
-		text-align: center;		
-	}
+	#degreeTextWrapper, #universityNameTextWrapper, #majorsTextWrapper, 
+	#minorsTextWrapper, #graduationTextWrapper, .date_range_of_relevance,
 	.volunteer_date_range_of_relevance {
-		text-align: center;
-	}
-	#degreeTextWrapper, #universityNameTextWrapper, #majorsTextWrapper, #minorsTextWrapper, #graduationTextWrapper {
 		text-align: center;
 	}
 }
@@ -194,7 +186,7 @@ footer i {
 		margin-bottom: 0px;
 	}	
 	.volunteer_date_range_of_relevance {
-		text-align: center;
+		text-align: left;
 	}	
 	header {
 		background: url(../images/header-bg-5.jpg) no-repeat center top;
@@ -238,16 +230,13 @@ footer i {
 .description-item-text {
 	margin-bottom: 5px;
 }
-.description-bullets {
-	margin-bottom: 25px;
-}
 
 .section_header {
 	margin-bottom: 70px;
 }
 
 .job_separator {
-	max-width: 500px;
+	max-width: 50%;
 	margin: 50px auto;
 }
 .work_line_description {
@@ -255,8 +244,14 @@ footer i {
 	margin-bottom: 5px;
 }
 
-.centered {
+.centered, .logo_container, #schoolLogoContainer {
 	text-align: center;
+}
+.date_range_of_relevance > p{
+	margin-top: 25px;
+}	
+.logo_container, #schoolLogoContainer {
+	margin-bottom: 50px;
 }
 
 .white-text, a, p {
@@ -273,10 +268,6 @@ footer i {
 	font-size: 20px;
 	padding-right: 8px;
 	vertical-align: middle;
-}
-
-#education > div {
-	margin-bottom: 25px;
 }
 
 #scrollToTop {
@@ -317,19 +308,12 @@ footer i {
 	background: #34495e;
 	color: white;
 }
-#universityNameText {
+
+#universityNameTextWrapper, #patrickSGilmoreSection, #universityNameText, #education > div {
 	margin-bottom: 25px;
 }
-#universityNameTextWrapper {
-	margin-bottom: 25px;
-}
-#graduated_note, #chargeOverDateRangeWrapper, #packYourBackDateRangeWrapper, .phiMuAlphaDateRangeWrapper, .date_range_of_relevance {
+
+#graduated_note, #chargeOverDateRangeWrapper, #packYourBackDateRangeWrapper, 
+.phiMuAlphaDateRangeWrapper, .date_range_of_relevance, .volunteer_date_range_of_relevance {
 	font-size: 15px;
-}
-.date_range_of_relevance > p{
-	margin-top: 25px;
-}	
-.logo_container, #schoolLogoContainer {
-	margin-bottom: 50px;
-	text-align: center;
 }
