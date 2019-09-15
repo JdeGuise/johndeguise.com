@@ -36,7 +36,7 @@ hr {
 	height: 1px;
 	border: 0;
 	border-top: 1px solid #ccc;
-	margin: 1em 0;
+	margin: 50px 0;
 	padding: 0;
 }
 
@@ -142,13 +142,6 @@ footer i {
 	nav ul li {
 		margin: 0 5px;
 	}
-	.logo_container, #schoolLogoContainer {
-		text-align: center;
-		margin-bottom: 50px;
-	}
-	.date_range_of_relevance{
-		text-align: center;
-	}
 	.nameSpan {
 		max-width: 766px;
 	}
@@ -158,31 +151,46 @@ footer i {
 	#nameCardWrapper {
 		padding-bottom: 75px;
 	}
-}
-/* mid */
-@media only screen and (min-width: 768px) and (max-width: 1100px){
+	#graduated_note {
+		margin-top: 25px;
+	}	
+	#degreeTextWrapper, #universityNameTextWrapper, #majorsTextWrapper, 
+	#minorsTextWrapper, #graduationTextWrapper, .volunteer_date_range_of_relevance,
 	.date_range_of_relevance {
 		text-align: center;
 	}
+}
+
+/* mid */
+@media only screen and (min-width: 768px) and (max-width: 991px){	
 	nav {
 		height: 80px;
 	}	
-	.logo_container, #schoolLogoContainer {
-		margin-bottom: 50px;
-		text-align: center;
-	}
 	header {
 		background-color: rgb(38, 55, 69);
 	}	
+	#graduated_note {
+		margin-top: 25px;
+	}
+	#degreeTextWrapper, #universityNameTextWrapper, #majorsTextWrapper, 
+	#minorsTextWrapper, #graduationTextWrapper, .date_range_of_relevance,
+	.volunteer_date_range_of_relevance {
+		text-align: center;
+	}
 }
+
 /* big */
-@media only screen and (min-width: 1101px){
+@media only screen and (min-width: 992px){
 	.logo_container, #schoolLogoContainer {
+		text-align: center;
+		margin-bottom: 0px;
+	}	
+	.volunteer_date_range_of_relevance {
 		text-align: left;
 	}	
 	header {
 		background: url(../images/header-bg-5.jpg) no-repeat center top;
-	}
+	}		
 }
 
 /*---------------------------------------------------
@@ -216,8 +224,11 @@ footer i {
 	text-transform: uppercase;
 }
 
-.container .row p.tight {
+.description-header {
 	margin-bottom: 10px;
+}
+.description-item-text {
+	margin-bottom: 5px;
 }
 
 .section_header {
@@ -225,7 +236,7 @@ footer i {
 }
 
 .job_separator {
-	max-width: 500px;
+	max-width: 50%;
 	margin: 50px auto;
 }
 .work_line_description {
@@ -233,8 +244,14 @@ footer i {
 	margin-bottom: 5px;
 }
 
-.centered {
+.centered, .logo_container, #schoolLogoContainer {
 	text-align: center;
+}
+.date_range_of_relevance > p{
+	margin-top: 25px;
+}	
+.logo_container, #schoolLogoContainer {
+	margin-bottom: 50px;
 }
 
 .white-text, a, p {
@@ -251,10 +268,6 @@ footer i {
 	font-size: 20px;
 	padding-right: 8px;
 	vertical-align: middle;
-}
-
-#education > div {
-	margin-bottom: 25px;
 }
 
 #scrollToTop {
@@ -290,13 +303,17 @@ footer i {
 #nameCard div h1 {
 	max-width: 95%;
 }
-#graduatedDiv{
+#graduatedDiv {
 	padding: 6px;
 	background: #34495e;
+	color: white;
 }
-#graduated_note, #chargeOverDateRangeWrapper, #packYourBackDateRangeWrapper, .phiMuAlphaDateRangeWrapper, .date_range_of_relevance {
+
+#universityNameTextWrapper, #patrickSGilmoreSection, #universityNameText, #education > div {
+	margin-bottom: 25px;
+}
+
+#graduated_note, #chargeOverDateRangeWrapper, #packYourBackDateRangeWrapper, 
+.phiMuAlphaDateRangeWrapper, .date_range_of_relevance, .volunteer_date_range_of_relevance {
 	font-size: 15px;
-}
-.date_range_of_relevance > p{
-	margin-top: 25px;
 }
