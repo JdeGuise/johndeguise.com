@@ -160,7 +160,7 @@ footer i {
 	}
 }
 /* mid */
-@media only screen and (min-width: 768px) and (max-width: 1100px){
+@media only screen and (min-width: 768px) and (max-width: 1500px){
 	.date_range_of_relevance {
 		text-align: center;
 	}
@@ -176,7 +176,7 @@ footer i {
 	}	
 }
 /* big */
-@media only screen and (min-width: 1101px){
+@media only screen and (min-width: 1501px){
 	.logo_container, #schoolLogoContainer {
 		text-align: left;
 	}	
@@ -293,6 +293,9 @@ footer i {
 #graduatedDiv{
 	padding: 6px;
 	background: #34495e;
+}
+#universityNameText {
+	margin-bottom: 25px;
 }
 #graduated_note, #chargeOverDateRangeWrapper, #packYourBackDateRangeWrapper, .phiMuAlphaDateRangeWrapper, .date_range_of_relevance {
 	font-size: 15px;
