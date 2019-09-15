@@ -142,13 +142,6 @@ footer i {
 	nav ul li {
 		margin: 0 5px;
 	}
-	.logo_container, #schoolLogoContainer {
-		text-align: center;
-		margin-bottom: 50px;
-	}
-	.date_range_of_relevance{
-		text-align: center;
-	}
 	.nameSpan {
 		max-width: 766px;
 	}
@@ -161,34 +154,51 @@ footer i {
 	#graduated_note {
 		margin-top: 25px;
 	}	
-}
-/* mid */
-@media only screen and (min-width: 768px) and (max-width: 1500px){
 	.date_range_of_relevance {
 		text-align: center;
 	}
+	.volunteer_date_range_of_relevance {
+		text-align: center;
+	}
+	#degreeTextWrapper, #universityNameTextWrapper, #majorsTextWrapper, #minorsTextWrapper, #graduationTextWrapper {
+		text-align: center;
+	}
+}
+
+/* mid */
+@media only screen and (min-width: 768px) and (max-width: 991px){	
 	nav {
 		height: 80px;
 	}	
-	.logo_container, #schoolLogoContainer {
-		margin-bottom: 50px;
-		text-align: center;
-	}
 	header {
 		background-color: rgb(38, 55, 69);
 	}	
 	#graduated_note {
 		margin-top: 25px;
 	}
+	.date_range_of_relevance {
+		text-align: center;		
+	}
+	.volunteer_date_range_of_relevance {
+		text-align: center;
+	}
+	#degreeTextWrapper, #universityNameTextWrapper, #majorsTextWrapper, #minorsTextWrapper, #graduationTextWrapper {
+		text-align: center;
+	}
 }
+
 /* big */
-@media only screen and (min-width: 1501px){
+@media only screen and (min-width: 992px){
 	.logo_container, #schoolLogoContainer {
-		text-align: left;
+		text-align: center;
+		margin-bottom: 0px;
+	}	
+	.volunteer_date_range_of_relevance {
+		text-align: center;
 	}	
 	header {
 		background: url(../images/header-bg-5.jpg) no-repeat center top;
-	}
+	}		
 }
 
 /*---------------------------------------------------
@@ -222,8 +232,14 @@ footer i {
 	text-transform: uppercase;
 }
 
-.container .row p.description-header {
+.description-header {
 	margin-bottom: 10px;
+}
+.description-item-text {
+	margin-bottom: 5px;
+}
+.description-bullets {
+	margin-bottom: 25px;
 }
 
 .section_header {
@@ -296,11 +312,15 @@ footer i {
 #nameCard div h1 {
 	max-width: 95%;
 }
-#graduatedDiv{
+#graduatedDiv {
 	padding: 6px;
 	background: #34495e;
+	color: white;
 }
 #universityNameText {
+	margin-bottom: 25px;
+}
+#universityNameTextWrapper {
 	margin-bottom: 25px;
 }
 #graduated_note, #chargeOverDateRangeWrapper, #packYourBackDateRangeWrapper, .phiMuAlphaDateRangeWrapper, .date_range_of_relevance {
@@ -308,4 +328,8 @@ footer i {
 }
 .date_range_of_relevance > p{
 	margin-top: 25px;
+}	
+.logo_container, #schoolLogoContainer {
+	margin-bottom: 50px;
+	text-align: center;
 }
