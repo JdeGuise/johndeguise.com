@@ -202,7 +202,7 @@ footer i {
 	SPECIFIC ID AND CLASS STYLES
 ---------------------------------------------------*/
 
-.row:hover {
+.highlight-row:hover {
 	background-color: rgb(181,244,246);
 }
 
