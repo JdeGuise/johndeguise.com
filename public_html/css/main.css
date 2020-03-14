@@ -202,6 +202,21 @@ footer i {
 	SPECIFIC ID AND CLASS STYLES
 ---------------------------------------------------*/
 
+.row:hover {
+	background-color: rgb(181,244,246);
+}
+
+.project-icons {
+	width: 150px;
+	height: 150px;
+	margin-top: 30px;
+	border: 1px solid rgb(151,214,216);
+}
+
+.project-icon-wrapper {
+	text-align: center;
+}
+
 .prob {
 	border: 2px solid rgb(50,50,50);
 }
@@ -247,7 +262,7 @@ footer i {
 .centered, .logo_container, #schoolLogoContainer {
 	text-align: center;
 }
-.date_range_of_relevance > p{
+.date_range_of_relevance > p, .upper-margin-for-entry{
 	margin-top: 25px;
 }	
 .logo_container, #schoolLogoContainer {
