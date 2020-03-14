@@ -202,8 +202,15 @@ footer i {
 	SPECIFIC ID AND CLASS STYLES
 ---------------------------------------------------*/
 
+.highlight-row {
+	transition: all .4s ease;
+	-webkit-transition: all .4s ease;	
+}
+
 .highlight-row:hover {
 	background-color: rgb(181,244,246);
+	transition: all .4s ease;
+	-webkit-transition: all .4s ease;	
 }
 
 .project-icons {
