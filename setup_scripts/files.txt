@@ -1,2 +1,2 @@
 ../public_html/index.html
-../public_html/stylesheets/style.css
+../public_html/css/main.css
