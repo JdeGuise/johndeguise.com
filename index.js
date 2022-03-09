@@ -10,4 +10,5 @@ express()
   .get('/blog', (req, res) => res.render('pages/blog'))
   .get('/projects', (req, res) => res.render('pages/projects'))
   .get('/about', (req, res) => res.render('pages/about'))
+  .get('/maintenance', (req, res) => res.render('pages/maintenance'))
   .listen(PORT, () => console.log(`Listening on ${ PORT }`));
