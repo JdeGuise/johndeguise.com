@@ -1,84 +1,102 @@
 body {
-  margin: 0;
-  padding: 0;
+  	margin: 0;
+	padding: 0;
+}
+
+.navbar-home-label {
+  	font-size: 28px;
 }
 
 .jumbotron {
-  background: #532F8C;
-  color: white;
-  padding-bottom: 80px; 
+  	background: #532F8C;
+  	color: white;
+  	padding-bottom: 80px; 
 }
 
 .jumbotron .btn-primary {
-  background: #845ac7;
-  border-color: #845ac7; 
+  	background: #845ac7;
+  	border-color: #845ac7; 
 }
       
 .jumbotron .btn-primary:hover {
-  background: #7646c1; 
+  	background: #7646c1; 
 }
     
 .jumbotron p {
-  color: #d9ccee;
-  max-width: 75%;
-  margin: 1em auto 2em; 
+  	color: #d9ccee;
+  	max-width: 75%;
+  	margin: 1em auto 2em; 
 }
 .navbar + .jumbotron {
-  margin-top: -20px; 
+  	margin-top: -20px; 
+}
+.navbar {
+  	line-height: 90px;
+  	min-height: 90px;
+  	text-align: center;
+  	background: #CC5500;
+}
+.navbar-nav > li > a {
+  	color: #0D3980;
+}
+
+.navbar .container {
+  	display: inline-block;
+  	vertical-align: middle;
 }
 .jumbotron .lang-logo {
-  display: block;
-  background: #B01302;
-  border-radius: 50%;
-  overflow: hidden;
-  width: 100px;
-  height: 100px;
-  margin: auto;
-  border: 2px solid white; 
+  	display: block;
+  	background: #B01302;
+  	border-radius: 50%;
+  	overflow: hidden;
+  	width: 100px;
+  	height: 100px;
+  	margin: auto;
+  	border: 2px solid white; 
 }
 .jumbotron .lang-logo img {
-  max-width: 100%; 
+  	max-width: 100%; 
 }
   
 .maintenance-container {
-  margin: 0 auto;
-  width: 50%;
+  	margin: 0 auto;
+  	width: 50%;
 }
 
 .maintenance-container > div > h1 {
-  font-size: 48px;
+  	font-size: 48px;
 }
 
 .maintenance-description {
-  margin: 0 auto; 
-  width: 66%; 
-  font-size: 18px;
+  	margin: 0 auto; 
+  	width: 66%; 
+  	font-size: 18px;
 }
 
 .m-top-sm {
-  margin-top: 16px;
+  	margin-top: 16px;
 }
 
 .m-top-md {
-  margin-top: 32px;
+  	margin-top: 32px;
 }
 
 .m-top-lg {
-  margin-top: 48px;
+  	margin-top: 48px;
 }
 
 .m-bot-sm {
-  margin-bottom: 16px;
+  	margin-bottom: 16px;
 }
 
 .m-bot-md {
-  margin-bottom: 32px;
+  	margin-bottom: 32px;
 }
 
 .m-bot-lg {
-  margin-bottom: 48px;
+  	margin-bottom: 48px;
 }
 
 .center {
-  text-align: center;
+  	text-align: center;
 }
