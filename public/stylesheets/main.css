@@ -7,6 +7,12 @@ body {
   	font-size: 28px;
 }
 
+.nav > li > a:hover {
+	border: 1px solid white;
+	border-radius:10%;
+	background: inherit;
+}
+
 .jumbotron {
   	color: #111111;
   	padding-bottom: 80px; 
@@ -42,6 +48,10 @@ body {
 .navbar .container {
   	display: inline-block;
   	vertical-align: middle;
+}
+
+.navbar-right {
+	padding: 0px 8px;
 }
 .jumbotron .lang-logo {
   	display: block;
@@ -96,6 +106,6 @@ body {
   	margin-bottom: 48px;
 }
 
-.center {
-  	text-align: center;
+.contact-container {
+	background-color: lightgrey;
 }
