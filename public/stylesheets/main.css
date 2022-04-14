@@ -19,6 +19,7 @@ body {
 
 .navbar-right {
 	padding: 6px 8px 0px 8px;
+	text-transform: uppercase;
 }
 
 .navbar-home-label {
@@ -31,7 +32,6 @@ body {
 
 .right-links:hover {
 	border: 1px solid white;
-	border-radius:10%;
 	background: inherit !important;
 }
 
