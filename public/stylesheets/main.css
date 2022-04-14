@@ -18,22 +18,45 @@ body {
 }
 
 .navbar-right {
-	padding: 0px 8px;
+	padding: 6px 8px 0px 8px;
+	text-transform: uppercase;
 }
 
 .navbar-home-label {
   	font-size: 28px;
 }
 
-.nav > li > a:hover {
+.right-links {
+	border: 1px solid transparent;
+}
+
+.right-links:hover {
 	border: 1px solid white;
-	border-radius:10%;
+	background: inherit !important;
+}
+
+.left-links:hover {
+	background: none !important;
+	cursor: initial !important;
+}
+
+.nav-pfp {
+	height: 50px;
+	width: 50px;
 	background: inherit;
+	border-radius: 4px;
+	border: 1px solid transparent;
+}
+
+.nav-pfp:hover {
+	border: 1px solid white;
+	cursor: pointer;
 }
 
 .jumbotron {
   	color: #111111;
   	padding-bottom: 80px; 
+	margin-bottom: 0px;
 }
 
 .jumbotron .btn-primary {
@@ -125,6 +148,20 @@ body {
 	color: whitesmoke;
 }
 
+.jumbotron-buttons {
+	background-color: #CC5500;
+	border: 1px solid white;
+	border-radius: 0px;
+	color: white;
+	margin: 0px 12px;
+}
+
+.jumbotron-buttons:hover {
+	background-color: none;
+	color: #111111;
+	border: 1px solid #CC5500;
+}
+
 .jumbotron-buttons-fade {
     -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
 	-webkit-animation-fill-mode: forwards;
@@ -163,4 +200,23 @@ body {
 @-ms-keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
+}
+
+.footer-contents {
+	min-height: 120px;
+	text-align: center;
+}
+
+.footer-contents-social > a > img {
+	height: 25px;
+	width: 25px;
+	margin: 24px 8px 0px 8px;
+}
+
+.footer-contents-social > a > img:hover {
+	cursor: pointer;
+}
+
+.footer-contents-copyright {
+	margin-top: 24px;
 }
