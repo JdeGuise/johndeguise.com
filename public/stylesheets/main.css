@@ -18,17 +18,39 @@ body {
 }
 
 .navbar-right {
-	padding: 0px 8px;
+	padding: 6px 8px 0px 8px;
 }
 
 .navbar-home-label {
   	font-size: 28px;
 }
 
-.nav > li > a:hover {
+.right-links {
+	border: 1px solid transparent;
+}
+
+.right-links:hover {
 	border: 1px solid white;
 	border-radius:10%;
+	background: inherit !important;
+}
+
+.left-links:hover {
+	background: none !important;
+	cursor: initial !important;
+}
+
+.nav-pfp {
+	height: 50px;
+	width: 50px;
 	background: inherit;
+	border-radius: 4px;
+	border: 1px solid transparent;
+}
+
+.nav-pfp:hover {
+	border: 1px solid white;
+	cursor: pointer;
 }
 
 .jumbotron {
