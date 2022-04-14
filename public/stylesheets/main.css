@@ -147,6 +147,20 @@ body {
 	color: whitesmoke;
 }
 
+.jumbotron-buttons {
+	background-color: #CC5500;
+	border: 1px solid white;
+	border-radius: 0px;
+	color: white;
+	margin: 0px 12px;
+}
+
+.jumbotron-buttons:hover {
+	background-color: none;
+	color: #111111;
+	border: 1px solid #CC5500;
+}
+
 .jumbotron-buttons-fade {
     -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
 	-webkit-animation-fill-mode: forwards;
