@@ -9,7 +9,7 @@ function main() {
 
 function showElements(selector) {
     Array.prototype.forEach.call(document.querySelectorAll(selector), function (entry) {
-        entry.classList.remove('d-none');
+        entry.classList.add('jumbotron-buttons-fade');
     });
 }
 
