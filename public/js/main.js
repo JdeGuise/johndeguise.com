@@ -1,7 +1,61 @@
-function handleSliding() {
-    console.log('clicked');
+let i = 0;
+let partOneDone = false;
+let partTwoDone = false;
+let partThreeDone = false;
 
-    scrollTo(document.body, document.querySelector('#testing').offsetTop, 600);
+function main() {
+    typeWriter(null, null);
+}
+
+function typeWriter(selector, txt) {
+    const selectorOne = '.jumbotron-header';
+    const txtOne = 'Hello!';
+
+    const selectorTwo = '.jumbotron-description-one';
+    const txtTwo = 'And welcome to my website!';
+
+    const selectorThree = '.jumbotron-description-two';
+    const txtThree = 'This site serves as a project portfolio, as well as the host of our family blog about our travels!';
+    
+    const selectorFour = '#jumbotron-button';
+    const speedMS = 50;
+
+    if(!partOneDone) {
+        if(i < txtOne.length) {
+            document.querySelector(selectorOne).textContent += txtOne.charAt(i);
+            i++;
+        } else {
+            i = 0;
+            partOneDone = true;
+        }
+        setTimeout(function() {
+            typeWriter();
+        }, speedMS);
+    } else if(!partTwoDone) {
+        if(i < txtTwo.length) {
+            document.querySelector(selectorTwo).textContent += txtTwo.charAt(i);
+            i++;
+        } else {
+            i = 0;
+            partTwoDone = true;
+        }
+        setTimeout(function() {
+            typeWriter();
+        }, speedMS);
+    } else if(!partThreeDone) {
+        if(i < txtThree.length) {
+            document.querySelector(selectorThree).textContent += txtThree.charAt(i);
+            i++;
+        } else {
+            i = 0;
+            partThreeDone = true;
+        }
+        setTimeout(function() {
+            typeWriter();
+        }, speedMS);
+    } else {
+        document.querySelector(selectorFour).classList.remove('d-none');
+    }
 }
 
 function scrollTo(element, to, duration) {
