@@ -1,79 +1,29 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <%- include ("../partials/header.ejs") %>
-</head>
+	<head>
+		<%- include ("../partials/header.ejs") %>
+	</head>
 
-<body>
+	<body onload="main()">
+		<%- include ("../partials/nav.ejs") %>
 
-  <%- include ("../partials/nav.ejs") %>
+		<div class="jumbotron text-center">
+			<div class="container" id="jumbotron-info">
+				<a href="/" class="lang-logo">
+					<img src="images/pfp.jpg"/>
+				</a>
+				<h1 class="jumbotron-header"></h1>
 
-<div class="jumbotron text-center">
-  <div class="container">
-    <a href="/" class="lang-logo">
-      <img src="https://via.placeholder.com/150x150">
-    </a>
-    <h1>Hello!</h1>
-    <p>And welcome to my website! This site serves as a project portfolio, as well as the host of our family blog about our travels!</p>
-    <a type="button" class="btn btn-lg btn-default" href="#" onclick="handleSliding()"><span class="glyphicon glyphicon-question-sign"></span> Who are you?</a>
-  </div>
-</div>
-<div class="container">
-  <div class="row main-row">
-    <section class="introduction">
-      <article class="col-md-6 introduction-article">
-        <h3>Hallo, ik heet John!</h3>
-        <p>I am an American software engineer that has recently relocated to Utrecht in the Netherlands, alongside my wife Rachel and our dog Artie.</p>
-      </article>
-      <aside class="col-md-6 text-center introduction-pfp-aside">
-        <img class="introduction-pfp" src="https://via.placeholder.com/150x150">
-      </aside>
-    </section>
+				<p class="jumbotron-description-one"></p>
+				<p class="jumbotron-description-two"></p>
 
-    <section class="professional-info">
-      <section class="professional-responsibilities">
-        <h4>What I typically do</h4>
-        <ul>
-          <li>Software Development (Apex, JavaScript, SOQL, HTML/CSS, Python)</li>
-          <li>Salesforce Implementations (Sales, Services, Support, Integrations)</li>
-          <li>DevOps Roadmapping and Monitoring (CICD, Git, Selenium, New Relic)</li>
-        </ul>
-      </section>
-      <section class="professional-capabilities">
-        <section>
-          <h4>What I can do</h4>
-          <ul>
-            <li>Front-end Development</li>
-            <li>Solution Refactor and Rearchitecture</li>
-            <li>CSS Implementation and Refactor</li>
-          </ul>
-        </section>
-      </section>
-      <section class="professional-fun">
-        <section>
-          <h4>What am I spending my free time doing right now?</h4>
-          <ul>
-            <li>Writing fun projects (Euchre game coming soon!)</li>
-            <li>Traveling around the Netherlands</li>
-            <li>Nederlands leren</li>
-            <li>Set up and tinker with emulators</li>
-            <li>Play retro games from my childhood for the nostalgia factor (Paper Mario and Banjo Tooie right now!)</li>
-            <li>Play Elden Ring!</li>
-          </ul>
-        </section>
-      </section>
-    </section>
-  </div>
-</div>
+				<a type="button" class="btn btn-lg btn-default hide-with-opacity jumbotron-buttons" href="/about">Continue along...</a>
+				<a type="button" class="btn btn-lg btn-default hide-with-opacity jumbotron-buttons" href="/contact">Want to get in touch?</a>
+			</div>
+		</div>
 
-<div class="container contact-container">
-  <div class="row contact-row">
-    <section class="contact text-center">
-      <a type="button" class="btn btn-lg btn-default" href="/contact">Come Say Hello!</a>
-    </section>
-  </div>
-</div>
-
-
-</body>
+		<footer>
+			<%- include ("../partials/footer.ejs") %>
+		</footer>
+	</body>
 </html>

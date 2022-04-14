@@ -3,6 +3,24 @@ body {
 	padding: 0;
 }
 
+.navbar + .jumbotron {
+	margin-top: -20px; 
+}
+.navbar {
+	line-height: 90px;
+	min-height: 90px;
+	text-align: center;
+}
+
+.navbar .container {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.navbar-right {
+	padding: 0px 8px;
+}
+
 .navbar-home-label {
   	font-size: 28px;
 }
@@ -19,52 +37,36 @@ body {
 }
 
 .jumbotron .btn-primary {
-  	/* background: #845ac7; */
   	border-color: #845ac7; 
 }
       
 .jumbotron .btn-primary:hover {
   	background: #7646c1; 
 }
-    
+
 .jumbotron p {
   	color: #111111;
-  	max-width: 75%;
+  	max-width: 80%;
   	margin: 1em auto 2em; 
 }
-.navbar + .jumbotron {
-  	margin-top: -20px; 
-}
-.navbar {
-  	line-height: 90px;
-  	min-height: 90px;
-  	text-align: center;
-  	background: #CC5500;
-}
-.navbar-nav > li > a {
-  	color: whitesmoke;
-}
 
-.navbar .container {
-  	display: inline-block;
-  	vertical-align: middle;
-}
-
-.navbar-right {
-	padding: 0px 8px;
-}
 .jumbotron .lang-logo {
-  	display: block;
-  	background: #B01302;
-  	border-radius: 50%;
-  	overflow: hidden;
-  	width: 100px;
-  	height: 100px;
-  	margin: auto;
-  	border: 2px solid white; 
+	display: block;
+	border-radius: 50%;
+	overflow: hidden;
+	width: 200px;
+	height: 200px;
+	margin: auto;
+	border: 2px solid white; 
 }
+
 .jumbotron .lang-logo img {
-  	max-width: 100%; 
+	max-width: 100%;
+	height: 100%; 
+}
+
+#jumbotron-info {
+	min-height: 580px;
 }
   
 .maintenance-container {
@@ -108,4 +110,57 @@ body {
 
 .contact-container {
 	background-color: lightgrey;
+}
+
+.d-none {
+	display: none;
+}
+
+.hide-with-opacity {
+	opacity: 0;
+}
+
+.navbar, footer, .navbar-nav > li > a {
+	background: #CC5500;
+	color: whitesmoke;
+}
+
+.jumbotron-buttons-fade {
+    -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+	-webkit-animation-fill-mode: forwards;
+    
+	-moz-animation: fadein 3s; /* Firefox < 16 */
+	-moz-animation-fill-mode: forwards; /* Firefox < 16 */
+        
+	-ms-animation: fadein 3s; /* Internet Explorer */
+	-ms-animation-fill-mode: forwards; /* Internet Explorer */
+    
+	-o-animation: fadein 3s; /* Opera < 12.1 */
+	-o-animation-fill-mode: forwards;
+
+	animation: fadein 3s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
