@@ -7,17 +7,23 @@ function main() {
     typeWriter(null, null);
 }
 
+function showElements(selector) {
+    Array.prototype.forEach.call(document.querySelectorAll(selector), function (entry) {
+        entry.classList.remove('d-none');
+    });
+}
+
 function typeWriter(selector, txt) {
     const selectorOne = '.jumbotron-header';
     const txtOne = 'Hello!';
 
     const selectorTwo = '.jumbotron-description-one';
-    const txtTwo = 'And welcome to my website!';
+    const txtTwo = 'Welcome to my website!';
 
     const selectorThree = '.jumbotron-description-two';
     const txtThree = 'This site serves as a project portfolio, as well as the host of our family blog about our travels!';
     
-    const selectorFour = '#jumbotron-button';
+    const selectorFour = '.jumbotron-buttons';
     const speedMS = 50;
 
     if(!partOneDone) {
@@ -54,7 +60,7 @@ function typeWriter(selector, txt) {
             typeWriter();
         }, speedMS);
     } else {
-        document.querySelector(selectorFour).classList.remove('d-none');
+        showElements(selectorFour);
     }
 }
 
