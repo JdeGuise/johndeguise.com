@@ -207,10 +207,14 @@ body {
 	text-align: center;
 }
 
-.footer-contents-social > img {
+.footer-contents-social > a > img {
 	height: 25px;
 	width: 25px;
 	margin: 24px 8px 0px 8px;
+}
+
+.footer-contents-social > a > img:hover {
+	cursor: pointer;
 }
 
 .footer-contents-copyright {
