@@ -21,10 +21,11 @@ function typeWriter(selector, txt) {
     const txtTwo = 'Welcome to my website!';
 
     const selectorThree = '.jumbotron-description-two';
-    const txtThree = 'This site serves as a project portfolio, as well as the host of our family blog about our travels!';
+    const txtThree = '';
+    // const txtThree = 'This site serves as a project portfolio, as well as the host of our family blog about our travels!';
     
     const selectorFour = '.jumbotron-buttons';
-    const speedMS = 50;
+    const speedMS = 40;
 
     if(!partOneDone) {
         if(i < txtOne.length) {
