@@ -149,7 +149,8 @@ body {
 	border: 1px solid white;
 	border-radius: 0px;
 	color: white;
-	margin: 0px 12px;
+	margin: 4px 12px;
+	width: 250px;
 }
 
 .jumbotron-buttons:hover {
