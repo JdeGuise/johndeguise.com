@@ -8,14 +8,13 @@ import About from '../components/About';
 import Job from '../components/Job';
 import Footer from '../components/Footer';
 
-import jobs from '../data/jobs.json'
+import jobs_json from '../data/jobs.json'
 import startTypeWriter from '../utils/utils';
 
 function Home() {
 
   useEffect(() => {
     // This function will be called when the component is mounted
-    console.log(jobs);
     startTypeWriter();
   }, []); // The empty dependency array ensures this runs only once
 
@@ -38,10 +37,8 @@ function Home() {
             <About/>
 
             <div id="experience">
-              <Job/>
-              <Job/>
-              <Job/>
-              <Job/>
+              <Job job={jobs_json.jobs[0]}/>
+              <Job job={jobs_json.jobs[1]}/>
             </div>
           </div>
         </div>
