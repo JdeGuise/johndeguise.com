@@ -21,51 +21,51 @@ function Home() {
   }
   
   function typeWriter(selector, txt) {
-      const selectorOne = '.jumbotron-header';
-      const txtOne = "Hey, I'm John.";
+    const selectorOne = '.jumbotron-header';
+    const txtOne = "Hey, I'm John.";
+
+    const selectorTwo = '.jumbotron-description-one';
+    const txtTwo = "Full stack developer.";
+    
+    const selectorThree = '.jumbotron-description-two';
+    const txtThree = "I build useful things for the modern web.";
+
+    const speedMS = 80;
   
-      const selectorTwo = '.jumbotron-description-one';
-      const txtTwo = "Full stack developer.";
-      
-      const selectorThree = '.jumbotron-description-two';
-      const txtThree = "I build useful things for the modern web.";
-  
-      const speedMS = 80;
-  
-      if (!partOneDone) {
-          if (i < txtOne.length) {
-              document.querySelector(selectorOne).textContent += txtOne.charAt(i);
-              i++;
-          } else {
-              i = 0;
-              partOneDone = true;
-          }
-          setTimeout(function() {
-              typeWriter();
-          }, speedMS);
-      } else if (!partTwoDone) {
-          if (i < txtTwo.length) {
-              document.querySelector(selectorTwo).textContent += txtTwo.charAt(i);
-              i++;
-          } else {
-              i = 0;
-              partTwoDone = true;
-          }
-          setTimeout(function() {
-              typeWriter();
-          }, speedMS);
-      } else if (!partThreeDone) {
-          if (i < txtThree.length) {
-              document.querySelector(selectorThree).textContent += txtThree.charAt(i);
-              i++;
-          } else {
-              i = 0;
-              partThreeDone = true;
-          }
-          setTimeout(function() {
-              typeWriter();
-          }, speedMS);
+    if (!partOneDone) {
+      if (i < txtOne.length) {
+        document.querySelector(selectorOne).textContent += txtOne.charAt(i);
+        i++;
+      } else {
+        i = 0;
+        partOneDone = true;
       }
+      setTimeout(function() {
+        typeWriter();
+      }, speedMS);
+    } else if (!partTwoDone) {
+        if (i < txtTwo.length) {
+          document.querySelector(selectorTwo).textContent += txtTwo.charAt(i);
+          i++;
+        } else {
+          i = 0;
+          partTwoDone = true;
+        }
+        setTimeout(function() {
+          typeWriter();
+        }, speedMS);
+    } else if (!partThreeDone) {
+        if (i < txtThree.length) {
+          document.querySelector(selectorThree).textContent += txtThree.charAt(i);
+          i++;
+        } else {
+          i = 0;
+          partThreeDone = true;
+        }
+        setTimeout(function() {
+          typeWriter();
+        }, speedMS);
+    }
   }
 
   return (
@@ -82,13 +82,13 @@ function Home() {
 
             <div class="jumbotron-nav pt-5">
               <div>
-                  <a href="#about">About</a>
+                <a href="#about">About</a>
               </div>
               <div>
-                  <a href="#experience">Experience</a>
+                <a href="#experience">Experience</a>
               </div>
               <div>
-                  <a href="#contact">Contact</a>
+                <a href="#contact">Contact</a>
               </div>
             </div>
           </div>
