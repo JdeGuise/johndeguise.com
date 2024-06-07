@@ -94,24 +94,34 @@ body {
 
 .jumbotron .content {
     grid-column: span 6;
+	margin: 0 auto;
 }
 
-.jumbotron .image {
+.jumbotron .summary {
     grid-column: span 6;
 }
 
-.jumbotron .btn-primary {
-  	border-color: #845ac7; 
+.jumbotron-info {
+	min-height: 160px;
+	min-width: 330px;
 }
-      
-.jumbotron .btn-primary:hover {
-  	background: #7646c1; 
+
+.jumbotron-nav > div {
+	margin: 12px auto;
+}
+
+.jumbotron-nav > div > a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.jumbotron-nav > div > a:hover {
+	color: #CC5500;
 }
 
 .jumbotron p {
   	color: #111111;
-  	max-width: 80%;
-  	margin: 1em auto 2em; 
+  	margin: 1em 4px 1em; 
 }
 
 .jumbotron .lang-logo {
@@ -120,7 +130,7 @@ body {
 	overflow: hidden;
 	width: 200px;
 	height: 200px;
-	margin: auto;
+	margin: 12px auto;
 	border: 2px solid white; 
 }
 
@@ -139,8 +149,8 @@ body {
         grid-column: span 8;
     }
 
-    .jumbotron .image {
-        grid-column: span 4;
+    .jumbotron .summary {
+        grid-column: span 12;
     }
 }
 
@@ -150,13 +160,8 @@ body {
     }
 
     .jumbotron .content,
-    .jumbotron .image {
+	.jumbotron .summary {
         grid-column: span 1;
-    }
-
-    .jumbotron .image {
-        order: -1;
-        margin-bottom: 20px;
     }
 }
 
@@ -221,38 +226,6 @@ body {
 .navbar, footer, .navbar-nav > li > a {
 	background: #CC5500;
 	color: whitesmoke;
-}
-
-.jumbotron-buttons {
-	background-color: #CC5500;
-	border: 1px solid white;
-	border-radius: 0px;
-	color: white;
-	margin: 4px 12px;
-	width: 250px;
-}
-
-.jumbotron-buttons:hover {
-	background-color: none;
-	color: #111111;
-	border: 1px solid #CC5500;
-}
-
-.jumbotron-buttons-fade {
-    -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
-	-webkit-animation-fill-mode: forwards;
-    
-	-moz-animation: fadein 3s; /* Firefox < 16 */
-	-moz-animation-fill-mode: forwards; /* Firefox < 16 */
-        
-	-ms-animation: fadein 3s; /* Internet Explorer */
-	-ms-animation-fill-mode: forwards; /* Internet Explorer */
-    
-	-o-animation: fadein 3s; /* Opera < 12.1 */
-	-o-animation-fill-mode: forwards;
-
-	animation: fadein 3s;
-	animation-fill-mode: forwards;
 }
 
 @keyframes fadein {
