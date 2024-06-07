@@ -4,69 +4,14 @@ import './../App.css'
 import './Home.css'
 import Job from '../components/Job';
 import Footer from '../components/Footer';
+import startTypeWriter from '../utils/utils';
+
 function Home() {
 
-  let i = 0;
-  let partOneDone = false;
-  let partTwoDone = false;
-  let partThreeDone = false;
-  
   useEffect(() => {
     // This function will be called when the component is mounted
-    main();
+    startTypeWriter();
   }, []); // The empty dependency array ensures this runs only once
-
-  function main() {
-      typeWriter(null, null);
-  }
-  
-  function typeWriter(selector, txt) {
-    const selectorOne = '.jumbotron-header';
-    const txtOne = "Hey, I'm John.";
-
-    const selectorTwo = '.jumbotron-description-one';
-    const txtTwo = "Full stack developer.";
-    
-    const selectorThree = '.jumbotron-description-two';
-    const txtThree = "I build useful things for the modern web.";
-
-    const speedMS = 80;
-  
-    if (!partOneDone) {
-      if (i < txtOne.length) {
-        document.querySelector(selectorOne).textContent += txtOne.charAt(i);
-        i++;
-      } else {
-        i = 0;
-        partOneDone = true;
-      }
-      setTimeout(function() {
-        typeWriter();
-      }, speedMS);
-    } else if (!partTwoDone) {
-        if (i < txtTwo.length) {
-          document.querySelector(selectorTwo).textContent += txtTwo.charAt(i);
-          i++;
-        } else {
-          i = 0;
-          partTwoDone = true;
-        }
-        setTimeout(function() {
-          typeWriter();
-        }, speedMS);
-    } else if (!partThreeDone) {
-        if (i < txtThree.length) {
-          document.querySelector(selectorThree).textContent += txtThree.charAt(i);
-          i++;
-        } else {
-          i = 0;
-          partThreeDone = true;
-        }
-        setTimeout(function() {
-          typeWriter();
-        }, speedMS);
-    }
-  }
 
   return (
     <div class="body-wrapper">
@@ -113,9 +58,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <div class="footer">
-        <Footer/>
-      </div>
+      <Footer/>
     </div>
   )
 }
