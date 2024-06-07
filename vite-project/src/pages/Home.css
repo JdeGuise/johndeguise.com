@@ -102,19 +102,6 @@ body {
 	min-width: 330px;
 }
 
-.jumbotron-nav > div {
-	margin: 12px auto;
-}
-
-.jumbotron-nav > div > a {
-	text-decoration: none;
-	color: inherit;
-}
-
-.jumbotron-nav > div > a:hover {
-	color: #CC5500;
-}
-
 .jumbotron p {
   	color: #111111;
   	margin: 1em 4px 1em; 

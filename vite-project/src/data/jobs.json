@@ -1,0 +1,14 @@
+{
+    "jobs" : [
+        {
+            "range" : "2023 - PRESENT",
+            "header" : "Senior Software Developer - GoMeddo",
+            "description" : "Work paragraph description of all of the things that I've been doing at GoMeddo. Work paragraph description of all of the things that I've been doing at GoMeddo. Work paragraph description of all of the things that I've been doing at GoMeddo. Work paragraph description of all of the things that I've been doing at GoMeddo. Work paragraph description of all of the things that I've been doing at GoMeddo. Work paragraph description of all of the things that I've been doing at GoMeddo. Work paragraph description of all of the things that I've been doing at GoMeddo. Work paragraph description of all of the things that I've been doing at GoMeddo."
+        },
+        {
+            "range" : "2022 - 2023",
+            "header" : "Senior Salesforce Developer - Valtech/Appsolutely",
+            "description" : "Summary of things I did at Appsolutely..."
+        }
+    ]
+}
