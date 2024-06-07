@@ -1,6 +1,7 @@
 let i = 0;
 let partOneDone = false;
 let partTwoDone = false;
+let partThreeDone = false;
 
 function main() {
     typeWriter(null, null);
@@ -11,8 +12,11 @@ function typeWriter(selector, txt) {
     const txtOne = "Hey, I'm John.";
 
     const selectorTwo = '.jumbotron-description-one';
-    const txtTwo = "I'm a full stack developer.";
+    const txtTwo = "Full stack developer.";
     
+    const selectorThree = '.jumbotron-description-two';
+    const txtThree = "I build useful things for the modern web.";
+
     const speedMS = 40;
 
     if (!partOneDone) {
@@ -33,6 +37,17 @@ function typeWriter(selector, txt) {
         } else {
             i = 0;
             partTwoDone = true;
+        }
+        setTimeout(function() {
+            typeWriter();
+        }, speedMS);
+    } else if (!partThreeDone) {
+        if (i < txtThree.length) {
+            document.querySelector(selectorThree).textContent += txtThree.charAt(i);
+            i++;
+        } else {
+            i = 0;
+            partThreeDone = true;
         }
         setTimeout(function() {
             typeWriter();
