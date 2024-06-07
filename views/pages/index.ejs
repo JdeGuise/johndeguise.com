@@ -5,23 +5,23 @@
 	</head>
 
 	<body onload="main()">
-		<%- include ("../partials/nav.ejs") %>
-
-		<div class="jumbotron text-center">
-			<div class="container" id="jumbotron-info">
-				<img class="lang-logo" src="images/profilepic.jpg"/>
-				<h1 class="jumbotron-header"></h1>
-
-				<p class="jumbotron-description-one"></p>
-				<p class="jumbotron-description-two"></p>
-
-				<!-- <a type="button" class="btn btn-lg btn-default hide-with-opacity jumbotron-buttons" href="/about">Continue along</a>
-				<a type="button" class="btn btn-lg btn-default hide-with-opacity jumbotron-buttons" href="mailto:john@johndeguise.com">Say hello</a> -->
+		<div class="body-wrapper">
+			<div class="jumbotron text-center">
+				<div class="container">
+					<div class="column" style="grid-column: span 6;">
+						<h1 class="jumbotron-header"></h1>
+						<p class="jumbotron-description-one"></p>
+						<p class="jumbotron-description-two"></p>
+					</div>
+					<div class="column" style="grid-column: span 3;">
+						<img class="lang-logo" src="images/profilepic.jpg"/>
+					</div>
+				</div>
 			</div>
+	
+			<footer class="footer">
+				<%- include ("../partials/footer.ejs") %>
+			</footer>
 		</div>
-
-		<footer>
-			<%- include ("../partials/footer.ejs") %>
-		</footer>
 	</body>
 </html>
