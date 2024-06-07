@@ -86,6 +86,20 @@ body {
 	margin-bottom: 0px;
 }
 
+.jumbotron .container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 12px;
+}
+
+.jumbotron .content {
+    grid-column: span 6;
+}
+
+.jumbotron .image {
+    grid-column: span 3;
+}
+
 .jumbotron .btn-primary {
   	border-color: #845ac7; 
 }
@@ -113,6 +127,45 @@ body {
 .jumbotron .lang-logo img {
 	max-width: 100%;
 	height: 100%; 
+}
+
+
+/* Responsive styles */
+@media (max-width: 992px) {
+    .jumbotron .content {
+        grid-column: span 8;
+    }
+
+    .jumbotron .image {
+        grid-column: span 4;
+    }
+}
+
+@media (max-width: 768px) {
+    .jumbotron .container {
+        grid-template-columns: 1fr;
+    }
+
+    .jumbotron .content,
+    .jumbotron .image {
+        grid-column: span 1;
+    }
+
+    .jumbotron .image {
+        order: -1;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .jumbotron .lang-logo {
+        width: 150px;
+        height: 150px;
+    }
+
+    .jumbotron .content {
+        text-align: center;
+    }
 }
 
 .maintenance-container {
