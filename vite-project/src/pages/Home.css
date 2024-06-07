@@ -220,8 +220,8 @@ body {
 }
 
 .navbar, footer, .navbar-nav > li > a {
-	background: #CC5500;
-	color: whitesmoke;
+	background: none;
+	color: black;
 }
 
 @keyframes fadein {
