@@ -15,14 +15,10 @@ function showElements(selector) {
 
 function typeWriter(selector, txt) {
     const selectorOne = '.jumbotron-header';
-    const txtOne = 'Hello!';
+    const txtOne = "Hey, I'm John.";
 
     const selectorTwo = '.jumbotron-description-one';
-    const txtTwo = 'Welcome to my website!';
-
-    const selectorThree = '.jumbotron-description-two';
-    const txtThree = '';
-    // const txtThree = 'This site serves as a project portfolio, as well as the host of our family blog about our travels!';
+    const txtTwo = "I'm a full stack developer.";
     
     const selectorFour = '.jumbotron-buttons';
     const speedMS = 40;
@@ -45,17 +41,6 @@ function typeWriter(selector, txt) {
         } else {
             i = 0;
             partTwoDone = true;
-        }
-        setTimeout(function() {
-            typeWriter();
-        }, speedMS);
-    } else if(!partThreeDone) {
-        if(i < txtThree.length) {
-            document.querySelector(selectorThree).textContent += txtThree.charAt(i);
-            i++;
-        } else {
-            i = 0;
-            partThreeDone = true;
         }
         setTimeout(function() {
             typeWriter();
