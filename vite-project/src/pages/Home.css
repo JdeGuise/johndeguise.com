@@ -219,8 +219,7 @@ body {
 	opacity: 0;
 }
 
-.navbar, footer, .navbar-nav > li > a {
-	background: none;
+.navbar, .navbar-nav > li > a {
 	color: black;
 }
 
