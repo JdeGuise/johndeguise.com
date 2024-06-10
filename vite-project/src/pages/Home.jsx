@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 
 import './../App.css'
 import './Home.css'
@@ -39,8 +39,10 @@ function Home() {
             <About/>
 
             <section id="experience">
-              <Job job={jobs_json.jobs[0]}/>
-              <Job job={jobs_json.jobs[1]}/>
+              {jobs_json.jobs.map(function(job){
+                return <Job key={job} job={job}/>;
+              })}
+
               <a href={Pdf} target ="_blank">View Resume</a>
             </section>
           </div>
