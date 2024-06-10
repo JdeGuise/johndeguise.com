@@ -126,6 +126,20 @@ body {
 	font-size: 3rem;
 }
 
+.job-content {
+	grid-template-columns: repeat(24, 1fr);
+	display: grid;
+}
+
+.year-range {
+	grid-column: span 5;
+	font-size: .8rem;
+}
+
+.job-info {
+	grid-column: span 19;
+}
+
 /* Responsive styles */
 @media (max-width: 992px) {
     .jumbotron .content {
@@ -175,35 +189,27 @@ body {
 }
 
 .m-top-sm {
-  	margin-top: 16px;
+  	margin-top: 3rem;
 }
 
 .m-top-md {
-  	margin-top: 32px;
+  	margin-top: 6rem;
 }
 
 .m-top-lg {
-  	margin-top: 48px;
+  	margin-top: 9rem;
 }
 
 .m-bot-sm {
-  	margin-bottom: 16px;
+  	margin-bottom: 3rem;
 }
 
 .m-bot-md {
-  	margin-bottom: 32px;
+  	margin-bottom: 6rem;
 }
 
 .m-bot-lg {
-  	margin-bottom: 48px;
-}
-
-.d-none {
-	display: none;
-}
-
-.hide-with-opacity {
-	opacity: 0;
+  	margin-bottom: 9rem;
 }
 
 .navbar, .navbar-nav > li > a {
