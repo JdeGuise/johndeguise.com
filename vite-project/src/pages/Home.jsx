@@ -11,6 +11,8 @@ import Footer from '../components/Footer';
 import jobs_json from '../data/jobs.json'
 import startTypeWriter from '../utils/utils';
 
+import Pdf from './../assets/JdeGuise.pdf';
+
 function Home() {
 
   useEffect(() => {
@@ -33,13 +35,14 @@ function Home() {
             <Nav/>
           </div>
 
-          <div className="column summary" id="about">
+          <div className="column summary">
             <About/>
 
-            <div id="experience">
+            <section id="experience">
               <Job job={jobs_json.jobs[0]}/>
               <Job job={jobs_json.jobs[1]}/>
-            </div>
+              <a href={Pdf} target ="_blank">View Resume</a>
+            </section>
           </div>
         </div>
       </div>
