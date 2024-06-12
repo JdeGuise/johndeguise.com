@@ -2,13 +2,21 @@ const express = require('express');
 const path = require('path');
 const PORT = 5001;
 
-express()
-	.use(express.static(path.join(__dirname, 'public')))
-	.set('views', path.join(__dirname, 'views'))
-	.set('view engine', 'ejs')
-	.get('/', (req, res) => res.render('pages/index'))
-	// .get('/blog', (req, res) => res.render('pages/blog'))
-	// .get('/projects', (req, res) => res.render('pages/projects'))
-	.get('/about', (req, res) => res.render('pages/about'))
-	// .get('/maintenance', (req, res) => res.render('pages/maintenance'))
-	.listen(PORT, () => console.log(`Listening on ${ PORT }`));
+const app = express();
+
+app.use(express.static(path.join(__dirname, './vite-project/dist')))
+app.use((req, res, next) => {
+	if (/(.ico|.js|.css|.jpg|.png|.map)$/i.test(req.path)) {
+		next();
+	} else {
+		res.header('Cache-Control', 'private, no-cache, no-store, must-revalidate');
+		res.header('Expires', '-1');
+		res.header('Pragma', 'no-cache');
+		res.sendFile(path.join(__dirname, './vite-project/dist', 'index.html'));
+	}
+});
+
+app.listen(PORT, () => {
+	console.log(`App listening on port ${PORT}`);
+	console.log('Press Ctrl+C to quit.');
+});
