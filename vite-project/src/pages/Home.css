@@ -97,6 +97,14 @@ body {
     grid-column: span 6;
 }
 
+.summary > section > a {
+	color: black;
+}
+
+.summary > section > a:hover {
+	color: #CC5500;
+}
+
 .jumbotron-info {
 	min-height: 160px;
 	min-width: 330px;
