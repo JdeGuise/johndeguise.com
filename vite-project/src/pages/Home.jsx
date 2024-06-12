@@ -24,17 +24,18 @@ function Home() {
     <div className="body-wrapper">
       <div className="jumbotron">
         <div className="container pt-5">
-          <div className="column content">
-            <img className="lang-logo" src="profilepic.jpg" alt="Profile Picture"/>
-            <div className="jumbotron-info">
-              <h1 className="jumbotron-header"></h1>
-              <p className="jumbotron-description-one"></p>
-              <p className="jumbotron-description-two"></p>
+            <div className="column content">
+              <div className="content-details">
+                <img className="lang-logo" src="profilepic.jpg" alt="Profile Picture"/>
+                <div className="jumbotron-info">
+                  <h1 className="jumbotron-header"></h1>
+                  <p className="jumbotron-description-one"></p>
+                  <p className="jumbotron-description-two"></p>
+                </div>
+
+                <Nav/>
+              </div>
             </div>
-
-            <Nav/>
-          </div>
-
           <div className="column summary">
             <About/>
 
