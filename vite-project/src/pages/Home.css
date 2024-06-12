@@ -134,6 +134,14 @@ body {
 	font-size: 3rem;
 }
 
+.about-me > p > a {
+	color: black;
+}
+
+.about-me > p > a:hover {
+	color: #13092B;
+}
+
 .job-anchor {
 	text-decoration: none;
 	color: black;
