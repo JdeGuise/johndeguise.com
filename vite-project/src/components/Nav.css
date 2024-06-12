@@ -1,0 +1,12 @@
+.jumbotron-nav > div {
+	margin: 12px auto;
+}
+
+.jumbotron-nav > div > a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.jumbotron-nav > div > a:hover {
+	color: #CC5500;
+}
