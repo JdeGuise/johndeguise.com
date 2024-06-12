@@ -126,6 +126,15 @@ body {
 	font-size: 3rem;
 }
 
+.job-anchor {
+	text-decoration: none;
+	color: black;
+}
+
+.job-info > p {
+	color: #4e4e4e;
+}
+
 .job-content {
 	grid-template-columns: repeat(24, 1fr);
 	display: grid;
@@ -136,6 +145,7 @@ body {
 	background-color: rgb(241, 241, 241);
 	border-radius: 5px;
 	cursor: pointer;
+	color: black;
 }
 
 .year-range {
