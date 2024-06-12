@@ -129,6 +129,13 @@ body {
 .job-content {
 	grid-template-columns: repeat(24, 1fr);
 	display: grid;
+	margin: 16px 0px;
+}
+
+.job-content:hover {
+	background-color: rgb(241, 241, 241);
+	border-radius: 5px;
+	cursor: pointer;
 }
 
 .year-range {
