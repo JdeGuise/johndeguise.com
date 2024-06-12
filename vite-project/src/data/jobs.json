@@ -3,33 +3,33 @@
         {
             "range" : "2023 - PRESENT",
             "header" : "Senior Software Developer - GoMeddo",
-            "description" : "Summary of things I've done at GoMeddo..."
+            "description" : "Building and maintaining features within the suite of GoMeddo products. Working within a cross-functional team to identify requirements, and to architect and construct scalable solutions. Developing product enhancements hosted within both Salesforce and Amazon Web Services via Apex, Lightning Web Components, React, and Python."
         },
         {
             "range" : "2022 - 2023",
             "header" : "Senior Salesforce Developer - Valtech/Appsolutely",
-            "description" : "Summary of things I did at Appsolutely..."
+            "description" : "Provided consultation, analysis, and implementation services to enhance clients' business capabilities within Salesforce and its integrations. Created test-driven, scalable solutions using HTML/CSS, JavaScript, Apex, and SOQL. Mentored stakeholders and junior developers on effective contributions to the software development cycle."
         },
         {
             "range" : "2019 - 2022",
             "header" : "Senior Salesforce Developer - Ping Identity",
             "previousPositions" : ["Salesforce Developer"],
-            "description" : "Summary of things I did at Ping..."
+            "description" : "Led the adoption of a version control as source of truth model, refactored Apex unit tests to a mock-basis, and implemented test-driven development for Lightning Web Components using Jest. Provided full-stack development services, built and deployed enhancements for Experience, Sales, and Service Clouds, and supported internal stakeholders with Salesforce CPQ. Simulated processes in New Relic to improve SFDC community metrics, oversaw management of CI/CD processes, and mentored junior developers."
         },
         {
             "range" : "2018 - 2019",
             "header" : "Software Engineer - aMind Solutions",
-            "description" : "Summary of things I did at aMind..."
+            "description" : "Provided Salesforce CPQ consulting services and solutions implementation for the B2B market, working with the VP of Customer Solutions to build Salesforce-specific strategies. Designed and built Lightning, JavaScript, and Apex features to enhance Salesforce CPQ."
         },
         {
             "range" : "2017 - 2018",
             "header" : "Developer - Bluewolf, an IBM Company",
-            "description" : "Summary of things I did at Bluewolf/IBM..."
+            "description" : "Designed, developed, and maintained Salesforce web applications for clients; resolved issues in Salesforce and Boomi middleware environments. Collaborated across technical teams to plan and implement solutions, demoed with clients and provided adhoc technical guidance."
         },
         {
             "range" : "2016 - 2017",
             "header" : "Software Developer - ChargeOver",
-            "description" : "Summary of things I did at ChargeOver..."
+            "description" : "Provided implementation services for a recurring billing services web application. Implemented front and backend features with PHP, JavaScript, Java, Python, HTML, CSS, and MySQL. Created and managed monthly feature update newsletters, and provided customer support for clients."
         }
     ]
 }
