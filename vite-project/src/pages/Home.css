@@ -93,6 +93,11 @@ body {
 	margin: 0 auto;
 }
 
+.content-details {
+	position: sticky;
+	top: 0;
+}
+
 .jumbotron .summary {
     grid-column: span 6;
 }

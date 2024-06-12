@@ -9,9 +9,9 @@ function Nav() {
         <div>
           <a href="#experience">Experience</a>
         </div>
-        <div>
+        {/* <div>
           <a href="#contact">Contact</a>
-        </div>
+        </div> */}
       </div>
     )
   }
