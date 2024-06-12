@@ -1,7 +1,11 @@
+html {
+	scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
 	padding: 0;
-    font-family: Arial, sans-serif;
+	font-family: Inter, sans-serif;
 }
 
 .container {
@@ -19,14 +23,6 @@ body {
     display: grid;
     grid-template-rows: auto 1fr auto;
     height: 100%;
-}
-
-.footer {
-	border-top: 1px solid #ccc;
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	height: 120px;
 }
 
 .navbar + .jumbotron {
@@ -86,18 +82,42 @@ body {
 	margin-bottom: 0px;
 }
 
-.jumbotron .btn-primary {
-  	border-color: #845ac7; 
+.jumbotron .container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 12px;
 }
-      
-.jumbotron .btn-primary:hover {
-  	background: #7646c1; 
+
+.jumbotron .content {
+    grid-column: span 6;
+	margin: 0 auto;
+}
+
+.content-details {
+	position: sticky;
+	top: 0;
+}
+
+.jumbotron .summary {
+    grid-column: span 6;
+}
+
+.summary > section > a {
+	color: black;
+}
+
+.summary > section > a:hover {
+	color: #CC5500;
+}
+
+.jumbotron-info {
+	min-height: 160px;
+	min-width: 330px;
 }
 
 .jumbotron p {
   	color: #111111;
-  	max-width: 80%;
-  	margin: 1em auto 2em; 
+  	margin: 1em 4px 1em; 
 }
 
 .jumbotron .lang-logo {
@@ -106,13 +126,89 @@ body {
 	overflow: hidden;
 	width: 200px;
 	height: 200px;
-	margin: auto;
+	margin: 12px auto;
 	border: 2px solid white; 
 }
 
 .jumbotron .lang-logo img {
 	max-width: 100%;
 	height: 100%; 
+}
+
+.jumbotron h1 {
+	font-size: 3rem;
+}
+
+.about-me > p > a {
+	color: black;
+}
+
+.about-me > p > a:hover {
+	color: #13092B;
+}
+
+.job-anchor {
+	text-decoration: none;
+	color: black;
+}
+
+.job-info > p {
+	color: #4e4e4e;
+}
+
+.job-content {
+	grid-template-columns: repeat(24, 1fr);
+	display: grid;
+	margin: 16px 0px;
+}
+
+.job-content:hover {
+	background-color: rgb(241, 241, 241);
+	border-radius: 5px;
+	cursor: pointer;
+	color: black;
+}
+
+.year-range {
+	grid-column: span 5;
+	font-size: .8rem;
+}
+
+.job-info {
+	grid-column: span 19;
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+    .jumbotron .content {
+        grid-column: span 8;
+    }
+
+    .jumbotron .summary {
+        grid-column: span 12;
+    }
+}
+
+@media (max-width: 768px) {
+    .jumbotron .container {
+        grid-template-columns: 1fr;
+    }
+
+    .jumbotron .content,
+	.jumbotron .summary {
+        grid-column: span 1;
+    }
+}
+
+@media (max-width: 576px) {
+    .jumbotron .lang-logo {
+        width: 150px;
+        height: 150px;
+    }
+
+    .jumbotron .content {
+        text-align: center;
+    }
 }
 
 .maintenance-container {
@@ -131,72 +227,31 @@ body {
 }
 
 .m-top-sm {
-  	margin-top: 16px;
+  	margin-top: 3rem;
 }
 
 .m-top-md {
-  	margin-top: 32px;
+  	margin-top: 6rem;
 }
 
 .m-top-lg {
-  	margin-top: 48px;
+  	margin-top: 9rem;
 }
 
 .m-bot-sm {
-  	margin-bottom: 16px;
+  	margin-bottom: 3rem;
 }
 
 .m-bot-md {
-  	margin-bottom: 32px;
+  	margin-bottom: 6rem;
 }
 
 .m-bot-lg {
-  	margin-bottom: 48px;
+  	margin-bottom: 9rem;
 }
 
-.d-none {
-	display: none;
-}
-
-.hide-with-opacity {
-	opacity: 0;
-}
-
-.navbar, footer, .navbar-nav > li > a {
-	background: #CC5500;
-	color: whitesmoke;
-}
-
-.jumbotron-buttons {
-	background-color: #CC5500;
-	border: 1px solid white;
-	border-radius: 0px;
-	color: white;
-	margin: 4px 12px;
-	width: 250px;
-}
-
-.jumbotron-buttons:hover {
-	background-color: none;
-	color: #111111;
-	border: 1px solid #CC5500;
-}
-
-.jumbotron-buttons-fade {
-    -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
-	-webkit-animation-fill-mode: forwards;
-    
-	-moz-animation: fadein 3s; /* Firefox < 16 */
-	-moz-animation-fill-mode: forwards; /* Firefox < 16 */
-        
-	-ms-animation: fadein 3s; /* Internet Explorer */
-	-ms-animation-fill-mode: forwards; /* Internet Explorer */
-    
-	-o-animation: fadein 3s; /* Opera < 12.1 */
-	-o-animation-fill-mode: forwards;
-
-	animation: fadein 3s;
-	animation-fill-mode: forwards;
+.navbar, .navbar-nav > li > a {
+	color: black;
 }
 
 @keyframes fadein {
@@ -222,21 +277,11 @@ body {
     to   { opacity: 1; }
 }
 
-.footer-contents {
-	min-height: 100px;
-	text-align: center;
+/* CSS */
+:root {
+	font-family: Inter, sans-serif;
+	font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
 }
-
-.footer-contents-social > a > img {
-	height: 25px;
-	width: 25px;
-	margin: 24px 8px 0px 8px;
-}
-
-.footer-contents-social > a > img:hover {
-	cursor: pointer;
-}
-
-.footer-contents-copyright {
-	margin-top: 24px;
+@supports (font-variation-settings: normal) {
+	:root { font-family: InterVariable, sans-serif; }
 }
