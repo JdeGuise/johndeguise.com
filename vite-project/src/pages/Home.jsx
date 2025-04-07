@@ -21,9 +21,9 @@ function Home() {
               <div className="content-details">
                 <img className="lang-logo" src="profilepic.jpg" alt="Profile Picture"/>
                 <div className="jumbotron-info">
-                  <h1 className="jumbotron-header"></h1>
-                  <p className="jumbotron-description-one"></p>
-                  <p className="jumbotron-description-two"></p>
+                  <h1 className="jumbotron-header">Hey, I'm John.</h1>
+                  <p className="jumbotron-description-one">Full stack developer.</p>
+                  <p className="jumbotron-description-two">I build useful things for the modern web.</p>
                 </div>
 
                 <Nav/>
