@@ -9,17 +9,10 @@ import Job from '../components/Job';
 import Footer from '../components/Footer';
 
 import jobs_json from '../data/jobs.json'
-import startTypeWriter from '../utils/utils';
 
 import Pdf from './../assets/JdeGuise.pdf';
 
 function Home() {
-
-  useEffect(() => {
-    // This function will be called when the component is mounted
-    startTypeWriter();
-  }, []); // The empty dependency array ensures this runs only once
-
   return (
     <div className="body-wrapper">
       <div className="jumbotron">
