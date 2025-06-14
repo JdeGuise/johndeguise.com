@@ -10,8 +10,6 @@ import Footer from '../components/Footer';
 
 import jobs_json from '../data/jobs.json'
 
-import Pdf from './../assets/JdeGuise.pdf';
-
 function Home() {
   return (
     <div className="body-wrapper">
@@ -36,8 +34,6 @@ function Home() {
               {jobs_json.jobs.map(function(job){
                 return <Job key={job} job={job}/>;
               })}
-
-              <a href={Pdf} target ="_blank">View Resume</a>
             </section>
           </div>
         </div>
