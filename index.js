@@ -4,19 +4,24 @@ const PORT = 5001;
 
 const app = express();
 
-app.use(express.static(path.join(__dirname, './vite-project/dist')))
-app.use((req, res, next) => {
-	if (/(.ico|.js|.css|.jpg|.png|.map)$/i.test(req.path)) {
-		next();
-	} else {
-		res.header('Cache-Control', 'private, no-cache, no-store, must-revalidate');
-		res.header('Expires', '-1');
-		res.header('Pragma', 'no-cache');
+// Serve static assets
+app.use(express.static(path.join(__dirname, './vite-project/dist')));
+
+// Route all other requests to index.html (for React Router)
+app.get('*', (req, res, next) => {
+	// If it doesn't look like a static file, serve index.html
+	if (!req.path.match(/\.[^\/]+$/)) {
 		res.sendFile(path.join(__dirname, './vite-project/dist', 'index.html'));
+	} else {
+		next();
 	}
+});
+
+// Optional: Handle unknown static assets with a 404
+app.use((req, res) => {
+	res.status(404).send('Not found');
 });
 
 app.listen(PORT, () => {
 	console.log(`App listening on port ${PORT}`);
-	console.log('Press Ctrl+C to quit.');
 });
