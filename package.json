@@ -6,7 +6,8 @@
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"dev": "nodemon index.js",
-		"start": "node index.js"
+		"start": "node index.js",
+		"prepare": "husky"
 	},
 	"repository": {
 		"type": "git",
@@ -19,6 +20,7 @@
 	},
 	"homepage": "https://github.com/JdeGuise/johndeguise.com#readme",
 	"devDependencies": {
+		"husky": "^9.1.7",
 		"nodemon": "^2.0.15"
 	},
 	"dependencies": {

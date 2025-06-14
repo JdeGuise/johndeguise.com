@@ -1,6 +1,7 @@
 import './Footer.css'
 
 function Footer() {
+  const currentYear = new Date().getFullYear()
   return (
     <div className="footer">
       <div className="footer-contents">
@@ -11,7 +12,7 @@ function Footer() {
         </div>
 
         <div className="footer-contents-copyright">
-          Copyright 2024 © John deGuise
+          Copyright {currentYear} © John deGuise
         </div>
       </div>
     </div>

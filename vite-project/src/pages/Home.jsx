@@ -9,17 +9,8 @@ import Job from '../components/Job';
 import Footer from '../components/Footer';
 
 import jobs_json from '../data/jobs.json'
-import startTypeWriter from '../utils/utils';
-
-import Pdf from './../assets/JdeGuise.pdf';
 
 function Home() {
-
-  useEffect(() => {
-    // This function will be called when the component is mounted
-    startTypeWriter();
-  }, []); // The empty dependency array ensures this runs only once
-
   return (
     <div className="body-wrapper">
       <div className="jumbotron">
@@ -28,9 +19,9 @@ function Home() {
               <div className="content-details">
                 <img className="lang-logo" src="profilepic.jpg" alt="Profile Picture"/>
                 <div className="jumbotron-info">
-                  <h1 className="jumbotron-header"></h1>
-                  <p className="jumbotron-description-one"></p>
-                  <p className="jumbotron-description-two"></p>
+                  <h1 className="jumbotron-header">Hey, I'm John.</h1>
+                  <p className="jumbotron-description-one">Full stack developer.</p>
+                  <p className="jumbotron-description-two">I build useful things for the modern web.</p>
                 </div>
 
                 <Nav/>
@@ -43,8 +34,6 @@ function Home() {
               {jobs_json.jobs.map(function(job){
                 return <Job key={job} job={job}/>;
               })}
-
-              <a href={Pdf} target ="_blank">View Resume</a>
             </section>
           </div>
         </div>
