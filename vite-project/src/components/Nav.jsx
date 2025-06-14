@@ -1,4 +1,5 @@
 import './Nav.css'
+import Pdf from './../assets/JdeGuise.pdf';
 
 function Nav() {
     return (
@@ -9,9 +10,9 @@ function Nav() {
         <div>
           <a href="#experience">Experience</a>
         </div>
-        {/* <div>
-          <a href="#contact">Contact</a>
-        </div> */}
+        <div>
+          <a href={Pdf} target ="_blank">Resume</a>
+        </div>
       </div>
     )
   }
