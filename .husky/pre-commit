@@ -10,7 +10,7 @@ echo "Running Vite build..."
 
 cd vite-project || exit 1
 
-npm run build || {
+yarn build || {
   echo "❌ Build failed. Commit aborted."
   exit 1
 }
