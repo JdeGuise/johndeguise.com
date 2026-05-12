@@ -1,4 +1,5 @@
-#!/bin/sh
+#!/usr/bin/env bash
+set -euo pipefail
 
 echo "Removing existing project from public_html"
 

@@ -1,23 +1,23 @@
 const express = require('express');
+const helmet = require('helmet');
 const path = require('path');
-const PORT = 5001;
+
+const PORT = process.env.PORT || 5001;
+const DIST_DIR = path.join(__dirname, './vite-project/dist');
 
 const app = express();
 
-// Serve static assets
-app.use(express.static(path.join(__dirname, './vite-project/dist')));
+app.use(helmet());
 
-// Route all other requests to index.html (for React Router)
-app.get('*', (req, res, next) => {
-	// If it doesn't look like a static file, serve index.html
-	if (!req.path.match(/\.[^\/]+$/)) {
-		res.sendFile(path.join(__dirname, './vite-project/dist', 'index.html'));
-	} else {
-		next();
-	}
+app.use(express.static(DIST_DIR));
+
+// SPA fallback: any GET without a file extension serves index.html
+app.use((req, res, next) => {
+	if (req.method !== 'GET') return next();
+	if (req.path.match(/\.[^\/]+$/)) return next();
+	res.sendFile(path.join(DIST_DIR, 'index.html'));
 });
 
-// Optional: Handle unknown static assets with a 404
 app.use((req, res) => {
 	res.status(404).send('Not found');
 });
