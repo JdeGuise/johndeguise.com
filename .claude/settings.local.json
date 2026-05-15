@@ -12,7 +12,12 @@
       "Bash(yarn install *)",
       "Bash(yarn build *)",
       "Bash(node -e \"require\\('./index.js'\\); setTimeout\\(\\(\\) => process.exit\\(0\\), 1500\\)\")",
-      "Bash(yarn audit *)"
+      "Bash(yarn audit *)",
+      "Bash(xargs grep -l \"mail\\\\|email\\\\|send\\\\|contact\")",
+      "Bash(yarn lint *)",
+      "Bash(npx eslint *)",
+      "Bash(node --check index.js)",
+      "Bash(node -e \"require\\('nodemailer'\\); console.log\\('nodemailer resolves OK'\\)\")"
     ]
   }
 }
