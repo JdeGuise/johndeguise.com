@@ -1,0 +1,60 @@
+name: 🚀 Deploy
+
+# Reusable workflow: build the Vite app and FTP-sync it to a target
+# environment directory. Branch-specific workflows call this with their
+# own server-dir.
+on:
+  workflow_call:
+    inputs:
+      server-dir:
+        description: Remote FTP directory to deploy into.
+        required: true
+        type: string
+
+jobs:
+  web-deploy:
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v4
+
+    - name: ⚙️ Setup Node
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+        cache: 'yarn'
+        cache-dependency-path: vite-project/yarn.lock
+
+    - name: 📦 Install dependencies
+      working-directory: vite-project
+      run: yarn install --frozen-lockfile
+
+    - name: 🛠️ Build
+      working-directory: vite-project
+      run: yarn build
+
+    - name: 📂 Sync files
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      with:
+        server: www.johndeguise.com
+        username: ${{ secrets.ftp_username }}
+        password: ${{ secrets.ftp_password }}
+        server-dir: ${{ inputs.server-dir }}
+        # Only ship runtime files: index.js, package.json, and the built
+        # vite-project/dist. Everything below is source/config/secrets.
+        exclude: |
+          **/.git*
+          **/.git*/**
+          **/node_modules/**
+          **/.env
+          **/.env.*
+          .github/**
+          .husky/**
+          .claude/**
+          memory/**
+          setup_scripts/**
+          init_scripts.sh
+          vite-project/src/**
+          vite-project/eslint.config.js
+          vite-project/README.md

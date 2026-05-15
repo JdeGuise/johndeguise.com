@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react'
+import { createPortal } from 'react-dom'
 import './ContactModal.css'
 
-// eslint-disable-next-line react/prop-types
 function ContactModal({ onClose }) {
-  const [form, setForm] = useState({ name: '', phone: '', email: '', message: '' })
+  const [form, setForm] = useState({ name: '', phone: '', email: '', message: '', company: '' })
   const [status, setStatus] = useState('idle') // idle | sending | success | error
   const [errorMessage, setErrorMessage] = useState('')
 
@@ -53,7 +53,9 @@ function ContactModal({ onClose }) {
     }
   }
 
-  return (
+  // Render through a portal on document.body so the fixed overlay escapes
+  // the sticky `.content-details` stacking context and covers the page.
+  return createPortal(
     <div className="contact-modal-overlay" onClick={onClose}>
       <div
         className="contact-modal"
@@ -120,6 +122,21 @@ function ContactModal({ onClose }) {
               />
             </label>
 
+            {/* Honeypot: hidden from real users, but spam bots fill it. */}
+            <div className="contact-hp" aria-hidden="true">
+              <label>
+                Company
+                <input
+                  type="text"
+                  name="company"
+                  value={form.company}
+                  onChange={handleChange}
+                  tabIndex={-1}
+                  autoComplete="off"
+                />
+              </label>
+            </div>
+
             {status === 'error' && (
               <p className="contact-modal-error">{errorMessage}</p>
             )}
@@ -143,7 +160,8 @@ function ContactModal({ onClose }) {
           </form>
         )}
       </div>
-    </div>
+    </div>,
+    document.body
   )
 }
 

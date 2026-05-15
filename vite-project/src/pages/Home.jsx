@@ -11,13 +11,13 @@ import jobs_json from '../data/jobs.json'
 function Home() {
   return (
     <div className="body-wrapper">
-      <div className="jumbotron">
+      <main className="jumbotron">
         <div className="container pt-5">
             <div className="column content">
               <div className="content-details">
-                <img className="lang-logo" src="profilepic.jpg" alt="Profile Picture"/>
+                <img className="lang-logo" src="profilepic.jpg" alt="Profile Picture" width="200" height="200"/>
                 <div className="jumbotron-info">
-                  <h1 className="jumbotron-header">Hey, I'm John.</h1>
+                  <h1 className="jumbotron-header">Hey, I&apos;m John.</h1>
                   <p className="jumbotron-description-one">Full stack developer.</p>
                   <p className="jumbotron-description-two">I build useful things for the modern web.</p>
                 </div>
@@ -30,12 +30,12 @@ function Home() {
 
             <section id="experience">
               {jobs_json.jobs.map(function(job){
-                return <Job key={job} job={job}/>;
+                return <Job key={job.header} job={job}/>;
               })}
             </section>
           </div>
         </div>
-      </div>
+      </main>
       <Footer/>
     </div>
   )
