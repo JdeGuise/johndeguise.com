@@ -1,35 +1,12 @@
+name: 🚀 Deploy website on push
 on:
   push:
     branches:
       - acceptance
-name: 🚀 Deploy website on push
+
 jobs:
-  web-deploy:
-    name: 🎉 Deploy
-    runs-on: ubuntu-latest
-    steps:
-    - name: 🚚 Get latest code
-      uses: actions/checkout@v4
-
-    - name: ⚙️ Setup Node
-      uses: actions/setup-node@v4
-      with:
-        node-version: '20'
-        cache: 'yarn'
-        cache-dependency-path: vite-project/yarn.lock
-
-    - name: 📦 Install dependencies
-      working-directory: vite-project
-      run: yarn install --frozen-lockfile
-
-    - name: 🛠️ Build
-      working-directory: vite-project
-      run: yarn build
-
-    - name: 📂 Sync files
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-      with:
-        server: www.johndeguise.com
-        username: ${{ secrets.ftp_username }}
-        password: ${{ secrets.ftp_password }}
-        server-dir: /acc.johndeguise.com/
+  deploy:
+    uses: ./.github/workflows/deploy.yml
+    with:
+      server-dir: /acc.johndeguise.com/
+    secrets: inherit

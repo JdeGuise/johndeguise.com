@@ -126,3 +126,12 @@
 .contact-modal-success p {
 	margin: 0;
 }
+
+/* Honeypot — moved offscreen so real users never see or tab to it. */
+.contact-hp {
+	position: absolute;
+	left: -5000px;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}

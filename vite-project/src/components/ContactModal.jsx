@@ -1,9 +1,8 @@
 import { useState, useEffect } from 'react'
 import './ContactModal.css'
 
-// eslint-disable-next-line react/prop-types
 function ContactModal({ onClose }) {
-  const [form, setForm] = useState({ name: '', phone: '', email: '', message: '' })
+  const [form, setForm] = useState({ name: '', phone: '', email: '', message: '', company: '' })
   const [status, setStatus] = useState('idle') // idle | sending | success | error
   const [errorMessage, setErrorMessage] = useState('')
 
@@ -119,6 +118,21 @@ function ContactModal({ onClose }) {
                 required
               />
             </label>
+
+            {/* Honeypot: hidden from real users, but spam bots fill it. */}
+            <div className="contact-hp" aria-hidden="true">
+              <label>
+                Company
+                <input
+                  type="text"
+                  name="company"
+                  value={form.company}
+                  onChange={handleChange}
+                  tabIndex={-1}
+                  autoComplete="off"
+                />
+              </label>
+            </div>
 
             {status === 'error' && (
               <p className="contact-modal-error">{errorMessage}</p>

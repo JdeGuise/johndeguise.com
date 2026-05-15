@@ -7,18 +7,38 @@ const express = require('express');
 const helmet = require('helmet');
 const path = require('path');
 const nodemailer = require('nodemailer');
+const rateLimit = require('express-rate-limit');
 
 const PORT = process.env.PORT || 5001;
 const DIST_DIR = path.join(__dirname, './vite-project/dist');
 
 const app = express();
 
+// Running behind the cPanel/LiteSpeed reverse proxy: trust one hop so
+// rate limiting sees the real client IP from X-Forwarded-For.
+app.set('trust proxy', 1);
+
 app.use(helmet());
 app.use(express.json());
 
+// Throttle contact submissions to curb spam and mailer abuse.
+const contactLimiter = rateLimit({
+	windowMs: 15 * 60 * 1000,
+	max: 5,
+	standardHeaders: true,
+	legacyHeaders: false,
+	message: { error: 'Too many messages sent. Please try again in a little while.' },
+});
+
 // Contact form: validate input and send an email via SMTP.
-app.post('/api/contact', async (req, res) => {
-	const { name, phone, email, message } = req.body || {};
+app.post('/api/contact', contactLimiter, async (req, res) => {
+	const { name, phone, email, message, company } = req.body || {};
+
+	// Honeypot: real users never see/fill `company`; bots do. Pretend
+	// success so the bot does not learn it was filtered.
+	if (company) {
+		return res.json({ ok: true });
+	}
 
 	if (!name || !email || !message) {
 		return res
