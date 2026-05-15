@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { createPortal } from 'react-dom'
 import './ContactModal.css'
 
 function ContactModal({ onClose }) {
@@ -52,7 +53,9 @@ function ContactModal({ onClose }) {
     }
   }
 
-  return (
+  // Render through a portal on document.body so the fixed overlay escapes
+  // the sticky `.content-details` stacking context and covers the page.
+  return createPortal(
     <div className="contact-modal-overlay" onClick={onClose}>
       <div
         className="contact-modal"
@@ -157,7 +160,8 @@ function ContactModal({ onClose }) {
           </form>
         )}
       </div>
-    </div>
+    </div>,
+    document.body
   )
 }
 
