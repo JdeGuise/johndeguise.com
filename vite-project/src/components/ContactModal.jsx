@@ -66,7 +66,7 @@ function ContactModal({ onClose }) {
 
         {status === 'success' ? (
           <div className="contact-modal-success">
-            <p>Thanks for reaching out — your message has been sent.</p>
+            <p>Thanks for reaching out! Your message has been sent.</p>
             <button
               type="button"
               className="contact-btn contact-btn-submit"
