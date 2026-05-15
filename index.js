@@ -8,6 +8,7 @@ const helmet = require('helmet');
 const path = require('path');
 const nodemailer = require('nodemailer');
 const rateLimit = require('express-rate-limit');
+const logger = require('./logger');
 
 const PORT = process.env.PORT || 5001;
 const DIST_DIR = path.join(__dirname, './vite-project/dist');
@@ -37,10 +38,12 @@ app.post('/api/contact', contactLimiter, async (req, res) => {
 	// Honeypot: real users never see/fill `company`; bots do. Pretend
 	// success so the bot does not learn it was filtered.
 	if (company) {
+		logger.warn({ ip: req.ip }, 'contact honeypot triggered');
 		return res.json({ ok: true });
 	}
 
 	if (!name || !email || !message) {
+		logger.info({ ip: req.ip }, 'contact rejected: missing required fields');
 		return res
 			.status(400)
 			.json({ error: 'Name, email, and message are required.' });
@@ -48,6 +51,7 @@ app.post('/api/contact', contactLimiter, async (req, res) => {
 
 	const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 	if (!emailPattern.test(email)) {
+		logger.info({ ip: req.ip }, 'contact rejected: invalid email');
 		return res
 			.status(400)
 			.json({ error: 'Please provide a valid email address.' });
@@ -84,9 +88,10 @@ app.post('/api/contact', contactLimiter, async (req, res) => {
 				`Message:\n${message}`,
 		});
 
+		logger.info({ to: process.env.CONTACT_TO || process.env.SMTP_USER }, 'contact email sent');
 		res.json({ ok: true });
 	} catch (err) {
-		console.error('Failed to send contact email:', err);
+		logger.error({ err }, 'contact email failed');
 		res.status(500).json({
 			error: 'Something went wrong sending your message. Please try again later.',
 		});
@@ -107,5 +112,5 @@ app.use((req, res) => {
 });
 
 app.listen(PORT, () => {
-	console.log(`App listening on port ${PORT}`);
+	logger.info({ port: PORT }, 'server started');
 });
