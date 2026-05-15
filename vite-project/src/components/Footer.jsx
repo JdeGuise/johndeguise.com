@@ -3,7 +3,7 @@ import './Footer.css'
 function Footer() {
   const currentYear = new Date().getFullYear()
   return (
-    <div className="footer">
+    <footer className="footer">
       <div className="footer-contents">
         <div className="footer-contents-social">
           <a href="https://www.linkedin.com/in/john-r-deguise"><img src="linkedin.svg" alt="LinkedIn"/></a>
@@ -15,7 +15,7 @@ function Footer() {
           Copyright {currentYear} © John deGuise
         </div>
       </div>
-    </div>
+    </footer>
 
   )
 }
