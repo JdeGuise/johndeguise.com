@@ -20,7 +20,12 @@
       "Bash(node -e \"require\\('nodemailer'\\); console.log\\('nodemailer resolves OK'\\)\")",
       "Bash(git checkout *)",
       "Bash(git rm *)",
-      "Bash(yarn add *)"
+      "Bash(yarn add *)",
+      "WebSearch",
+      "Bash(node -e \"const p=require\\('./package.json'\\); console.log\\('pino:', p.dependencies.pino, ' pino-loki:', p.dependencies['pino-loki']\\)\")",
+      "Bash(node --check logger.js)",
+      "Bash(node -e \"const l=require\\('./logger'\\); l.info\\({test:1},'logger smoke test'\\); l.error\\({err:new Error\\('boom'\\)},'error serializer test'\\); setTimeout\\(\\(\\)=>process.exit\\(0\\),500\\)\")",
+      "Bash(LOKI_URL=http://127.0.0.1:9999 LOKI_CF_ACCESS_ID=x.access LOKI_CF_ACCESS_SECRET=y APP_NAME=test APP_ENV=dev node -e \"const l=require\\('./logger'\\); l.info\\('loki transport init test'\\); setTimeout\\(\\(\\)=>process.exit\\(0\\),600\\)\")"
     ]
   }
 }
