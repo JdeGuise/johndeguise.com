@@ -2,6 +2,13 @@ html {
 	scroll-behavior: smooth;
 }
 
+/* Leave breathing room above anchor targets so the scroll endpoint
+   frames the content instead of butting against the viewport top. */
+#about,
+#experience {
+	scroll-margin-top: 2rem;
+}
+
 body {
     margin: 0;
 	padding: 0;
@@ -19,60 +26,15 @@ body {
     padding: 10px;
 }
 
+/* Replaces Bootstrap's pt-5 utility (Bootstrap removed). */
+.pt-5 {
+    padding-top: 3rem;
+}
+
 .body-wrapper {
     display: grid;
     grid-template-rows: auto 1fr auto;
     height: 100%;
-}
-
-.navbar + .jumbotron {
-	margin-top: -20px; 
-}
-.navbar {
-	line-height: 90px;
-	min-height: 90px;
-	text-align: center;
-}
-
-.navbar .container {
-	display: inline-block;
-	vertical-align: middle;
-}
-
-.navbar-right {
-	padding: 6px 8px 0px 8px;
-	text-transform: uppercase;
-}
-
-.navbar-home-label {
-  	font-size: 28px;
-}
-
-.right-links {
-	border: 1px solid transparent;
-}
-
-.right-links:hover {
-	border: 1px solid white;
-	background: inherit !important;
-}
-
-.left-links:hover {
-	background: none !important;
-	cursor: initial !important;
-}
-
-.nav-pfp {
-	height: 50px;
-	width: 50px;
-	background: inherit;
-	border-radius: 4px;
-	border: 1px solid transparent;
-}
-
-.nav-pfp:hover {
-	border: 1px solid white;
-	cursor: pointer;
 }
 
 .jumbotron {
@@ -248,33 +210,6 @@ body {
 
 .m-bot-lg {
   	margin-bottom: 9rem;
-}
-
-.navbar, .navbar-nav > li > a {
-	color: black;
-}
-
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Firefox < 16 */
-@-moz-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Safari, Chrome and Opera > 12.1 */
-@-webkit-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Internet Explorer */
-@-ms-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
 }
 
 /* CSS */

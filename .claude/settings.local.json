@@ -17,7 +17,9 @@
       "Bash(yarn lint *)",
       "Bash(npx eslint *)",
       "Bash(node --check index.js)",
-      "Bash(node -e \"require\\('nodemailer'\\); console.log\\('nodemailer resolves OK'\\)\")"
+      "Bash(node -e \"require\\('nodemailer'\\); console.log\\('nodemailer resolves OK'\\)\")",
+      "Bash(git checkout *)",
+      "Bash(git rm *)"
     ]
   }
 }
