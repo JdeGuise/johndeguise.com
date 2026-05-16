@@ -4,38 +4,38 @@
             "range" : "2023 - PRESENT",
             "header" : "Senior Software Developer - GoMeddo",
             "companyUrl" : "https://www.gomeddo.com",
-            "description" : "At GoMeddo, I build and maintain features across our product suite, working closely with a cross-functional team to define requirements and design scalable solutions. My work spans both the Salesforce platform and Amazon Web Services, where I develop enhancements using React, Python, Lightning Web Components, and Apex."
+            "description" : "I build and maintain features across GoMeddo’s product suite, partnering with the team on everything from early requirements to release. My work spans the Salesforce platform and AWS, with day-to-day development in React, Python, Lightning Web Components, and Apex."
         },
         {
             "range" : "2022 - 2023",
             "header" : "Senior Salesforce Developer - Valtech/Appsolutely",
             "companyUrl" : "https://www.valtech.com",
-            "description": "Delivered consulting, analysis, and implementation services to help clients optimize their use of Salesforce and its integrations. Designed and built scalable, test-driven solutions using HTML/CSS, JavaScript, Apex, and SOQL. Also provided mentorship to stakeholders and junior developers, guiding effective participation throughout the software development lifecycle."
+            "description": "I consulted with clients to analyze, optimize, and extend their Salesforce environments and integrations, building well-tested solutions in JavaScript, Apex, and SOQL. I also coached client teams and junior developers through the delivery process."
         },
         {
             "range" : "2019 - 2022",
             "header" : "Senior Salesforce Developer - Ping Identity",
             "companyUrl" : "https://www.pingidentity.com",
             "previousPositions" : ["Salesforce Developer"],
-            "description" : "Led the transition to a version control–driven development model, refactored Apex unit tests to use mocking frameworks, and introduced test-driven development practices for Lightning Web Components using Jest. Delivered full-stack development across Experience, Sales, and Service Clouds, while supporting internal stakeholders with Salesforce CPQ enhancements. Simulated key processes in New Relic to improve Salesforce Community Cloud metrics, managed CI/CD workflows, and mentored junior developers throughout the development lifecycle."
+            "description" : "I led the move to a version-control-driven development model and modernized how we tested — refactoring Apex unit tests around mocking frameworks and introducing test-driven development for Lightning Web Components with Jest. I delivered full-stack work across Experience, Sales, and Service Clouds, managed CI/CD pipelines, profiled and improved platform performance with New Relic, and supported internal teams with CPQ enhancements."
         },
         {
             "range" : "2018 - 2019",
             "header" : "Software Engineer - aMind Solutions",
             "companyUrl" : "https://amindsolutions.com",
-            "description" : "Delivered Salesforce CPQ consulting and implementation services for B2B clients, collaborating closely with the VP of Customer Solutions to develop tailored Salesforce strategies. Designed and developed features using Lightning Components, JavaScript, and Apex to extend and enhance Salesforce CPQ functionality."
+            "description" : "I delivered Salesforce CPQ consulting and implementation for B2B clients, working closely with the VP of Customer Solutions to shape strategy for each engagement. I built features in Lightning Components, JavaScript, and Apex that extended CPQ to match how each client actually sold."
         },
         {
             "range" : "2017 - 2018",
             "header" : "Developer - Bluewolf, an IBM Company",
             "companyUrl" : "https://www.ibm.com/consulting/salesforce",
-            "description" : "Designed, developed, and maintained Salesforce web applications for clients, troubleshooting issues in both Salesforce and Boomi middleware environments. Collaborated with cross-functional technical teams to plan and implement solutions, conducted client demos, and provided ad-hoc technical guidance as needed."
+            "description" : "I designed, built, and maintained Salesforce web applications for clients, troubleshooting issues across both Salesforce and Boomi middleware. I worked with technical teams to plan and ship solutions, ran client demos, and provided hands-on technical guidance throughout each project."
         },
         {
             "range" : "2016 - 2017",
             "header" : "Software Developer - ChargeOver",
             "companyUrl" : "https://chargeover.com",
-            "description" : "Delivered implementation services for a recurring billing web application, developing both front-end and back-end features using PHP, JavaScript, Java, Python, HTML, CSS, and MySQL. Managed monthly feature update newsletters and provided ongoing customer support to clients."
+            "description" : "I built front-end and back-end features for a recurring-billing web application using PHP, JavaScript, Java, Python, and MySQL. I also handled customer implementations and wrote the monthly feature-update newsletter."
         }
     ]
 }

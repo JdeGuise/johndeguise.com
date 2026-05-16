@@ -18,8 +18,8 @@ function Home() {
                 <img className="lang-logo" src="profilepic.jpg" alt="Profile Picture" width="200" height="200"/>
                 <div className="jumbotron-info">
                   <h1 className="jumbotron-header">Hey, I&apos;m John.</h1>
-                  <p className="jumbotron-description-one">Full stack developer.</p>
-                  <p className="jumbotron-description-two">I build useful things for the modern web.</p>
+                  <p className="jumbotron-description-one">Senior software engineer.</p>
+                  <p className="jumbotron-description-two">I build software that makes complex work feel simpler.</p>
                 </div>
 
                 <Nav/>

@@ -19,6 +19,17 @@ const app = express();
 // rate limiting sees the real client IP from X-Forwarded-For.
 app.set('trust proxy', 1);
 
+// Canonical host: 301 www -> bare domain so search engines see a single
+// URL (matches the <link rel="canonical"> in index.html). GET/HEAD only,
+// so a stray POST to www still reaches its handler instead of being lost.
+app.use((req, res, next) => {
+	const host = req.headers.host || '';
+	if ((req.method === 'GET' || req.method === 'HEAD') && host.startsWith('www.')) {
+		return res.redirect(301, `https://${host.slice(4)}${req.originalUrl}`);
+	}
+	next();
+});
+
 app.use(helmet());
 app.use(express.json());
 
