@@ -38,38 +38,51 @@ body {
 }
 
 .jumbotron {
-  	color: #111111;
-	background-color: white;
-  	padding-bottom: 80px; 
+  	color: var(--text-strong);
+	background-color: var(--bg);
+  	padding-bottom: 80px;
 	margin-bottom: 0px;
+	transition: background-color 0.25s ease, color 0.25s ease;
 }
 
+/* 16 tracks split 5/11. Combined with the wider #root max-width, this keeps
+   the left column at its original width while the right column gains ~10%. */
 .jumbotron .container {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(16, 1fr);
     gap: 12px;
 }
 
+/* Left column is intentionally narrower than the right: it holds only the
+   photo, intro and nav, while the summary column carries the bulk of the
+   content (about + job history). */
 .jumbotron .content {
-    grid-column: span 6;
+    grid-column: span 5;
 	margin: 0 auto;
 }
 
+/* Text stays left-aligned; cluster centres in any leftover column whitespace.
+   Cap is wide enough to keep the tagline on a single line. */
 .content-details {
 	position: sticky;
 	top: 0;
+	max-width: 440px;
+	margin: 0 auto;
 }
 
 .jumbotron .summary {
-    grid-column: span 6;
+    grid-column: span 11;
+	/* Nudge the whole right column 64px further right (10px is the base
+	   .column padding). Reset on narrower screens — see media query below. */
+	padding-left: 154px;
 }
 
 .summary > section > a {
-	color: black;
+	color: var(--link);
 }
 
 .summary > section > a:hover {
-	color: #CC5500;
+	color: var(--link-hover);
 }
 
 .jumbotron-info {
@@ -78,8 +91,8 @@ body {
 }
 
 .jumbotron p {
-  	color: #111111;
-  	margin: 1em 4px 1em; 
+  	color: var(--text);
+  	margin: 1em 4px 1em;
 }
 
 .jumbotron .lang-logo {
@@ -89,7 +102,7 @@ body {
 	width: 200px;
 	height: 200px;
 	margin: 12px auto;
-	border: 2px solid white; 
+	border: 2px solid var(--pic-border);
 }
 
 .jumbotron .lang-logo img {
@@ -102,20 +115,20 @@ body {
 }
 
 .about-me > p > a {
-	color: black;
+	color: var(--link);
 }
 
 .about-me > p > a:hover {
-	color: #13092B;
+	color: var(--link-hover);
 }
 
 .job-anchor {
 	text-decoration: none;
-	color: black;
+	color: var(--link);
 }
 
 .job-info > p {
-	color: #4e4e4e;
+	color: var(--text-muted);
 }
 
 /* Job header is an <h2> for correct heading order; keep it visually small. */
@@ -131,10 +144,10 @@ body {
 }
 
 .job-content:hover {
-	background-color: rgb(241, 241, 241);
+	background-color: var(--surface-hover);
 	border-radius: 5px;
 	cursor: pointer;
-	color: black;
+	color: var(--text-strong);
 }
 
 .year-range {
@@ -149,11 +162,12 @@ body {
 /* Responsive styles */
 @media (max-width: 992px) {
     .jumbotron .content {
-        grid-column: span 8;
+        grid-column: span 11;
     }
 
     .jumbotron .summary {
-        grid-column: span 12;
+        grid-column: span 16;
+        padding-left: 10px;
     }
 }
 

@@ -1,7 +1,14 @@
+import { useEffect } from 'react'
 import './../App.css'
 import './Artie.css'
 
 function Artie() {
+  // Dark mode is a Home-page-only feature; this memorial page stays light
+  // regardless of the visitor's stored preference or browser setting.
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', 'light')
+  }, [])
+
   return (
     <div className="to-artie">
       <div>

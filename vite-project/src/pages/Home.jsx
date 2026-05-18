@@ -5,12 +5,14 @@ import Nav from '../components/Nav';
 import About from '../components/About';
 import Job from '../components/Job';
 import Footer from '../components/Footer';
+import ThemeToggle from '../components/ThemeToggle';
 
 import jobs_json from '../data/jobs.json'
 
 function Home() {
   return (
     <div className="body-wrapper">
+      <ThemeToggle/>
       <main className="jumbotron">
         <div className="container pt-5">
             <div className="column content">
