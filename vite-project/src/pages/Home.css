@@ -87,7 +87,6 @@ body {
 
 .jumbotron-info {
 	min-height: 160px;
-	min-width: 330px;
 }
 
 .jumbotron p {
@@ -180,6 +179,21 @@ body {
 	.jumbotron .summary {
         grid-column: span 1;
     }
+
+    /* Stack each job row: the 24-track grid leaves the year column too
+       narrow on phones, so the date wraps awkwardly beside the text. */
+    .job-content {
+        grid-template-columns: 1fr;
+    }
+
+    .year-range,
+    .job-info {
+        grid-column: span 1;
+    }
+
+    .year-range {
+        margin-bottom: 4px;
+    }
 }
 
 @media (max-width: 576px) {
@@ -190,6 +204,11 @@ body {
 
     .jumbotron .content {
         text-align: center;
+    }
+
+    /* Down-scale the heading so it fits the narrow phone column cleanly. */
+    .jumbotron h1 {
+        font-size: 2.25rem;
     }
 }
 

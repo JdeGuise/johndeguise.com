@@ -1,5 +1,7 @@
 .theme-toggle {
-	position: fixed;
+	/* Absolute (not fixed) so the toggle stays at the top of the page and
+	   scrolls away with the content instead of tracking the viewport. */
+	position: absolute;
 	top: 1rem;
 	right: 1rem;
 	/* Below the contact modal overlay (z-index 1000) so the modal covers it. */
