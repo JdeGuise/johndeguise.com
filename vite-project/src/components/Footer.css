@@ -1,5 +1,5 @@
 .footer {
-	border-top: 1px solid #ccc;
+	border-top: 1px solid var(--border);
 	position: relative;
 	bottom: 0;
 	width: 100%;
@@ -7,7 +7,7 @@
 }
 
 .footer {
-	color: black;
+	color: var(--text);
 }
 
 .footer-contents {
@@ -23,6 +23,11 @@
 
 .footer-contents-social > a > img:hover {
 	cursor: pointer;
+}
+
+/* The social icons are solid-black SVGs; invert them to white in dark mode. */
+:root[data-theme="dark"] .footer-contents-social > a > img {
+	filter: invert(1);
 }
 
 .footer-contents-copyright {
