@@ -6,3 +6,11 @@
   box-sizing: border-box;
   text-align: left;
 }
+
+/* Trim the fixed 2rem padding on phones — at 320-400px wide it eats ~40%
+   of the screen and leaves the content column cramped. */
+@media (max-width: 600px) {
+  #root {
+    padding: 1rem;
+  }
+}
