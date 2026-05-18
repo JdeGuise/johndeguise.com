@@ -21,6 +21,19 @@
     <meta name="twitter:title" content="John deGuise — Senior Software Engineer" />
     <meta name="twitter:description" content="Senior software engineer building reliable, intuitive software for the web. A decade across consulting and product teams — currently at GoMeddo in Utrecht." />
     <meta name="twitter:image" content="https://johndeguise.com/profilepic.jpg" />
+
+    <!-- Apply the saved/preferred theme before first paint to avoid a flash. -->
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem('theme');
+          var theme = (stored === 'dark' || stored === 'light')
+            ? stored
+            : (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+          document.documentElement.setAttribute('data-theme', theme);
+        } catch (e) { /* ignore */ }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>

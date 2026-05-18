@@ -3,14 +3,50 @@
   line-height: 1.5;
   font-weight: 400;
 
+  /* Light theme (default). Dark overrides live in [data-theme="dark"] below. */
   color-scheme: light;
-  color: #213547;
-  background-color: #ffffff;
+  --bg: #ffffff;
+  --text: #213547;
+  --text-strong: #111111;
+  --text-muted: #4e4e4e;
+  --link: #000000;
+  --link-hover: #CC5500;
+  --surface-hover: rgb(241, 241, 241);
+  --border: #cccccc;
+  --pic-border: #ffffff;
+  --modal-bg: #ffffff;
+  --modal-shadow: rgba(0, 0, 0, 0.35);
+  --input-bg: #ffffff;
+  --btn-cancel-bg: #f1f1f1;
+
+  color: var(--text);
+  background-color: var(--bg);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #15171a;
+  --text: #d6dde3;
+  --text-strong: #f1f3f5;
+  --text-muted: #9aa4ad;
+  --link: #d6dde3;
+  --link-hover: #ff7a29;
+  --surface-hover: #23262b;
+  --border: #3a3f45;
+  --pic-border: #2a2e33;
+  --modal-bg: #1d2024;
+  --modal-shadow: rgba(0, 0, 0, 0.6);
+  --input-bg: #15171a;
+  --btn-cancel-bg: #2a2e33;
+}
+
+html {
+  transition: background-color 0.25s ease, color 0.25s ease;
 }
 
 a {

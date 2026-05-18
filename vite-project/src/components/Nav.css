@@ -8,5 +8,5 @@
 }
 
 .jumbotron-nav > div > a:hover {
-	color: #CC5500;
+	color: var(--link-hover);
 }
