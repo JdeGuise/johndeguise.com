@@ -1,0 +1,20 @@
+{
+    "services" : [
+        {
+            "title" : "Full-stack product development",
+            "description" : "Have an idea, or a half-built product that needs to ship? I design and build web applications end to end: React on the front, Python and Node on the back, deployed on AWS. You get something real in users’ hands, not just a prototype."
+        },
+        {
+            "title" : "AI implementation & solutions",
+            "description" : "AI is only worth it where it actually moves the needle. I bring LLMs into your product and workflows: copilots and chat, retrieval over your own data (RAG), agents, and automation. And I’ll tell you honestly where it helps and where it’s hype."
+        },
+        {
+            "title" : "Salesforce & platform consulting",
+            "description" : "A decade of Salesforce delivery: Apex, Lightning Web Components, CPQ, integrations, and CI/CD. I extend and untangle complex orgs so the platform fits how your business actually sells and operates."
+        },
+        {
+            "title" : "Fractional & advisory",
+            "description" : "Need senior engineering judgment without a full-time hire? I work as a fractional lead or technical advisor: architecture reviews, technical direction, and hands-on help getting a team unstuck and shipping."
+        }
+    ]
+}

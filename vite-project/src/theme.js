@@ -30,6 +30,6 @@ export function storeTheme(theme) {
   try {
     localStorage.setItem(THEME_KEY, theme)
   } catch {
-    /* localStorage unavailable (private mode, etc.) — choice just won't persist. */
+    /* localStorage unavailable (private mode, etc.); choice just won't persist. */
   }
 }

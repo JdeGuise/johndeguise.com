@@ -15,7 +15,7 @@ function Job(props) {
             {props.job.range}
           </div>
           <div className="column job-info">
-            <h2>{props.job.header}</h2>
+            <h3>{props.job.header}</h3>
             <p>{props.job.description}</p>
           </div>
       </div>
