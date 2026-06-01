@@ -11,10 +11,7 @@ function Nav() {
           <a href="#about">About</a>
         </div>
         <div>
-          <a href="#experience">Experience</a>
-        </div>
-        <div>
-          <a href="/assets/JdeGuise.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+          <a href="#experience">Track Record</a>
         </div>
         <div>
           <a
@@ -24,7 +21,7 @@ function Nav() {
               setIsContactOpen(true)
             }}
           >
-            Contact
+            Let&apos;s talk
           </a>
         </div>
 

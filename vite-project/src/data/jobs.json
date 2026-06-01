@@ -4,7 +4,7 @@
             "range" : "2023 - PRESENT",
             "header" : "Senior Software Developer - GoMeddo",
             "companyUrl" : "https://www.gomeddo.com",
-            "description" : "I build and maintain features across GoMeddo’s product suite, partnering with the team on everything from early requirements to release. My work spans the Salesforce platform and AWS, with day-to-day development in React, Python, Lightning Web Components, and Apex."
+            "description" : "I ship full-stack features across GoMeddo’s product suite, owning the work from early requirements through release, and I lead much of our push to use AI to ship faster and more consistently. My day-to-day spans React, Python, Apex, and AWS."
         },
         {
             "range" : "2022 - 2023",
@@ -17,7 +17,7 @@
             "header" : "Senior Salesforce Developer - Ping Identity",
             "companyUrl" : "https://www.pingidentity.com",
             "previousPositions" : ["Salesforce Developer"],
-            "description" : "I led the move to a version-control-driven development model and modernized how we tested — refactoring Apex unit tests around mocking frameworks and introducing test-driven development for Lightning Web Components with Jest. I delivered full-stack work across Experience, Sales, and Service Clouds, managed CI/CD pipelines, profiled and improved platform performance with New Relic, and supported internal teams with CPQ enhancements."
+            "description" : "I led the move to a version-control-driven development model and modernized how we tested, refactoring Apex unit tests around mocking frameworks and introducing test-driven development for Lightning Web Components with Jest. I delivered full-stack work across Experience, Sales, and Service Clouds, managed CI/CD pipelines, profiled and improved platform performance with New Relic, and supported internal teams with CPQ enhancements."
         },
         {
             "range" : "2018 - 2019",

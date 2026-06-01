@@ -1,0 +1,31 @@
+.services-list {
+	display: flex;
+	flex-direction: column;
+}
+
+/* Editorial dividers instead of boxed cards: each service is a row set off
+   by hairline rules, letting whitespace and type do the work. */
+.service-item {
+	padding: 1.3rem 0;
+	border-top: 1px solid var(--rule);
+}
+
+.service-item:last-child {
+	border-bottom: 1px solid var(--rule);
+}
+
+.service-title {
+	font-family: var(--font-display);
+	font-size: 1.3rem;
+	font-weight: 500;
+	color: var(--text-strong);
+	margin: 0 0 0.4rem;
+}
+
+/* Scoped under .services to outrank the broad `.jumbotron p` rule, which
+   otherwise overrides this margin and color on the nested <p>. */
+.services .service-description {
+	font-size: 0.95rem;
+	color: var(--text-muted);
+	margin: 0;
+}

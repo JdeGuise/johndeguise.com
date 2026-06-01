@@ -11,6 +11,10 @@ function Footer() {
           <a href="mailto:john@johndeguise.com"><img src="email.svg" alt="Email"/></a>
         </div>
 
+        <div className="footer-contents-resume">
+          <a href="/assets/JdeGuise.pdf" target="_blank" rel="noopener noreferrer">Résumé</a>
+        </div>
+
         <div className="footer-contents-copyright">
           Copyright {currentYear} © John deGuise
         </div>
