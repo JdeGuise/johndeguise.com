@@ -1,3 +1,5 @@
+import { useEffect } from 'react'
+
 import './../App.css'
 import './Home.css'
 
@@ -6,6 +8,7 @@ import About from '../components/About';
 import Services from '../components/Services';
 import Approach from '../components/Approach';
 import Job from '../components/Job';
+import SectionHeader from '../components/SectionHeader';
 import ClosingCta from '../components/ClosingCta';
 import Footer from '../components/Footer';
 import ThemeToggle from '../components/ThemeToggle';
@@ -13,6 +16,24 @@ import ThemeToggle from '../components/ThemeToggle';
 import jobs_json from '../data/jobs.json'
 
 function Home() {
+  // Reveal sections as they scroll into view, echoing the hero's entrance.
+  useEffect(() => {
+    const els = document.querySelectorAll('.reveal')
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('reveal-in')
+            observer.unobserve(entry.target)
+          }
+        })
+      },
+      { threshold: 0.12, rootMargin: '0px 0px -10% 0px' }
+    )
+    els.forEach((el) => observer.observe(el))
+    return () => observer.disconnect()
+  }, [])
+
   return (
     <div className="body-wrapper">
       <ThemeToggle/>
@@ -38,8 +59,8 @@ function Home() {
 
             <Approach/>
 
-            <section id="experience">
-              <h2 className="experience-heading">Track Record</h2>
+            <section className="reveal" id="experience">
+              <SectionHeader num="03" label="Track Record" />
               {jobs_json.jobs.map(function(job){
                 return <Job key={job.header} job={job}/>;
               })}

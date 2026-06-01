@@ -7,7 +7,7 @@ function ClosingCta() {
   const [isContactOpen, setIsContactOpen] = useState(false)
 
   return (
-    <section className="closing-cta" id="contact" aria-label="Get in touch">
+    <section className="closing-cta reveal" id="contact" aria-label="Get in touch">
       <h2 className="closing-cta-heading">{cta_json.heading}</h2>
       <p className="closing-cta-body">{cta_json.body}</p>
 

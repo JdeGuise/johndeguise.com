@@ -2,6 +2,27 @@ html {
 	scroll-behavior: smooth;
 }
 
+/* Scroll-reveal: sections fade and rise as they enter the viewport (the
+   reveal-in class is toggled by an IntersectionObserver in Home). */
+.reveal {
+	opacity: 0;
+	transform: translateY(16px);
+	transition: opacity 0.6s ease, transform 0.6s cubic-bezier(0.2, 0.6, 0.2, 1);
+}
+
+.reveal.reveal-in {
+	opacity: 1;
+	transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.reveal {
+		opacity: 1;
+		transform: none;
+		transition: none;
+	}
+}
+
 /* Leave breathing room above anchor targets so the scroll endpoint
    frames the content instead of butting against the viewport top. */
 #about,
@@ -67,7 +88,9 @@ body {
    Cap is wide enough to keep the tagline on a single line. */
 .content-details {
 	position: sticky;
-	top: 0;
+	/* Keep a little breathing room above the photo when the column sticks,
+	   so it stays framed instead of butting against the viewport top. */
+	top: 2rem;
 	max-width: 440px;
 	margin: 0 auto;
 }
@@ -122,19 +145,13 @@ body {
 	overflow: hidden;
 	width: 200px;
 	height: 200px;
-	margin: 12px auto;
+	margin: 12px auto 1.75rem;
 	border: 2px solid var(--pic-border);
 }
 
 .jumbotron .lang-logo img {
 	max-width: 100%;
 	height: 100%;
-	filter: grayscale(1) contrast(1.03);
-	transition: filter 0.4s ease;
-}
-
-.jumbotron .lang-logo:hover img {
-	filter: grayscale(0);
 }
 
 .jumbotron h1 {
@@ -202,16 +219,10 @@ body {
 	color: var(--text-muted);
 }
 
-/* Section heading for Selected Work; matches the Services/Approach headings. */
-.experience-heading {
-	font-size: 1rem;
-	color: var(--text-strong);
-	margin: 0 0 1rem;
-}
-
-/* Job header is an <h3> (section heading is the <h2>); keep it visually small. */
+/* Job header is an <h3> (section heading is the <h2>); display serif. */
 .job-info h3 {
-	font-size: 1rem;
+	font-size: 1.05rem;
+	font-weight: 500;
 	margin: 0;
 }
 
@@ -230,7 +241,11 @@ body {
 
 .year-range {
 	grid-column: span 5;
-	font-size: .8rem;
+	font-family: var(--font-mono);
+	font-size: .72rem;
+	letter-spacing: 0.02em;
+	color: var(--text-muted);
+	padding-top: 0.2rem;
 }
 
 .job-info {
