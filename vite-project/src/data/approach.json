@@ -1,0 +1,18 @@
+{
+    "heading" : "How I work with AI",
+    "intro" : "I think AI is here to stay, and before long it’ll be as ordinary and as important to the tech conversation as the smartphone. I’d rather help people use it well than hype it, so most of my recent work has been about making AI genuinely useful for a team, not just impressive in a demo.",
+    "points" : [
+        {
+            "label" : "Reusable AI tooling for teams",
+            "description" : "I build reusable Claude Code skills so a whole team gets consistent results from AI, not just whoever happens to write the best prompt. One walks a repo file by file, checks each file type against our standards for spacing, linting, and naming, auto-formats the safe fixes, and flags the rest for review. It brought legacy codebases up to modern standards in a fraction of the usual time, and ended the cycle of pull requests bouncing on the same formatting notes."
+        },
+        {
+            "label" : "Smarter context for AI",
+            "description" : "I built a concept-linked knowledge map that AI tools can reference instead of fetching documentation page by page. It’s generated from our existing docs, so the model gets the context it needs up front rather than hunting for it mid-task. That cut token usage sharply and keeps long conversations coherent, since the important context lives in the map and not only in the chat history."
+        },
+        {
+            "label" : "AI on Salesforce since the start",
+            "description" : "I led an Agentforce integration and took part in Salesforce’s original pilot, so I’ve worked with AI on the platform since it launched. Outside of work, I spend a lot of time learning and testing the newest capabilities available. I wire Claude and n8n into my home lab, automating everything from smart-device control to keeping track of the dates and details I’d otherwise forget. It keeps me close to what’s actually possible."
+        }
+    ]
+}

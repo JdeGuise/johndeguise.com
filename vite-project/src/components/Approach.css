@@ -1,0 +1,37 @@
+.approach-heading {
+	font-size: 1rem;
+	color: var(--text-strong);
+	margin: 0 0 1rem;
+}
+
+/* Scoped under .approach so these win over the broad `.jumbotron p` rule,
+   which otherwise forces its own margin and color onto every nested <p>. */
+.approach .approach-intro {
+	color: var(--text-muted);
+	margin: 0 0 2.5rem;
+}
+
+.approach-points {
+	display: flex;
+	flex-direction: column;
+	gap: 1.25rem;
+}
+
+/* Orange accent rail on each point: gives the section structure and rhythm
+   without boxing the longer paragraphs the way the Services cards do. */
+.approach-point {
+	border-left: 3px solid var(--link-hover);
+	padding-left: 1rem;
+}
+
+.approach-point-label {
+	font-size: 1rem;
+	color: var(--text-strong);
+	margin: 0 0 0.35rem;
+}
+
+.approach .approach-point-description {
+	font-size: 0.9rem;
+	color: var(--text-muted);
+	margin: 0;
+}

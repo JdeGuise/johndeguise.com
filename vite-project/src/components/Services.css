@@ -1,0 +1,44 @@
+.services-heading {
+	font-size: 1rem;
+	color: var(--text-strong);
+	margin: 0 0 1rem;
+}
+
+/* Two-up on desktop; collapses to one column on narrow screens (below). */
+.services-grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 16px;
+}
+
+.service-card {
+	border: 1px solid var(--border);
+	border-radius: 8px;
+	padding: 20px;
+	transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.service-card:hover {
+	background-color: var(--surface-hover);
+	border-color: var(--link-hover);
+}
+
+.service-title {
+	font-size: 1rem;
+	color: var(--text-strong);
+	margin: 0 0 0.5rem;
+}
+
+/* Scoped under .services to outrank the broad `.jumbotron p` rule, which
+   otherwise overrides this margin and color on the nested <p>. */
+.services .service-description {
+	font-size: 0.9rem;
+	color: var(--text-muted);
+	margin: 0;
+}
+
+@media (max-width: 768px) {
+	.services-grid {
+		grid-template-columns: 1fr;
+	}
+}

@@ -26,7 +26,13 @@
       "Bash(node --check logger.js)",
       "Bash(node -e \"const l=require\\('./logger'\\); l.info\\({test:1},'logger smoke test'\\); l.error\\({err:new Error\\('boom'\\)},'error serializer test'\\); setTimeout\\(\\(\\)=>process.exit\\(0\\),500\\)\")",
       "Bash(LOKI_URL=http://127.0.0.1:9999 LOKI_CF_ACCESS_ID=x.access LOKI_CF_ACCESS_SECRET=y APP_NAME=test APP_ENV=dev node -e \"const l=require\\('./logger'\\); l.info\\('loki transport init test'\\); setTimeout\\(\\(\\)=>process.exit\\(0\\),600\\)\")",
-      "Bash(git -C \"C:\\\\Users\\\\johnr\\\\Documents\\\\Personal Stuff\\\\Tech Projects\\\\Github-Projects\\\\johndeguise.com\" checkout -- vite-project/dist)"
+      "Bash(git -C \"C:\\\\Users\\\\johnr\\\\Documents\\\\Personal Stuff\\\\Tech Projects\\\\Github-Projects\\\\johndeguise.com\" checkout -- vite-project/dist)",
+      "Bash(node -e \"JSON.parse\\(require\\('fs'\\).readFileSync\\('src/data/about.json','utf8'\\)\\); JSON.parse\\(require\\('fs'\\).readFileSync\\('src/data/jobs.json','utf8'\\)\\); console.log\\('JSON valid'\\)\")",
+      "Bash(node -e \"JSON.parse\\(require\\('fs'\\).readFileSync\\('src/data/services.json','utf8'\\)\\); console.log\\('services.json valid'\\)\")",
+      "Bash(node -e \"['about','jobs','services'].forEach\\(f=>JSON.parse\\(require\\('fs'\\).readFileSync\\('src/data/'+f+'.json','utf8'\\)\\)\\);console.log\\('JSON valid'\\)\")",
+      "Bash(node -e \"JSON.parse\\(require\\('fs'\\).readFileSync\\('src/data/about.json','utf8'\\)\\);console.log\\('about.json valid'\\)\")",
+      "Bash(node -e \"['approach','jobs'].forEach\\(f=>JSON.parse\\(require\\('fs'\\).readFileSync\\('src/data/'+f+'.json','utf8'\\)\\)\\);console.log\\('JSON valid'\\)\")",
+      "Bash(node -e \"JSON.parse\\(require\\('fs'\\).readFileSync\\('src/data/approach.json','utf8'\\)\\);console.log\\('approach.json valid'\\)\")"
     ]
   }
 }

@@ -5,6 +5,8 @@ html {
 /* Leave breathing room above anchor targets so the scroll endpoint
    frames the content instead of butting against the viewport top. */
 #about,
+#services,
+#ai,
 #experience {
 	scroll-margin-top: 2rem;
 }
@@ -73,7 +75,7 @@ body {
 .jumbotron .summary {
     grid-column: span 11;
 	/* Nudge the whole right column 64px further right (10px is the base
-	   .column padding). Reset on narrower screens — see media query below. */
+	   .column padding). Reset on narrower screens, see media query below. */
 	padding-left: 154px;
 }
 
@@ -92,6 +94,22 @@ body {
 .jumbotron p {
   	color: var(--text);
   	margin: 1em 4px 1em;
+}
+
+/* Invitation hook under the intro: full-weight and strong so it reads as a
+   prompt to reach out, not as fine print. Pairs with the contact CTA. */
+.jumbotron-cta {
+	color: var(--text-strong);
+	font-weight: 500;
+}
+
+.jumbotron-cta-link {
+	color: var(--link);
+	text-decoration: underline;
+}
+
+.jumbotron-cta-link:hover {
+	color: var(--link-hover);
 }
 
 .jumbotron .lang-logo {
@@ -130,8 +148,15 @@ body {
 	color: var(--text-muted);
 }
 
-/* Job header is an <h2> for correct heading order; keep it visually small. */
-.job-info h2 {
+/* Section heading for Selected Work; matches the Services/Approach headings. */
+.experience-heading {
+	font-size: 1rem;
+	color: var(--text-strong);
+	margin: 0 0 1rem;
+}
+
+/* Job header is an <h3> (section heading is the <h2>); keep it visually small. */
+.job-info h3 {
 	font-size: 1rem;
 	margin: 0;
 }
