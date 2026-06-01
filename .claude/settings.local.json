@@ -32,7 +32,8 @@
       "Bash(node -e \"['about','jobs','services'].forEach\\(f=>JSON.parse\\(require\\('fs'\\).readFileSync\\('src/data/'+f+'.json','utf8'\\)\\)\\);console.log\\('JSON valid'\\)\")",
       "Bash(node -e \"JSON.parse\\(require\\('fs'\\).readFileSync\\('src/data/about.json','utf8'\\)\\);console.log\\('about.json valid'\\)\")",
       "Bash(node -e \"['approach','jobs'].forEach\\(f=>JSON.parse\\(require\\('fs'\\).readFileSync\\('src/data/'+f+'.json','utf8'\\)\\)\\);console.log\\('JSON valid'\\)\")",
-      "Bash(node -e \"JSON.parse\\(require\\('fs'\\).readFileSync\\('src/data/approach.json','utf8'\\)\\);console.log\\('approach.json valid'\\)\")"
+      "Bash(node -e \"JSON.parse\\(require\\('fs'\\).readFileSync\\('src/data/approach.json','utf8'\\)\\);console.log\\('approach.json valid'\\)\")",
+      "Bash(node -e \"JSON.parse\\(require\\('fs'\\).readFileSync\\('src/data/cta.json','utf8'\\)\\);console.log\\('cta.json valid'\\)\")"
     ]
   }
 }

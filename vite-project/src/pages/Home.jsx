@@ -6,6 +6,7 @@ import About from '../components/About';
 import Services from '../components/Services';
 import Approach from '../components/Approach';
 import Job from '../components/Job';
+import ClosingCta from '../components/ClosingCta';
 import Footer from '../components/Footer';
 import ThemeToggle from '../components/ThemeToggle';
 
@@ -45,6 +46,8 @@ function Home() {
             </section>
           </div>
         </div>
+
+        <ClosingCta/>
       </main>
       <Footer/>
     </div>
