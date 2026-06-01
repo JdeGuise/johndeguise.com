@@ -358,15 +358,15 @@
     "@eslint/core" "^0.17.0"
     levn "^0.4.1"
 
-"@fontsource-variable/fraunces@^5.2.9":
-  version "5.2.9"
-  resolved "https://registry.yarnpkg.com/@fontsource-variable/fraunces/-/fraunces-5.2.9.tgz#4de75b80a64de593491e3472ea7cd47962fcc9d3"
-  integrity sha512-Y6IjunlN9Ni723np+GIgAaKzCDBrPRrqNi01TZxHs5wtHYROWFM9W6yiT+/gGwSjWIRD18oX17kD/BRWekc/Lw==
-
 "@fontsource-variable/ibm-plex-sans@^5.2.8":
   version "5.2.8"
   resolved "https://registry.yarnpkg.com/@fontsource-variable/ibm-plex-sans/-/ibm-plex-sans-5.2.8.tgz#8947cca46a35ca91266b88ebcbcac09ff264aabc"
   integrity sha512-n5PF2iFa0CZT0QYTPzxvZ39opC9LnU0zdoRccoADbs+Dtsd+lbXOZF7RNuIPHcQX1dKjF63sxnRImQIB5eD0Ag==
+
+"@fontsource-variable/source-serif-4@^5.2.9":
+  version "5.2.9"
+  resolved "https://registry.yarnpkg.com/@fontsource-variable/source-serif-4/-/source-serif-4-5.2.9.tgz#cd17f0e47b6c74b183a8a6b6fa1a743622d7c5ea"
+  integrity sha512-PPcxjLFk/fS0WHg79pDM2YNvz61kC+oYZ5cWZZyCS0DHpJncmuYOuiZAsvj4tDxlWPBEvxxcRLQQNmSaRbPkqw==
 
 "@fontsource/ibm-plex-mono@^5.2.7":
   version "5.2.7"

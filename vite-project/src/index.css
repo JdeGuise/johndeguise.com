@@ -1,7 +1,7 @@
 :root {
   /* Type system: editorial serif display, technical mono for metadata,
      clean grotesque body. */
-  --font-display: 'Fraunces Variable', Georgia, 'Times New Roman', serif;
+  --font-display: 'Source Serif 4 Variable', Georgia, 'Times New Roman', serif;
   --font-body: 'IBM Plex Sans Variable', system-ui, -apple-system, sans-serif;
   --font-mono: 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', monospace;
 
