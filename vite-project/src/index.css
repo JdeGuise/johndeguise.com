@@ -1,23 +1,32 @@
 :root {
-  font-family: 'Inter Variable', system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+  /* Type system: editorial serif display, technical mono for metadata,
+     clean grotesque body. */
+  --font-display: 'Source Serif 4 Variable', Georgia, 'Times New Roman', serif;
+  --font-body: 'IBM Plex Sans Variable', system-ui, -apple-system, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', monospace;
+
+  font-family: var(--font-body);
+  line-height: 1.6;
   font-weight: 400;
 
-  /* Light theme (default). Dark overrides live in [data-theme="dark"] below. */
+  /* Light theme (default). Dark overrides live in [data-theme="dark"] below.
+     Warm paper + ink instead of clinical pure white/black. */
   color-scheme: light;
-  --bg: #ffffff;
-  --text: #213547;
-  --text-strong: #111111;
-  --text-muted: #4e4e4e;
-  --link: #000000;
-  --link-hover: #CC5500;
-  --surface-hover: rgb(241, 241, 241);
-  --border: #cccccc;
-  --pic-border: #ffffff;
-  --modal-bg: #ffffff;
-  --modal-shadow: rgba(0, 0, 0, 0.35);
+  --bg: #faf8f3;
+  --text: #322e29;
+  --text-strong: #16130d;
+  --text-muted: #6f685d;
+  --link: #16130d;
+  --link-hover: #c2410c;
+  --accent: #c2410c;
+  --rule: #e6e0d4;
+  --surface-hover: #f0ece2;
+  --border: #ddd5c7;
+  --pic-border: #faf8f3;
+  --modal-bg: #faf8f3;
+  --modal-shadow: rgba(40, 30, 10, 0.28);
   --input-bg: #ffffff;
-  --btn-cancel-bg: #f1f1f1;
+  --btn-cancel-bg: #efeadf;
 
   color: var(--text);
   background-color: var(--bg);
@@ -30,32 +39,40 @@
 
 :root[data-theme="dark"] {
   color-scheme: dark;
-  --bg: #15171a;
-  --text: #d6dde3;
-  --text-strong: #f1f3f5;
-  --text-muted: #9aa4ad;
-  --link: #d6dde3;
-  --link-hover: #ff7a29;
-  --surface-hover: #23262b;
-  --border: #3a3f45;
-  --pic-border: #2a2e33;
-  --modal-bg: #1d2024;
+  --bg: #141210;
+  --text: #cfc7b8;
+  --text-strong: #f4efe4;
+  --text-muted: #968d7d;
+  --link: #f4efe4;
+  --link-hover: #ff7a35;
+  --accent: #ff7a35;
+  --rule: #322d26;
+  --surface-hover: #211e19;
+  --border: #383229;
+  --pic-border: #2a2620;
+  --modal-bg: #1c1916;
   --modal-shadow: rgba(0, 0, 0, 0.6);
-  --input-bg: #15171a;
-  --btn-cancel-bg: #2a2e33;
+  --input-bg: #141210;
+  --btn-cancel-bg: #2a2620;
 }
 
 html {
   transition: background-color 0.25s ease, color 0.25s ease;
 }
 
+/* Signature accent carries through to text selection. */
+::selection {
+  background-color: var(--accent);
+  color: #fff;
+}
+
 a {
   font-weight: 500;
-  color: #646cff;
+  color: var(--link);
   text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+  color: var(--link-hover);
 }
 
 body {
@@ -64,11 +81,22 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  font-family: var(--font-body);
+}
+
+/* Headings use the editorial display face; metadata uses mono (set per
+   component). Body stays in the grotesque. */
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  color: var(--text-strong);
 }
 
 h1 {
   font-size: 3.2em;
-  line-height: 1.1;
+  line-height: 1.05;
 }
 
 button {
@@ -83,7 +111,7 @@ button {
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: var(--accent);
 }
 button:focus,
 button:focus-visible {

@@ -1,0 +1,61 @@
+.closing-cta {
+	text-align: center;
+	border-top: 1px solid var(--border);
+	margin-top: 3rem;
+	padding-top: 3rem;
+}
+
+.closing-cta-heading {
+	font-size: 1.5rem;
+	color: var(--text-strong);
+	margin: 0 0 0.75rem;
+}
+
+/* Scoped under .closing-cta so it outranks the broad `.jumbotron p` rule,
+   which otherwise overrides this margin and color on the nested <p>. */
+.closing-cta .closing-cta-body {
+	color: var(--text-muted);
+	max-width: 540px;
+	margin: 0 auto 1.75rem;
+}
+
+.closing-cta-actions {
+	display: flex;
+	gap: 1.25rem;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+/* Primary action. White text reads on the orange accent in both themes,
+   so it's an intentional exception to the "use theme variables" rule. */
+.closing-cta-button {
+	display: inline-block;
+	background-color: var(--link-hover);
+	color: #fff;
+	padding: 0.7rem 1.4rem;
+	border-radius: 8px;
+	text-decoration: none;
+	font-weight: 500;
+}
+
+.closing-cta-button:hover {
+	color: #fff;
+	opacity: 0.9;
+}
+
+/* Secondary action: reset the global <button> styles back to a text link. */
+.closing-cta-link {
+	background: none;
+	border: none;
+	padding: 0;
+	font-size: 1rem;
+	font-family: inherit;
+	color: var(--link);
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.closing-cta-link:hover {
+	color: var(--link-hover);
+}
