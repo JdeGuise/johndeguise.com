@@ -22,8 +22,8 @@ function Home() {
               <div className="content-details">
                 <img className="lang-logo" src="profilepic.jpg" alt="Profile Picture" width="200" height="200"/>
                 <div className="jumbotron-info">
-                  <h1 className="jumbotron-header">Hey, I&apos;m John.</h1>
-                  <p className="jumbotron-description-one">Full-stack engineer &amp; AI specialist.</p>
+                  <p className="jumbotron-eyebrow">Full-stack engineer · AI specialist</p>
+                  <h1 className="jumbotron-header">Hey, I&apos;m <span className="jumbotron-name">John</span>.</h1>
                   <p className="jumbotron-description-two">I help teams build and ship full-stack products, from first idea to production.</p>
                   <p className="jumbotron-cta">Curious how AI could accelerate your business but not sure where to start? I bet that <a className="jumbotron-cta-link" href="https://calendly.com/johndeguise" target="_blank" rel="noopener noreferrer">I can help.</a></p>
                 </div>
