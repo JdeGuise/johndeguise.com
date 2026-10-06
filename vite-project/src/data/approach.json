@@ -4,15 +4,15 @@
     "points" : [
         {
             "label" : "Reusable AI tooling for teams",
-            "description" : "I build reusable Claude Code skills so a whole team gets consistent results from AI, not just whoever happens to write the best prompt. One walks a repo file by file, checks each file type against our standards for spacing, linting, and naming, auto-formats the safe fixes, and flags the rest for review. It brought legacy codebases up to modern standards in a fraction of the usual time, and ended the cycle of pull requests bouncing on the same formatting notes."
+            "description" : "I build reusable Claude Code skills so a whole team gets consistent results from AI, not just whoever happens to write the best prompt. Five of them now run across 20 of our repositories. One rolled out a shared formatting standard: before it, 1,136 of our Apex files didn’t match. Today none do, and pull requests stopped bouncing on the same formatting notes."
         },
         {
             "label" : "Smarter context for AI",
-            "description" : "I built a concept-linked knowledge map that AI tools can reference instead of fetching documentation page by page. It’s generated from our existing docs, so the model gets the context it needs up front rather than hunting for it mid-task. That cut token usage sharply and keeps long conversations coherent, since the important context lives in the map and not only in the chat history."
+            "description" : "I built a concept-linked knowledge map that AI tools can reference instead of fetching documentation page by page. It’s generated from our existing docs, so the model gets the context it needs up front. I benchmarked it on a real documentation question against the usual mix of public docs and source code: about 40% fewer tokens, half the lookups, and better answers (91% on our rubric, up from 73%). It doesn’t help with deep engine internals yet, which tells me exactly what to document next."
         },
         {
             "label" : "AI on Salesforce since the start",
-            "description" : "I led an Agentforce integration and took part in Salesforce’s original pilot, so I’ve worked with AI on the platform since it launched. Outside of work, I spend a lot of time learning and testing the newest capabilities available. I wire Claude and n8n into my home lab, automating everything from smart-device control to keeping track of the dates and details I’d otherwise forget. It keeps me close to what’s actually possible."
+            "description" : "I built our Agentforce agent and took part in Salesforce’s original pilot, so I’ve worked with AI on the platform since it launched. The agent handles booking, rescheduling, and availability in plain language, and customers have used it in live campaigns. Outside of work, I spend a lot of time learning and testing the newest capabilities available. I wire Claude and n8n into my home lab, automating everything from smart-device control to keeping track of the dates and details I’d otherwise forget. It keeps me close to what’s actually possible."
         }
     ]
 }

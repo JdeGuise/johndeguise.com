@@ -2,22 +2,28 @@
     "jobs" : [
         {
             "range" : "2023 - PRESENT",
-            "header" : "Senior Software Developer - GoMeddo",
+            "header" : "Senior Developer - GoMeddo",
             "companyUrl" : "https://www.gomeddo.com",
-            "description" : "I ship full-stack features across GoMeddo’s product suite, owning the work from early requirements through release, and I lead much of our push to use AI to ship faster and more consistently. My day-to-day spans React, Python, Apex, and AWS."
+            "description" : "I lead development of our messaging product, which connects Salesforce to WhatsApp, Telegram, and Twilio and carries millions of messages a year, and I build and maintain the TypeScript SDK and Python/Django API that tie our frontends to Salesforce. I also drive much of our AI work, including our Agentforce agent and the tooling described above. My day-to-day spans TypeScript, React, Python, Django, PostgreSQL, Heroku, AWS, and Apex."
+        },
+        {
+            "range" : "2026 - PRESENT",
+            "header" : "Independent Consultant - JDG CodeWorks",
+            "companyUrl" : "https://calendly.com/johndeguise",
+            "description" : "My freelance practice. Right now I’m leading a US SaaS company through the Salesforce Partner Program and AppExchange security review. That included a security assessment of their AWS-hosted web application with OWASP ZAP, which turned up SQL injection, XSS, CSRF, and path traversal issues, plus a manual review of their managed package."
         },
         {
             "range" : "2022 - 2023",
-            "header" : "Senior Salesforce Developer - Valtech/Appsolutely",
+            "header" : "Senior Salesforce Developer - Valtech (formerly Appsolutely)",
             "companyUrl" : "https://www.valtech.com",
-            "description": "I consulted with clients to analyze, optimize, and extend their Salesforce environments and integrations, building well-tested solutions in JavaScript, Apex, and SOQL. I also coached client teams and junior developers through the delivery process."
+            "description": "I consulted with clients to analyze, optimize, and extend their Salesforce environments and integrations, building well-tested solutions in JavaScript, Apex, and SOQL, including a Slack integration for case management before Salesforce had native tooling for it. I also coached client teams and junior developers through the delivery process."
         },
         {
             "range" : "2019 - 2022",
             "header" : "Senior Salesforce Developer - Ping Identity",
             "companyUrl" : "https://www.pingidentity.com",
             "previousPositions" : ["Salesforce Developer"],
-            "description" : "I led the move to a version-control-driven development model and modernized how we tested, refactoring Apex unit tests around mocking frameworks and introducing test-driven development for Lightning Web Components with Jest. I delivered full-stack work across Experience, Sales, and Service Clouds, managed CI/CD pipelines, profiled and improved platform performance with New Relic, and supported internal teams with CPQ enhancements."
+            "description" : "With one other developer, I rebuilt Ping’s license management system, moving it off a legacy ColdFusion service and into Salesforce, where sales, support, and finance all used it. I was the primary developer on ground-up rebuilds of the Support and Partner portals. After my promotion to senior, I led the move to Git-based CI/CD for 5 developers and 4 admins, which cut up to 40 hours of deployment work per sprint, and refactored our Apex tests around mocks to cut suite runtime by up to 75%."
         },
         {
             "range" : "2018 - 2019",
